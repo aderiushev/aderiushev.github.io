@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (iOS/flat icon) -->
+  <rect x="0" y="0" width="1024" height="1024" rx="200" fill="#FFFFFF"/>
+
+  <!-- Geometric P: stem + bowl stroke -->
+  <!-- Stem -->
+  <rect x="308" y="208" width="168" height="620" rx="84" fill="#C62828"/>
+
+  <!-- Bowl (thick rounded rectangle stroke to read as a P bowl) -->
+  <rect x="380" y="180" width="420" height="320" rx="160" fill="none" stroke="#C62828" stroke-width="160" stroke-linejoin="round"/>
+
+  <!-- Image tiles inside the bowl (Spanish via color accent) -->
+  <rect x="560" y="270" width="90" height="90" rx="18" fill="#FBC02D"/>
+  <rect x="665" y="270" width="90" height="90" rx="18" fill="#FBC02D"/>
+  <rect x="560" y="375" width="90" height="90" rx="18" fill="#FBC02D"/>
+</svg>
+

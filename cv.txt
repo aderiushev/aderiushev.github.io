@@ -1,0 +1,108 @@
+Aleksei Deriushev
+Senior Front-end Engineer
+
+📍 Barcelona, Spain
+📞 +34 614 377 858
+✉️ derushev.alekse@gmail.com
+LinkedIn
+GitHub
+🔗 LinkedIn | GitHub
+33 y.o.
+
+
+
+
+Summary
+Senior Software Engineer with 12+ years of experience delivering high-performance web, mobile, and desktop applications.
+Expert in React, TypeScript, and Node.js, with a strong background in front-end architecture, performance optimization, and scalable design systems.
+Hands-on experience across diverse domains: streaming platforms, fintech, blockchain, maps, influencer marketing, and e-commerce.
+I combine technical expertise with adaptability, having worked internationally in startups, enterprises, and as a team lead. Strong ability to quickly learn, troubleshoot, and deliver value in complex environments.
+
+Core Skills
+Frontend: Typescript, React, React Native, Next.js, Redux, MobX, Styled-components, Expo, Electron, Zustand, Zod, Tailwind, TanStack Query
+Backend: Node.js, Express, NestJS, Prisma, GraphQL, WebSockets, SQL, Firebase, AWS, RPC
+Testing & Tools: Vite, Webpack, Turborepo, Cypress, Playwright, Jest, Docker, Figma, Sentry, Rollbar, Youbora
+DevOps / Cloud: Kubernetes, Docker, AWS, CI/CD (GitHub Actions, GitLab CI).
+
+As a person
+I’m a passionate and curious individual who thrives on solving complex problems and learning new things. Outside of my professional life, I enjoy running, which keeps me energised and focused. As a father, I love spending time with my son Miron, whether it’s playing games or exploring new activities together. I believe in maintaining a balanced life, where continuous growth, both personally and professionally
+Professional Experience
+Front-End Engineer
+Rakuten TV (Barcelona, ES) | 06/2023 – 04/2025 (1y 8m)
+📺 Streaming platform (TVOD/AVOD) — rakuten.tv
+Improved website performance, UX, and scalability for millions of users.
+Designed and implemented new features and optimizations across the platform.
+Gained deep insights into streaming platform architecture and under-the-hood systems.
+Tech stack: React, Redux, TypeScript, Styled-components, Next.js, Docker, Cypress, Playwright, Jest, Figma
+
+
+
+Front-End Engineer
+Aldrin (Remote, US) | 04/2022 – 06/2023 (1y 2m)
+💰 Blockchain fintech — aldrin.com
+Built and maintained Web3 SDK and integrated third-party wallets.
+Worked on Solana-based pools, swaps, and DeFi features.
+Tech stack: TypeScript, Web3.js, Node.js
+
+
+
+Senior Front-End Engineer
+NRDS (Remote, US) | 03/2019 – 04/2022 (3y 1m)
+📍 Rich map-feature mobile app — nrdsdata.com
+Developed and optimized complex mobile features in map-driven applications.
+Solved performance-critical challenges in large-scale apps.
+Integrated third-party APIs and SDKs.
+Contributed to leadership tasks and knowledge sharing within the team.
+Tech stack: React Native, Expo, Firebase, React, MobX, TypeScript, NestJS, Prisma
+
+
+
+Senior Front-End Engineer
+IT X100 (Moscow, RU) | 11/2018 – 03/2019 (4m)
+🍽️ Food tech platform — joinitx100.com
+Addressed complex performance issues guided by Lighthouse audits.
+Facilitated knowledge-sharing sessions.
+Tech stack: React, Redux, GraphQL, TypeScript
+
+
+
+Senior Front-End Engineer
+LabelUp (Moscow, RU) | 06/2016 – 11/2018 (2y 5m)
+📢 Influencer Marketing Platform — labelup.ru
+Built and scaled the entire front-end ecosystem.
+Introduced performance enhancements and Agile-driven processes.
+Conducted onboarding, interviews, and mentoring.
+Tech stack: React Native, React, Redux, WebSockets, TypeScript, GraphQL
+
+
+
+Middle Full-Stack Engineer
+iTechArt Group (Minsk, BY) | 03/2015 – 06/2016 (1y 3m)
+🧳 Chrome extension for corporate travel — rocketrip.com
+Gathered requirements, coordinated with stakeholders, and led small team efforts.
+Introduced GraphQL into the workflow.
+Delivered complex performance-critical features.
+Tech stack: Python, Django, React, Redux, Flowtype, Firebase, AWS
+
+
+
+Back-End Engineer
+Enaza (Perm, RU) | 01/2012 – 03/2015 (3y 2m)
+🎮 Software distribution platform — enaza.pro
+Contributed to backend systems powering e-commerce for online software & games.
+Tech stack: PHP, Yii Framework, MySQL
+
+Education
+🎓 Perm State Pedagogical University (2010 – 2015)
+Master’s Degree in Information Technologies in Education (Diploma with Honors)
+
+Languages
+🇷🇺 Russian — Native
+🇬🇧 English — C1 (Fluent, Professional)
+🇪🇸 Spanish — B1
+
+Personal Interests
+Continuous learner with a passion for solving complex challenges and exploring emerging technologies.
+Running enthusiast, maintaining focus and resilience through regular training.
+Dedicated father, enjoying quality time and shared activities with my son.
+Chess player, appreciating strategy and analytical thinking (active on Lichess).

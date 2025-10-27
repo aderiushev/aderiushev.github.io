@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aleksei Deriushev - Senior Front-end Engineer with 12+ years of experience in React, TypeScript, and Node.js. Based in Barcelona, Spain.">
+    <meta name="keywords" content="frontend developer, react developer, typescript, senior engineer, web development, Barcelona">
+    <meta name="author" content="Aleksei Deriushev">
+    <title>Aleksei Deriushev - Senior Front-end Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">AD</a>
+                <nav>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Aleksei Deriushev</h1>
+                <p class="title">Senior Front-end Engineer</p>
+                <p class="tagline">12+ years crafting high-performance web, mobile, and desktop applications</p>
+                <div class="hero-buttons">
+                    <a href="cv.pdf" class="btn btn-primary" download>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download CV
+                    </a>
+                    <a href="https://github.com/aderiushev" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/in/aderiushev" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+                <div class="hero-info">
+                    <span>📍 Barcelona, Spain</span>
+                    <span>✉️ derushev.alekse@gmail.com</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Senior Software Engineer with <strong>12+ years of experience</strong> delivering high-performance web, mobile, and desktop applications. Expert in React, TypeScript, and Node.js, with a strong background in front-end architecture, performance optimization, and scalable design systems.</p>
+                <p>Hands-on experience across diverse domains: streaming platforms, fintech, blockchain, maps, influencer marketing, and e-commerce. I combine technical expertise with adaptability, having worked internationally in startups, enterprises, and as a team lead.</p>
+                <p>Outside of work, I'm a passionate runner, dedicated father to my son Miron, and chess enthusiast on Lichess. I thrive on solving complex problems and continuously learning new technologies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2>Core Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <div class="skill-tags">
+                        <span>TypeScript</span>
+                        <span>React</span>
+                        <span>React Native</span>
+                        <span>Next.js</span>
+                        <span>Redux</span>
+                        <span>MobX</span>
+                        <span>Zustand</span>
+                        <span>Styled-components</span>
+                        <span>Tailwind</span>
+                        <span>TanStack Query</span>
+                        <span>Expo</span>
+                        <span>Electron</span>
+                        <span>Zod</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <div class="skill-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>NestJS</span>
+                        <span>Prisma</span>
+                        <span>GraphQL</span>
+                        <span>WebSockets</span>
+                        <span>SQL</span>
+                        <span>Firebase</span>
+                        <span>AWS</span>
+                        <span>RPC</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Testing & Tools</h3>
+                    <div class="skill-tags">
+                        <span>Vite</span>
+                        <span>Webpack</span>
+                        <span>Turborepo</span>
+                        <span>Cypress</span>
+                        <span>Playwright</span>
+                        <span>Jest</span>
+                        <span>Docker</span>
+                        <span>Figma</span>
+                        <span>Sentry</span>
+                        <span>Rollbar</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>DevOps & Cloud</h3>
+                    <div class="skill-tags">
+                        <span>Kubernetes</span>
+                        <span>Docker</span>
+                        <span>AWS</span>
+                        <span>CI/CD</span>
+                        <span>GitHub Actions</span>
+                        <span>GitLab CI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Front-End Engineer</h3>
+                        <h4>Rakuten TV · Barcelona, Spain</h4>
+                        <p class="company-type">📺 Streaming platform (TVOD/AVOD)</p>
+                        <ul>
+                            <li>Improved website performance, UX, and scalability for millions of users</li>
+                            <li>Designed and implemented new features and optimizations across the platform</li>
+                            <li>Gained deep insights into streaming platform architecture</li>
+                        </ul>
+                        <div class="tech-stack">React · Redux · TypeScript · Next.js · Docker · Cypress · Playwright</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>Front-End Engineer</h3>
+                        <h4>Aldrin · Remote, US</h4>
+                        <p class="company-type">💰 Blockchain fintech</p>
+                        <ul>
+                            <li>Built and maintained Web3 SDK and integrated third-party wallets</li>
+                            <li>Worked on Solana-based pools, swaps, and DeFi features</li>
+                        </ul>
+                        <div class="tech-stack">TypeScript · Web3.js · Node.js</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2019 - 2022</div>
+                    <div class="timeline-content">
+                        <h3>Senior Front-End Engineer</h3>
+                        <h4>NRDS · Remote, US</h4>
+                        <p class="company-type">📍 Rich map-feature mobile app</p>
+                        <ul>
+                            <li>Developed and optimized complex mobile features in map-driven applications</li>
+                            <li>Solved performance-critical challenges in large-scale apps</li>
+                            <li>Contributed to leadership tasks and knowledge sharing</li>
+                        </ul>
+                        <div class="tech-stack">React Native · Expo · Firebase · MobX · TypeScript · NestJS · Prisma</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2018 - 2019</div>
+                    <div class="timeline-content">
+                        <h3>Senior Front-End Engineer</h3>
+                        <h4>IT X100 · Moscow, Russia</h4>
+                        <p class="company-type">🍽️ Food tech platform</p>
+                        <ul>
+                            <li>Addressed complex performance issues guided by Lighthouse audits</li>
+                            <li>Facilitated knowledge-sharing sessions</li>
+                        </ul>
+                        <div class="tech-stack">React · Redux · GraphQL · TypeScript</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2016 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Senior Front-End Engineer</h3>
+                        <h4>LabelUp · Moscow, Russia</h4>
+                        <p class="company-type">📢 Influencer Marketing Platform</p>
+                        <ul>
+                            <li>Built and scaled the entire front-end ecosystem</li>
+                            <li>Introduced performance enhancements and Agile-driven processes</li>
+                            <li>Conducted onboarding, interviews, and mentoring</li>
+                        </ul>
+                        <div class="tech-stack">React Native · React · Redux · WebSockets · TypeScript · GraphQL</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2015 - 2016</div>
+                    <div class="timeline-content">
+                        <h3>Middle Full-Stack Engineer</h3>
+                        <h4>iTechArt Group · Minsk, Belarus</h4>
+                        <p class="company-type">🧳 Chrome extension for corporate travel</p>
+                        <ul>
+                            <li>Gathered requirements and coordinated with stakeholders</li>
+                            <li>Introduced GraphQL into the workflow</li>
+                            <li>Delivered complex performance-critical features</li>
+                        </ul>
+                        <div class="tech-stack">Python · Django · React · Redux · Flowtype · Firebase · AWS</div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-date">2012 - 2015</div>
+                    <div class="timeline-content">
+                        <h3>Back-End Engineer</h3>
+                        <h4>Enaza · Perm, Russia</h4>
+                        <p class="company-type">🎮 Software distribution platform</p>
+                        <ul>
+                            <li>Contributed to backend systems powering e-commerce for online software & games</li>
+                        </ul>
+                        <div class="tech-stack">PHP · Yii Framework · MySQL</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Personal Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>N3WS</h3>
+                    <p class="project-description">News in 3 Words - Ultra-concise headlines from Russia, Spain, and around the world powered by AI.</p>
+                    <a href="/n3ws/" class="project-link">View Project →</a>
+                </div>
+                <div class="project-card">
+                    <h3>Palabrino</h3>
+                    <p class="project-description">Learn Spanish vocabulary through visual learning. Match Spanish words with images in an engaging language learning game.</p>
+                    <a href="/palabrino/" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+                <div class="contact-info">
+                    <a href="mailto:derushev.alekse@gmail.com" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        derushev.alekse@gmail.com
+                    </a>
+                    <a href="tel:+34614377858" class="contact-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                        +34 614 377 858
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Aleksei Deriushev. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="https://github.com/aderiushev" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://linkedin.com/in/aderiushev" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

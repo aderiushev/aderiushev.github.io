@@ -21,8 +21,6 @@ jobs:
           node-version: '20'
       - name: Install dependencies
         run: npm install
-      - name: Generate localized CV PDFs
-        run: npm run build:cv
       - name: Build localized pages
         run: npm run build:i18n
       - name: Commit changes

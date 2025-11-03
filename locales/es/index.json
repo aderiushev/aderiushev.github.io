@@ -16,6 +16,9 @@
   "hero.location": "\ud83d\udccd Barcelona, España",
 
   "about.title": "Sobre mí",
+  "about.paragraph1": "Ingeniero de software senior con <strong>más de 12 años de experiencia</strong> desarrollando aplicaciones web, móviles y de escritorio de alto rendimiento. Experto en React, TypeScript y Node.js, con una sólida base en arquitectura front-end, optimización del rendimiento y sistemas de diseño escalables.",
+  "about.paragraph2": "Experiencia práctica en diversos ámbitos: plataformas de streaming, fintech, blockchain, mapas, marketing de influencers y comercio electrónico. Combino experiencia técnica con adaptabilidad, habiendo trabajado internacionalmente en startups, empresas y como líder de equipo.",
+  "about.paragraph3": "Fuera del trabajo, soy un apasionado corredor, padre dedicado de mi hijo Miron y entusiasta del ajedrez en Lichess. Me encanta resolver problemas complejos y aprender continuamente nuevas tecnologías.",
 
   "skills.title": "Habilidades clave",
   "skills.frontend": "Frontend",
@@ -24,11 +27,41 @@
   "skills.devops_cloud": "DevOps y Cloud",
 
   "experience.title": "Experiencia profesional",
+  "experience.rakuten.companyType": "📺 Plataforma de streaming (TVOD/AVOD)",
+  "experience.rakuten.bullet1": "Mejoré el rendimiento del sitio web, la UX y la escalabilidad para millones de usuarios",
+  "experience.rakuten.bullet2": "Diseñé e implementé nuevas funcionalidades y optimizaciones en toda la plataforma",
+  "experience.rakuten.bullet3": "Obtuve conocimientos profundos sobre la arquitectura de plataformas de streaming",
+  "experience.aldrin.companyType": "💰 Fintech blockchain",
+  "experience.aldrin.bullet1": "Construí y mantuve el SDK Web3 e integré carteras de terceros",
+  "experience.aldrin.bullet2": "Trabajé en pools, swaps y funcionalidades DeFi basadas en Solana",
+  "experience.nrds.companyType": "📍 Aplicación móvil con funciones de mapa avanzadas",
+  "experience.nrds.bullet1": "Desarrollé y optimicé funcionalidades móviles complejas en aplicaciones basadas en mapas",
+  "experience.nrds.bullet2": "Resolví desafíos críticos de rendimiento en aplicaciones a gran escala",
+  "experience.nrds.bullet3": "Contribuí a tareas de liderazgo y compartición de conocimientos",
+  "experience.itx100.companyType": "🍽️ Plataforma de tecnología alimentaria",
+  "experience.itx100.bullet1": "Abordé problemas complejos de rendimiento guiado por auditorías de Lighthouse",
+  "experience.itx100.bullet2": "Facilité sesiones de compartición de conocimientos",
+  "experience.labelup.companyType": "📢 Plataforma de marketing de influencers",
+  "experience.labelup.bullet1": "Construí y escalé todo el ecosistema front-end",
+  "experience.labelup.bullet2": "Introduje mejoras de rendimiento y procesos impulsados por Agile",
+  "experience.labelup.bullet3": "Realicé onboarding, entrevistas y mentoría",
+  "experience.itechart.companyType": "🧳 Extensión de Chrome para viajes corporativos",
+  "experience.itechart.bullet1": "Recopilé requisitos y coordiné con las partes interesadas",
+  "experience.itechart.bullet2": "Introduje GraphQL al flujo de trabajo",
+  "experience.itechart.bullet3": "Entregué funcionalidades complejas críticas para el rendimiento",
+  "experience.enaza.companyType": "🎮 Plataforma de distribución de software",
+  "experience.enaza.bullet1": "Contribuí a los sistemas backend que impulsan el comercio electrónico de software y juegos en línea",
 
   "projects.title": "Proyectos personales",
   "projects.viewProject": "Ver proyecto \u2192",
+  "projects.cm.description": "Aplicación de gestión de tareas de equipo para una colaboración fluida. Crea, asigna y rastrea tareas en tiempo real con tu equipo.",
+  "projects.n3ws.description": "Noticias en 3 palabras - Titulares ultra-concisos de Rusia, España y todo el mundo impulsados por IA.",
+  "projects.palabrino.description": "Aprende vocabulario español mediante el aprendizaje visual. Relaciona palabras españolas con imágenes en un juego de aprendizaje de idiomas atractivo.",
+  "projects.adchange.description": "Rastrea RUB/USDT/EUR en vivo, compara rutas directas vs indirectas con ahorros reales, visualiza gráficos de historial y convierte al instante (React Native + Firebase).",
 
   "contact.title": "Contacto",
-  "contact.description": "Siempre abierto a hablar de nuevas oportunidades, proyectos interesantes o simplemente charlar sobre tecnología."
+  "contact.description": "Siempre abierto a hablar de nuevas oportunidades, proyectos interesantes o simplemente charlar sobre tecnología.",
+
+  "footer.copyright": "© 2025 Aleksei Deriushev. Todos los derechos reservados."
 }
 

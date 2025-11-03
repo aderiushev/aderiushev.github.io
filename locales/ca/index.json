@@ -16,6 +16,9 @@
   "hero.location": "\ud83d\udccd Barcelona, Espanya",
 
   "about.title": "Sobre mi",
+  "about.paragraph1": "Enginyer de programari sènior amb <strong>més de 12 anys d'experiència</strong> desenvolupant aplicacions web, mòbils i d'escriptori d'alt rendiment. Expert en React, TypeScript i Node.js, amb una sòlida base en arquitectura front-end, optimització del rendiment i sistemes de disseny escalables.",
+  "about.paragraph2": "Experiència pràctica en diversos àmbits: plataformes de streaming, fintech, blockchain, mapes, màrqueting d'influencers i comerç electrònic. Combino experiència tècnica amb adaptabilitat, havent treballat internacionalment en startups, empreses i com a líder d'equip.",
+  "about.paragraph3": "Fora de la feina, sóc un apassionat corredor, pare dedicat del meu fill Miron i entusiasta dels escacs a Lichess. M'encanta resoldre problemes complexos i aprendre contínuament noves tecnologies.",
 
   "skills.title": "Habilitats clau",
   "skills.frontend": "Frontend",
@@ -24,11 +27,41 @@
   "skills.devops_cloud": "DevOps i Cloud",
 
   "experience.title": "Experiència professional",
+  "experience.rakuten.companyType": "📺 Plataforma de streaming (TVOD/AVOD)",
+  "experience.rakuten.bullet1": "Vaig millorar el rendiment del lloc web, l'UX i l'escalabilitat per a milions d'usuaris",
+  "experience.rakuten.bullet2": "Vaig dissenyar i implementar noves funcionalitats i optimitzacions a tota la plataforma",
+  "experience.rakuten.bullet3": "Vaig obtenir coneixements profunds sobre l'arquitectura de plataformes de streaming",
+  "experience.aldrin.companyType": "💰 Fintech blockchain",
+  "experience.aldrin.bullet1": "Vaig construir i mantenir l'SDK Web3 i integrar carteres de tercers",
+  "experience.aldrin.bullet2": "Vaig treballar en pools, swaps i funcionalitats DeFi basades en Solana",
+  "experience.nrds.companyType": "📍 Aplicació mòbil amb funcions de mapa avançades",
+  "experience.nrds.bullet1": "Vaig desenvolupar i optimitzar funcionalitats mòbils complexes en aplicacions basades en mapes",
+  "experience.nrds.bullet2": "Vaig resoldre reptes crítics de rendiment en aplicacions a gran escala",
+  "experience.nrds.bullet3": "Vaig contribuir a tasques de lideratge i compartició de coneixements",
+  "experience.itx100.companyType": "🍽️ Plataforma de tecnologia alimentària",
+  "experience.itx100.bullet1": "Vaig abordar problemes complexos de rendiment guiat per auditories de Lighthouse",
+  "experience.itx100.bullet2": "Vaig facilitar sessions de compartició de coneixements",
+  "experience.labelup.companyType": "📢 Plataforma de màrqueting d'influencers",
+  "experience.labelup.bullet1": "Vaig construir i escalar tot l'ecosistema front-end",
+  "experience.labelup.bullet2": "Vaig introduir millores de rendiment i processos impulsats per Agile",
+  "experience.labelup.bullet3": "Vaig realitzar onboarding, entrevistes i mentoria",
+  "experience.itechart.companyType": "🧳 Extensió de Chrome per a viatges corporatius",
+  "experience.itechart.bullet1": "Vaig recopilar requisits i coordinar amb les parts interessades",
+  "experience.itechart.bullet2": "Vaig introduir GraphQL al flux de treball",
+  "experience.itechart.bullet3": "Vaig lliurar funcionalitats complexes crítiques per al rendiment",
+  "experience.enaza.companyType": "🎮 Plataforma de distribució de programari",
+  "experience.enaza.bullet1": "Vaig contribuir als sistemes backend que impulsen el comerç electrònic de programari i jocs en línia",
 
   "projects.title": "Projectes personals",
   "projects.viewProject": "Veure projecte \u2192",
+  "projects.cm.description": "Aplicació de gestió de tasques d'equip per a una col·laboració fluida. Crea, assigna i segueix tasques en temps real amb el teu equip.",
+  "projects.n3ws.description": "Notícies en 3 paraules - Titulars ultra-concisos de Rússia, Espanya i arreu del món impulsats per IA.",
+  "projects.palabrino.description": "Aprèn vocabulari espanyol mitjançant l'aprenentatge visual. Relaciona paraules espanyoles amb imatges en un joc d'aprenentatge d'idiomes atractiu.",
+  "projects.adchange.description": "Segueix RUB/USDT/EUR en directe, compara rutes directes vs indirectes amb estalvis reals, visualitza gràfics d'historial i converteix a l'instant (React Native + Firebase).",
 
   "contact.title": "Contacte",
-  "contact.description": "Sempre obert a parlar de noves oportunitats, projectes interessants o simplement conversar sobre tecnologia."
+  "contact.description": "Sempre obert a parlar de noves oportunitats, projectes interessants o simplement conversar sobre tecnologia.",
+
+  "footer.copyright": "© 2025 Aleksei Deriushev. Tots els drets reservats."
 }
 

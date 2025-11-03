@@ -16,6 +16,9 @@
   "hero.location": "📍 Barcelona, Spain",
 
   "about.title": "About Me",
+  "about.paragraph1": "Senior Software Engineer with <strong>12+ years of experience</strong> delivering high-performance web, mobile, and desktop applications. Expert in React, TypeScript, and Node.js, with a strong background in front-end architecture, performance optimization, and scalable design systems.",
+  "about.paragraph2": "Hands-on experience across diverse domains: streaming platforms, fintech, blockchain, maps, influencer marketing, and e-commerce. I combine technical expertise with adaptability, having worked internationally in startups, enterprises, and as a team lead.",
+  "about.paragraph3": "Outside of work, I'm a passionate runner, dedicated father to my son Miron, and chess enthusiast on Lichess. I thrive on solving complex problems and continuously learning new technologies.",
 
   "skills.title": "Core Skills",
   "skills.frontend": "Frontend",
@@ -24,11 +27,41 @@
   "skills.devops_cloud": "DevOps & Cloud",
 
   "experience.title": "Professional Experience",
+  "experience.rakuten.companyType": "📺 Streaming platform (TVOD/AVOD)",
+  "experience.rakuten.bullet1": "Improved website performance, UX, and scalability for millions of users",
+  "experience.rakuten.bullet2": "Designed and implemented new features and optimizations across the platform",
+  "experience.rakuten.bullet3": "Gained deep insights into streaming platform architecture",
+  "experience.aldrin.companyType": "💰 Blockchain fintech",
+  "experience.aldrin.bullet1": "Built and maintained Web3 SDK and integrated third-party wallets",
+  "experience.aldrin.bullet2": "Worked on Solana-based pools, swaps, and DeFi features",
+  "experience.nrds.companyType": "📍 Rich map-feature mobile app",
+  "experience.nrds.bullet1": "Developed and optimized complex mobile features in map-driven applications",
+  "experience.nrds.bullet2": "Solved performance-critical challenges in large-scale apps",
+  "experience.nrds.bullet3": "Contributed to leadership tasks and knowledge sharing",
+  "experience.itx100.companyType": "🍽️ Food tech platform",
+  "experience.itx100.bullet1": "Addressed complex performance issues guided by Lighthouse audits",
+  "experience.itx100.bullet2": "Facilitated knowledge-sharing sessions",
+  "experience.labelup.companyType": "📢 Influencer Marketing Platform",
+  "experience.labelup.bullet1": "Built and scaled the entire front-end ecosystem",
+  "experience.labelup.bullet2": "Introduced performance enhancements and Agile-driven processes",
+  "experience.labelup.bullet3": "Conducted onboarding, interviews, and mentoring",
+  "experience.itechart.companyType": "🧳 Chrome extension for corporate travel",
+  "experience.itechart.bullet1": "Gathered requirements and coordinated with stakeholders",
+  "experience.itechart.bullet2": "Introduced GraphQL into the workflow",
+  "experience.itechart.bullet3": "Delivered complex performance-critical features",
+  "experience.enaza.companyType": "🎮 Software distribution platform",
+  "experience.enaza.bullet1": "Contributed to backend systems powering e-commerce for online software & games",
 
   "projects.title": "Personal Projects",
   "projects.viewProject": "View Project →",
+  "projects.cm.description": "Team task management app for seamless collaboration. Create, assign, and track tasks in real-time with your team.",
+  "projects.n3ws.description": "News in 3 Words - Ultra-concise headlines from Russia, Spain, and around the world powered by AI.",
+  "projects.palabrino.description": "Learn Spanish vocabulary through visual learning. Match Spanish words with images in an engaging language learning game.",
+  "projects.adchange.description": "Track live RUB/USDT/EUR, compare direct vs indirect routes with real savings, view history charts, and convert instantly (React Native + Firebase).",
 
   "contact.title": "Get In Touch",
-  "contact.description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology."
+  "contact.description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",
+
+  "footer.copyright": "© 2025 Aleksei Deriushev. All rights reserved."
 }
 

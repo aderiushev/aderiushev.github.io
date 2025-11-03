@@ -1,5 +1,54 @@
+// i18n Functionality
+const detectLanguage = () => {
+    const path = window.location.pathname;
+    if (path.startsWith('/ca/') || path === '/ca') return 'ca';
+    if (path.startsWith('/es/') || path === '/es') return 'es';
+    if (path.startsWith('/ru/') || path === '/ru') return 'ru';
+    return 'en';
+};
+
+const loadTranslations = async (lang) => {
+    try {
+        const response = await fetch(`/locales/${lang}/index.json`);
+        if (!response.ok) throw new Error(`Failed to load ${lang} translations`);
+        return await response.json();
+    } catch (error) {
+        console.error('Translation loading error:', error);
+        // Fallback to English
+        if (lang !== 'en') {
+            return await loadTranslations('en');
+        }
+        return {};
+    }
+};
+
+const applyTranslations = (translations) => {
+    document.querySelectorAll('[data-i18n]').forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[key]) {
+            element.innerHTML = translations[key];
+        }
+    });
+
+    document.querySelectorAll('[data-i18n-attr]').forEach(element => {
+        const attrConfig = element.getAttribute('data-i18n-attr');
+        const [attr, key] = attrConfig.split(':');
+        if (translations[key]) {
+            element.setAttribute(attr, translations[key]);
+        }
+    });
+};
+
 // Theme Toggle Functionality
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    // Load and apply translations
+    const lang = detectLanguage();
+    const translations = await loadTranslations(lang);
+    applyTranslations(translations);
+
+    // Update HTML lang attribute
+    document.documentElement.setAttribute('lang', lang);
+
     const themeToggle = document.getElementById('theme-toggle');
     const html = document.documentElement;
 

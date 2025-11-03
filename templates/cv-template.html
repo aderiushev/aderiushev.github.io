@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{LANG}}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{TITLE}}</title>
+  <style>
+    @page { size: A4; margin: 12mm; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+      color: #111;
+      line-height: 1.4;
+      font-size: 12px;
+    }
+    .cv {
+      display: block;
+      width: 100%;
+    }
+    .cv h1 {
+      font-size: 22px;
+      margin: 0 0 2mm 0;
+    }
+    .cv .subtitle {
+      color: #444;
+      margin-bottom: 6mm;
+    }
+    .cv pre {
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 11px;
+    }
+    .footer {
+      position: fixed;
+      bottom: 6mm;
+      left: 0; right: 0;
+      text-align: center;
+      color: #777;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+  <main class="cv">
+    <h1>{{NAME}}</h1>
+    <div class="subtitle">{{SUBTITLE}}</div>
+    <pre>{{CONTENT}}</pre>
+  </main>
+  <div class="footer">Generated {{DATE}}</div>
+</body>
+</html>
+

@@ -1,0 +1,34 @@
+{
+  "head.title": "Aleksei Deriushev - Enginyer Front-end Sènior",
+  "head.description": "Aleksei Deriushev - Enginyer Front-end Sènior amb més de 12 anys d'experiència en React, TypeScript i Node.js. Basat a Barcelona, Espanya.",
+
+  "nav.about": "Sobre mi",
+  "nav.skills": "Habilitats",
+  "nav.experience": "Experiència",
+  "nav.projects": "Projectes",
+  "nav.contact": "Contacte",
+
+  "hero.title": "Enginyer Front-end Sènior",
+  "hero.tagline": "Més de 12 anys creant aplicacions web, mòbils i d'escriptori d'alt rendiment",
+  "hero.downloadCV": "Descarregar CV",
+  "hero.github": "GitHub",
+  "hero.linkedin": "LinkedIn",
+  "hero.location": "\ud83d\udccd Barcelona, Espanya",
+
+  "about.title": "Sobre mi",
+
+  "skills.title": "Habilitats clau",
+  "skills.frontend": "Frontend",
+  "skills.backend": "Backend",
+  "skills.testing_tools": "Proves i eines",
+  "skills.devops_cloud": "DevOps i Cloud",
+
+  "experience.title": "Experiència professional",
+
+  "projects.title": "Projectes personals",
+  "projects.viewProject": "Veure projecte \u2192",
+
+  "contact.title": "Contacte",
+  "contact.description": "Sempre obert a parlar de noves oportunitats, projectes interessants o simplement conversar sobre tecnologia."
+}
+

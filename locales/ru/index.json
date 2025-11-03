@@ -1,0 +1,34 @@
+{
+  "head.title": "Aleksei Deriushev — старший фронтенд‑инженер",
+  "head.description": "Aleksei Deriushev — старший фронтенд‑инженер с опытом более 12 лет в React, TypeScript и Node.js. Барселона, Испания.",
+
+  "nav.about": "Обо мне",
+  "nav.skills": "Навыки",
+  "nav.experience": "Опыт",
+  "nav.projects": "Проекты",
+  "nav.contact": "Контакты",
+
+  "hero.title": "Старший фронтенд‑инженер",
+  "hero.tagline": "12+ лет разработки высокопроизводительных веб‑, мобильных и десктоп‑приложений",
+  "hero.downloadCV": "Скачать резюме",
+  "hero.github": "GitHub",
+  "hero.linkedin": "LinkedIn",
+  "hero.location": "\ud83d\udccd Барселона, Испания",
+
+  "about.title": "Обо мне",
+
+  "skills.title": "Ключевые навыки",
+  "skills.frontend": "Фронтенд",
+  "skills.backend": "Бэкенд",
+  "skills.testing_tools": "Тестирование и инструменты",
+  "skills.devops_cloud": "DevOps и облако",
+
+  "experience.title": "Профессиональный опыт",
+
+  "projects.title": "Личные проекты",
+  "projects.viewProject": "Смотреть проект \u2192",
+
+  "contact.title": "Связаться",
+  "contact.description": "Открыт к обсуждению новых возможностей, интересных проектов или просто беседе о технологиях."
+}
+

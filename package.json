@@ -1,0 +1,13 @@
+{
+  "name": "aderiushev-github-io",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:cv": "node scripts/generate-cv-pdfs.mjs",
+    "build:i18n": "node scripts/build-i18n.mjs",
+    "build:all": "npm run build:cv && npm run build:i18n"
+  },
+  "dependencies": {
+    "puppeteer": "^24.27.0"
+  }
+}

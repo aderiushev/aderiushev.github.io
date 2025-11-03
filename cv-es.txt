@@ -1,0 +1,94 @@
+Aleksei Deriushev
+Ingeniero Front-end Senior
+
+📍 Barcelona, España
+📞 +34 614 377 858
+✉️ derushev.aleksei@gmail.com
+LinkedIn | GitHub
+33 años
+
+
+Resumen
+Ingeniero de software senior con más de 12 años de experiencia entregando aplicaciones web, móviles y de escritorio de alto rendimiento.
+Experto en React, TypeScript y Node.js, con sólida base en arquitectura front-end, optimización de rendimiento y sistemas de diseño escalables.
+Experiencia práctica en múltiples dominios: plataformas de streaming, fintech, blockchain, mapas, marketing de influencers y e‑commerce.
+Combino pericia técnica con adaptabilidad, habiendo trabajado internacionalmente en startups, empresas y como líder de equipo. Alta capacidad para aprender rápido, resolver problemas y aportar valor en entornos complejos.
+
+Habilidades clave
+Frontend: TypeScript, React, React Native, Next.js, Redux, MobX, Styled-components, Expo, Electron, Zustand, Zod, Tailwind, TanStack Query
+Backend: Node.js, Express, NestJS, Prisma, GraphQL, WebSockets, SQL, Firebase, AWS, RPC
+Pruebas y herramientas: Vite, Webpack, Turborepo, Cypress, Playwright, Jest, Docker, Figma, Sentry, Rollbar, Youbora
+DevOps / Cloud: Kubernetes, Docker, AWS, CI/CD (GitHub Actions, GitLab CI)
+
+Como persona
+Apasionado y curioso, disfruto resolviendo problemas complejos y aprendiendo cosas nuevas. Fuera del trabajo, me gusta correr, lo que me ayuda a mantener energía y foco. Como padre, paso tiempo de calidad con mi hijo Miron. Creo en un equilibrio sano con crecimiento continuo personal y profesional.
+
+Experiencia profesional
+Front-end Engineer
+Rakuten TV (Barcelona, ES) | 06/2023 – 04/2025 (1 a 8 m)
+📺 Plataforma de streaming (TVOD/AVOD) — rakuten.tv
+• Mejoré el rendimiento, la UX y la escalabilidad del sitio para millones de usuarios
+• Diseñé e implementé nuevas funcionalidades y optimizaciones en toda la plataforma
+• Profundicé en la arquitectura y los sistemas internos de una plataforma de streaming
+Stack: React, Redux, TypeScript, Styled-components, Next.js, Docker, Cypress, Playwright, Jest, Figma
+
+Front-end Engineer
+Aldrin (Remoto, US) | 04/2022 – 06/2023 (1 a 2 m)
+💰 Fintech blockchain — aldrin.com
+• Construí y mantuve el SDK Web3 e integré wallets de terceros
+• Trabajé en pools, swaps y funcionalidades DeFi sobre Solana
+Stack: TypeScript, Web3.js, Node.js
+
+Senior Front-end Engineer
+NRDS (Remoto, US) | 03/2019 – 04/2022 (3 a 1 m)
+📍 App móvil con funciones de mapas — nrdsdata.com
+• Desarrollé y optimicé funcionalidades móviles complejas en apps basadas en mapas
+• Resolví retos críticos de rendimiento en aplicaciones a gran escala
+• Integré APIs y SDKs de terceros
+• Contribuí a tareas de liderazgo y compartí conocimiento en el equipo
+Stack: React Native, Expo, Firebase, React, MobX, TypeScript, NestJS, Prisma
+
+Senior Front-end Engineer
+IT X100 (Moscú, RU) | 11/2018 – 03/2019 (4 m)
+🍽️ Plataforma food tech — joinitx100.com
+• Solucioné problemas complejos de rendimiento guiado por auditorías Lighthouse
+• Facilités sesiones de intercambio de conocimiento
+Stack: React, Redux, GraphQL, TypeScript
+
+Senior Front-end Engineer
+LabelUp (Moscú, RU) | 06/2016 – 11/2018 (2 a 5 m)
+📢 Plataforma de marketing de influencers — labelup.ru
+• Construí y escalé todo el ecosistema front-end
+• Introduje mejoras de rendimiento y procesos ágiles
+• Realicé onboarding, entrevistas y mentoring
+Stack: React Native, React, Redux, WebSockets, TypeScript, GraphQL
+
+Middle Full-Stack Engineer
+iTechArt Group (Minsk, BY) | 03/2015 – 06/2016 (1 a 3 m)
+🧳 Extensión de Chrome para viajes corporativos — rocketrip.com
+• Recogí requisitos, coordiné con stakeholders y lideré pequeños equipos
+• Introduje GraphQL en el flujo de trabajo
+• Entregué funcionalidades complejas críticas de rendimiento
+Stack: Python, Django, React, Redux, Flowtype, Firebase, AWS
+
+Back-end Engineer
+Enaza (Perm, RU) | 01/2012 – 03/2015 (3 a 2 m)
+🎮 Plataforma de distribución de software — enaza.pro
+• Contribuí a sistemas backend que impulsan e‑commerce de software y juegos
+Stack: PHP, Yii Framework, MySQL
+
+Educación
+🎓 Universidad Pedagógica Estatal de Perm (2010 – 2015)
+Máster en Tecnologías de la Información en Educación (Diploma con Honores)
+
+Idiomas
+🇷🇺 Ruso — Nativo
+🇬🇧 Inglés — C1 (Fluido, Profesional)
+🇪🇸 Español — B1
+
+Intereses personales
+Aprendiz continuo, apasionado por resolver desafíos complejos y explorar tecnologías emergentes.
+Aficionado al running, mantengo el enfoque y la resiliencia mediante entrenamiento regular.
+Padre dedicado, disfruto de actividades compartidas con mi hijo.
+Ajedrecista, aprecio la estrategia y el pensamiento analítico (activo en Lichess).
+

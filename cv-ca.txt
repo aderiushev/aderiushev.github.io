@@ -1,0 +1,94 @@
+Aleksei Deriushev
+Enginyer Front-end Sènior
+
+📍 Barcelona, Espanya
+📞 +34 614 377 858
+✉️ derushev.aleksei@gmail.com
+LinkedIn | GitHub
+33 anys
+
+
+Resum
+Enginyer de programari sènior amb més de 12 anys d'experiència lliurant aplicacions web, mòbils i d'escriptori d'alt rendiment.
+Expert en React, TypeScript i Node.js, amb una base sòlida en arquitectura front-end, optimització del rendiment i sistemes de disseny escalables.
+Experiència pràctica en diversos dominis: plataformes de streaming, fintech, blockchain, mapes, màrqueting d'influencers i comerç electrònic.
+Combino l'expertesa tècnica amb l'adaptabilitat, havent treballat internacionalment en startups, empreses i com a líder d'equip. Alta capacitat per aprendre ràpid, resoldre problemes i aportar valor en entorns complexos.
+
+Habilitats clau
+Frontend: TypeScript, React, React Native, Next.js, Redux, MobX, Styled-components, Expo, Electron, Zustand, Zod, Tailwind, TanStack Query
+Backend: Node.js, Express, NestJS, Prisma, GraphQL, WebSockets, SQL, Firebase, AWS, RPC
+Proves i eines: Vite, Webpack, Turborepo, Cypress, Playwright, Jest, Docker, Figma, Sentry, Rollbar, Youbora
+DevOps / Cloud: Kubernetes, Docker, AWS, CI/CD (GitHub Actions, GitLab CI)
+
+Com a persona
+Apassionat i curiós, gaudeixo resolent problemes complexos i aprenent coses noves. Fora de la feina, m'agrada córrer, cosa que m'ajuda a mantenir l'energia i el focus. Com a pare, passo temps de qualitat amb el meu fill Miron. Crec en un equilibri sa amb creixement continu personal i professional.
+
+Experiència professional
+Front-end Engineer
+Rakuten TV (Barcelona, ES) | 06/2023 – 04/2025 (1 a 8 m)
+📺 Plataforma de streaming (TVOD/AVOD) — rakuten.tv
+• Vaig millorar el rendiment, la UX i l'escalabilitat del lloc per a milions d'usuaris
+• Vaig dissenyar i implementar noves funcionalitats i optimitzacions a tota la plataforma
+• Vaig aprofundir en l'arquitectura i els sistemes interns d'una plataforma de streaming
+Stack: React, Redux, TypeScript, Styled-components, Next.js, Docker, Cypress, Playwright, Jest, Figma
+
+Front-end Engineer
+Aldrin (Remot, US) | 04/2022 – 06/2023 (1 a 2 m)
+💰 Fintech blockchain — aldrin.com
+• Construcció i manteniment del SDK Web3 i integració de wallets de tercers
+• Treball en pools, swaps i funcionalitats DeFi sobre Solana
+Stack: TypeScript, Web3.js, Node.js
+
+Senior Front-end Engineer
+NRDS (Remot, US) | 03/2019 – 04/2022 (3 a 1 m)
+📍 App mòbil amb funcions de mapes — nrdsdata.com
+• Desenvolupament i optimització de funcionalitats mòbils complexes en apps basades en mapes
+• Resolució de reptes crítics de rendiment en aplicacions a gran escala
+• Integració d'APIs i SDKs de tercers
+• Contribució a tasques de lideratge i compartició de coneixement dins l'equip
+Stack: React Native, Expo, Firebase, React, MobX, TypeScript, NestJS, Prisma
+
+Senior Front-end Engineer
+IT X100 (Moscou, RU) | 11/2018 – 03/2019 (4 m)
+🍽️ Plataforma food tech — joinitx100.com
+• Resolució de problemes complexos de rendiment guiada per auditories Lighthouse
+• Sessions de compartició de coneixement
+Stack: React, Redux, GraphQL, TypeScript
+
+Senior Front-end Engineer
+LabelUp (Moscou, RU) | 06/2016 – 11/2018 (2 a 5 m)
+📢 Plataforma de màrqueting d'influencers — labelup.ru
+• Construcció i escalat de tot l'ecosistema front-end
+• Introducció de millores de rendiment i processos àgils
+• Onboarding, entrevistes i mentoria
+Stack: React Native, React, Redux, WebSockets, TypeScript, GraphQL
+
+Middle Full-Stack Engineer
+iTechArt Group (Minsk, BY) | 03/2015 – 06/2016 (1 a 3 m)
+🧳 Extensió de Chrome per a viatges corporatius — rocketrip.com
+• Recollida de requisits, coordinació amb stakeholders i lideratge de petits equips
+• Introducció de GraphQL al flux de treball
+• Lliurament de funcionalitats crítiques de rendiment
+Stack: Python, Django, React, Redux, Flowtype, Firebase, AWS
+
+Back-end Engineer
+Enaza (Perm, RU) | 01/2012 – 03/2015 (3 a 2 m)
+🎮 Plataforma de distribució de programari — enaza.pro
+• Contribució a sistemes backend per impulsar e‑commerce de programari i jocs
+Stack: PHP, Yii Framework, MySQL
+
+Educació
+🎓 Universitat Pedagògica Estatal de Perm (2010 – 2015)
+Màster en Tecnologies de la Informació en Educació (Diploma amb Honors)
+
+Idiomes
+🇷🇺 Rus — Nadiu
+🇬🇧 Anglès — C1 (Fluid, Professional)
+🇪🇸 Espanyol — B1
+
+Interessos personals
+Aprenent continu amb passió per resoldre reptes complexos i explorar tecnologies emergents.
+Aficionat al running, mantinc el focus i la resiliència amb entrenament regular.
+Pare dedicat, gaudeixo d'activitats compartides amb el meu fill.
+Jugador d'escacs, aprecio l'estratègia i el pensament analític (actiu a Lichess).
+

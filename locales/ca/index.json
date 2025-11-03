@@ -9,16 +9,16 @@
   "nav.contact": "Contacte",
 
   "hero.title": "Enginyer Front-end Sènior",
-  "hero.tagline": "Més de 12 anys creant aplicacions web, mòbils i d'escriptori d'alt rendiment",
+  "hero.tagline": "Fa més de 12 anys que faig apps web, mòbils i d'escriptori que van ràpid",
   "hero.downloadCV": "Descarregar CV",
   "hero.github": "GitHub",
   "hero.linkedin": "LinkedIn",
   "hero.location": "\ud83d\udccd Barcelona, Espanya",
 
   "about.title": "Sobre mi",
-  "about.paragraph1": "Enginyer de programari sènior amb <strong>més de 12 anys d'experiència</strong> desenvolupant aplicacions web, mòbils i d'escriptori d'alt rendiment. Expert en React, TypeScript i Node.js, amb una sòlida base en arquitectura front-end, optimització del rendiment i sistemes de disseny escalables.",
-  "about.paragraph2": "Experiència pràctica en diversos àmbits: plataformes de streaming, fintech, blockchain, mapes, màrqueting d'influencers i comerç electrònic. Combino experiència tècnica amb adaptabilitat, havent treballat internacionalment en startups, empreses i com a líder d'equip.",
-  "about.paragraph3": "Fora de la feina, sóc un apassionat corredor, pare dedicat del meu fill Miron i entusiasta dels escacs a Lichess. M'encanta resoldre problemes complexos i aprendre contínuament noves tecnologies.",
+  "about.paragraph1": "Treballo com a enginyer de programari des de fa <strong>més de 12 anys</strong>, fent apps web, mòbils i d'escriptori que van ràpid. M'especialitzo en React, TypeScript i Node.js, i em defenso bé amb arquitectura frontend, optimització de rendiment i sistemes de disseny que escalen.",
+  "about.paragraph2": "He treballat en molts sectors: plataformes de streaming, fintech, blockchain, mapes, màrqueting d'influencers i comerç electrònic. Barrego coneixement tècnic amb capacitat d'adaptar-me, i he treballat en startups, empreses grans i com a líder d'equip a diferents països.",
+  "about.paragraph3": "Fora de la feina, m'agrada córrer, sóc pare del meu fill Miron i jugo als escacs a Lichess. M'agrada resoldre problemes complicats i sempre estic aprenent tecnologies noves.",
 
   "skills.title": "Habilitats clau",
   "skills.frontend": "Frontend",

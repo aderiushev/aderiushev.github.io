@@ -9,16 +9,16 @@
   "nav.contact": "Contacto",
 
   "hero.title": "Ingeniero Front-end Senior",
-  "hero.tagline": "Más de 12 años creando aplicaciones web, móviles y de escritorio de alto rendimiento",
+  "hero.tagline": "Llevo más de 12 años haciendo apps web, móviles y de escritorio que funcionan rápido",
   "hero.downloadCV": "Descargar CV",
   "hero.github": "GitHub",
   "hero.linkedin": "LinkedIn",
   "hero.location": "\ud83d\udccd Barcelona, España",
 
   "about.title": "Sobre mí",
-  "about.paragraph1": "Ingeniero de software senior con <strong>más de 12 años de experiencia</strong> desarrollando aplicaciones web, móviles y de escritorio de alto rendimiento. Experto en React, TypeScript y Node.js, con una sólida base en arquitectura front-end, optimización del rendimiento y sistemas de diseño escalables.",
-  "about.paragraph2": "Experiencia práctica en diversos ámbitos: plataformas de streaming, fintech, blockchain, mapas, marketing de influencers y comercio electrónico. Combino experiencia técnica con adaptabilidad, habiendo trabajado internacionalmente en startups, empresas y como líder de equipo.",
-  "about.paragraph3": "Fuera del trabajo, soy un apasionado corredor, padre dedicado de mi hijo Miron y entusiasta del ajedrez en Lichess. Me encanta resolver problemas complejos y aprender continuamente nuevas tecnologías.",
+  "about.paragraph1": "Trabajo como ingeniero de software desde hace <strong>más de 12 años</strong>, haciendo apps web, móviles y de escritorio que van rápido. Me especializo en React, TypeScript y Node.js, y me manejo bien con arquitectura frontend, optimización de rendimiento y sistemas de diseño que escalan.",
+  "about.paragraph2": "He trabajado en muchos sectores: plataformas de streaming, fintech, blockchain, mapas, marketing de influencers y e-commerce. Mezclo conocimiento técnico con capacidad de adaptarme, y he trabajado en startups, empresas grandes y como líder de equipo en varios países.",
+  "about.paragraph3": "Fuera del trabajo, me encanta correr, soy padre de mi hijo Miron y juego al ajedrez en Lichess. Me gusta resolver problemas complicados y siempre estoy aprendiendo tecnologías nuevas.",
 
   "skills.title": "Habilidades clave",
   "skills.frontend": "Frontend",

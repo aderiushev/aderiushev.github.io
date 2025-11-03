@@ -232,15 +232,16 @@ section .section-description {
 
 .screenshots-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 2rem;
-  justify-items: center;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .screenshot-image {
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);

@@ -232,15 +232,13 @@ section .section-description {
 
 .screenshots-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
   margin-top: 2rem;
-  justify-items: center;
 }
 
 .screenshot-image {
   width: 100%;
-  max-width: 400px;
   height: auto;
   border-radius: 16px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -250,6 +248,14 @@ section .section-description {
 .screenshot-image:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 50px rgba(74, 158, 255, 0.3);
+}
+
+/* Responsive Screenshots Grid */
+@media (max-width: 640px) {
+  .screenshots-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
 }
 
 /* Footer */

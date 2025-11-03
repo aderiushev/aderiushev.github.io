@@ -39,8 +39,52 @@ const applyTranslations = (translations) => {
     });
 };
 
+// Random Emoji Logo System
+const initializeEmojiLogo = () => {
+    const emojis = ['👨‍💻', '🚀', '⚡', '🎯', '💎', '🔥', '🌟', '🏃‍♂️', '♟️'];
+    const logoContainer = document.getElementById('logo-emojis');
+
+    if (!logoContainer) return;
+
+    // Shuffle and pick 3 unique emojis
+    const shuffled = [...emojis].sort(() => Math.random() - 0.5);
+    const selectedEmojis = shuffled.slice(0, 3);
+
+    // Create emoji elements
+    logoContainer.innerHTML = selectedEmojis
+        .map(emoji => `<span class="logo-emoji">${emoji}</span>`)
+        .join('');
+};
+
+// Scroll Animation Observer
+const initializeScrollAnimations = () => {
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animated');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(element => {
+        observer.observe(element);
+    });
+};
+
 // Theme Toggle Functionality
 document.addEventListener('DOMContentLoaded', async () => {
+    // Initialize emoji logo
+    initializeEmojiLogo();
+
+    // Initialize scroll animations
+    initializeScrollAnimations();
+
     // Load and apply translations
     const lang = detectLanguage();
     const translations = await loadTranslations(lang);

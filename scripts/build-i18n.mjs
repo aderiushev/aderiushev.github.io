@@ -72,14 +72,6 @@ function localizeIndex(lang) {
   // Hreflang alternates
   html = insertHreflang(html);
 
-  // CV link: prefer localized if present, else fallback to root English CV
-  const localizedPdf = `cv-${lang}.pdf`;
-  const localizedPdfPath = path.join(root, lang, localizedPdf);
-  const hasLocalizedPdf = fs.existsSync(localizedPdfPath);
-  const hrefValue = hasLocalizedPdf ? localizedPdf : '/cv.pdf';
-  // update href on #download-cv
-  html = html.replace(/(<a[^>]*id="download-cv"[^>]*href=")([^"]*)("[^>]*>)/, `$1${hrefValue}$3`);
-
   // Write to /{lang}/index.html
   const outDir = path.join(root, lang);
   ensureDir(outDir);

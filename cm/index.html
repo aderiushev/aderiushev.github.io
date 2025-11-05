@@ -197,12 +197,21 @@
                 Experience the clean, intuitive interface designed for everyday productivity.
             </p>
 
-            <div class="screenshots-grid">
-                <img src="assets/screenshot1.png" alt="Control Manager task list view showing personal tasks and to-dos" class="screenshot-image">
-                <img src="assets/screenshot2.png" alt="Control Manager task details and time tracking" class="screenshot-image">
-                <img src="assets/screenshot3.png" alt="Control Manager project organization" class="screenshot-image">
-                <img src="assets/screenshot4.png" alt="Control Manager multiple task views" class="screenshot-image">
-                <img src="assets/screenshot5.png" alt="Control Manager mobile interface" class="screenshot-image">
+            <div class="screenshots-gallery">
+                <div class="screenshots-track">
+                    <img src="assets/screenshot1.png" alt="Control Manager task list view showing personal tasks and to-dos" class="screenshot-image">
+                    <img src="assets/screenshot2.png" alt="Control Manager task details and time tracking" class="screenshot-image">
+                    <img src="assets/screenshot3.png" alt="Control Manager project organization" class="screenshot-image">
+                    <img src="assets/screenshot4.png" alt="Control Manager multiple task views" class="screenshot-image">
+                    <img src="assets/screenshot5.png" alt="Control Manager mobile interface" class="screenshot-image">
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
             </div>
         </div>
     </section>
@@ -267,6 +276,140 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Screenshot Gallery Swipe Functionality
+        const gallery = document.querySelector('.screenshots-gallery');
+        const track = document.querySelector('.screenshots-track');
+        const dots = document.querySelectorAll('.dot');
+        const images = document.querySelectorAll('.screenshot-image');
+
+        let currentIndex = 0;
+        let startX = 0;
+        let currentX = 0;
+        let isDragging = false;
+        let startScrollLeft = 0;
+        let isProgrammaticScroll = false;
+
+        // Get computed gap value
+        function getGap() {
+            const style = window.getComputedStyle(track);
+            return parseFloat(style.gap) || 24;
+        }
+
+        // Update active dot
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Scroll to specific image
+        function scrollToImage(index) {
+            if (index < 0 || index >= images.length) return;
+            currentIndex = index;
+            isProgrammaticScroll = true;
+            // Use the actual offset position of the image
+            const targetImage = images[index];
+            track.scrollTo({ left: targetImage.offsetLeft, behavior: 'smooth' });
+            updateDots();
+
+            // Reset flag after scroll animation completes
+            setTimeout(() => {
+                isProgrammaticScroll = false;
+            }, 600);
+        }
+
+        // Handle scroll event to update dots
+        function handleScroll() {
+            // Don't update during programmatic scrolling
+            if (isProgrammaticScroll) return;
+
+            // Find which image is closest to the current scroll position
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            if (closestIndex !== currentIndex) {
+                currentIndex = closestIndex;
+                updateDots();
+            }
+        }
+
+        // Touch/Mouse events for dragging
+        function handleStart(e) {
+            isDragging = true;
+            startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            startScrollLeft = track.scrollLeft;
+            track.style.scrollBehavior = 'auto';
+            track.style.cursor = 'grabbing';
+        }
+
+        function handleMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            const diff = startX - currentX;
+            track.scrollLeft = startScrollLeft + diff;
+        }
+
+        function handleEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            track.style.scrollBehavior = 'smooth';
+            track.style.cursor = 'grab';
+
+            // Snap to nearest image
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            scrollToImage(closestIndex);
+        }
+
+        // Event listeners
+        let scrollTimeout;
+        track.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(handleScroll, 100);
+        });
+
+        // Mouse events
+        track.addEventListener('mousedown', handleStart);
+        track.addEventListener('mousemove', handleMove);
+        track.addEventListener('mouseup', handleEnd);
+        track.addEventListener('mouseleave', handleEnd);
+
+        // Touch events
+        track.addEventListener('touchstart', handleStart, { passive: true });
+        track.addEventListener('touchmove', handleMove, { passive: false });
+        track.addEventListener('touchend', handleEnd);
+
+        // Dot click events
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => scrollToImage(index));
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') scrollToImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') scrollToImage(currentIndex + 1);
+        });
+    </script>
 </body>
 </html>
 

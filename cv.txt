@@ -1,108 +1,135 @@
-Aleksei Deriushev
-Senior Front-end Engineer
-
-📍 Barcelona, Spain
-📞 +34 614 377 858
+﻿Aleksei Deriushev
+Senior Front-end Engineer  
+📍 Barcelona, Spain 
+📞 +34 614 377 858 
 ✉️ derushev.aleksei@gmail.com
 LinkedIn
 GitHub
-🔗 LinkedIn | GitHub
+https://aderiushev.github.io
 33 y.o.
+	
+
+	________________
 
 
-
-
+TLDR;
+1. Lead developer of the project Spoten (editor’s choice in appstore, top-10 category navigation)
+2. Leading role in DEX crypto market Haqqex & mobile app wallet Haqqabi
+3. Solo-responsibility over Rakuten TV website - highload legacy project from A to Z on me
 Summary
-Senior Software Engineer with 12+ years of experience delivering high-performance web, mobile, and desktop applications.
-Expert in React, TypeScript, and Node.js, with a strong background in front-end architecture, performance optimization, and scalable design systems.
-Hands-on experience across diverse domains: streaming platforms, fintech, blockchain, maps, influencer marketing, and e-commerce.
-I combine technical expertise with adaptability, having worked internationally in startups, enterprises, and as a team lead. Strong ability to quickly learn, troubleshoot, and deliver value in complex environments.
+Senior Software Engineer with 8+7 years of experience (sorry big numbers scares me) delivering high-performance web, mobile applications.
+Expert in React, React Native, TypeScript, and Node.js, with a strong background in both front-end, back-end ecosystems. Don’t mind contributing into QA, DevOps things, usually setting them up for my personal projects at least.
+Proficient across diverse domains: streaming platforms, fintech, foodtech, blockchain, rich mapping functionality, influencer marketing, and e-commerce.
+I combine technical expertise with adaptability, having worked in startups or enterprises, from foodtech to fintech :) 
+I used to be a lead developer or a team lead depending on the target.
+Having strong abilities to pick things up quickly, troubleshoot, and deliver value in complex environments.
+For more concrete projects I was involved (personal ones mostly) u can follow the portfolio page.
+________________
+
 
 Core Skills
 Frontend: Typescript, React, React Native, Next.js, Redux, MobX, Styled-components, Expo, Electron, Zustand, Zod, Tailwind, TanStack Query
 Backend: Node.js, Express, NestJS, Prisma, GraphQL, WebSockets, SQL, Firebase, AWS, RPC
 Testing & Tools: Vite, Webpack, Turborepo, Cypress, Playwright, Jest, Docker, Figma, Sentry, Rollbar, Youbora
 DevOps / Cloud: Kubernetes, Docker, AWS, CI/CD (GitHub Actions, GitLab CI).
+________________
+
 
 As a person
-I’m a passionate and curious individual who thrives on solving complex problems and learning new things. Outside of my professional life, I enjoy running, which keeps me energised and focused. As a father, I love spending time with my son Miron, whether it’s playing games or exploring new activities together. I believe in maintaining a balanced life, where continuous growth, both personally and professionally
+I would believe that I'm the one who easily gets new people, projects - being cheerful and proactive. I’m not that concerned about the legacy code, damned project etc. Over the years I have come to think more from the business perspective, not being that idealistic but instead really being passionate about bringing the target value, moving forward and developing myself, surrounding colleagues, business.
+I might be quite a demanding person sometime, but I always(!) start with myself.
 Professional Experience
+UXRocket (Remote, UAE) | 04/2025 – 11/2025 (7m) 
+Senior Front-End Engineer
+📱Analytics tools platform — https://uxrocket.ae
+I was in charge of making/supporting/developing React Native, Flutter SDK’s.
+Implemented the most up-to-date features of this domain, such as: automatic events markup, A/B tests, mobile visor functionality and many others making the product a heavy-weight competitor in the division 🙂
+Tech stack: React Native, Flutter, TypeScript, Zustand, Firebase, TRPC, IAP
+________________
+
+
+Rakuten TV (Barcelona, ES) | 06/2023 – 04/2025 (1y 8m) 
 Front-End Engineer
-Rakuten TV (Barcelona, ES) | 06/2023 – 04/2025 (1y 8m)
 📺 Streaming platform (TVOD/AVOD) — rakuten.tv
 Improved website performance, UX, and scalability for millions of users.
 Designed and implemented new features and optimizations across the platform.
 Gained deep insights into streaming platform architecture and under-the-hood systems.
 Tech stack: React, Redux, TypeScript, Styled-components, Next.js, Docker, Cypress, Playwright, Jest, Figma
 
-
-
-Front-End Engineer
+________________
 Aldrin (Remote, US) | 04/2022 – 06/2023 (1y 2m)
+Front-End Engineer
 💰 Blockchain fintech — aldrin.com
 Built and maintained Web3 SDK and integrated third-party wallets.
 Worked on Solana-based pools, swaps, and DeFi features.
 Tech stack: TypeScript, Web3.js, Node.js
 
+________________
 
 
-Senior Front-End Engineer
 NRDS (Remote, US) | 03/2019 – 04/2022 (3y 1m)
+Senior Front-End Engineer
 📍 Rich map-feature mobile app — nrdsdata.com
 Developed and optimized complex mobile features in map-driven applications.
 Solved performance-critical challenges in large-scale apps.
 Integrated third-party APIs and SDKs.
 Contributed to leadership tasks and knowledge sharing within the team.
 Tech stack: React Native, Expo, Firebase, React, MobX, TypeScript, NestJS, Prisma
+________________
 
 
-
-Senior Front-End Engineer
 IT X100 (Moscow, RU) | 11/2018 – 03/2019 (4m)
+Senior Front-End Engineer
 🍽️ Food tech platform — joinitx100.com
 Addressed complex performance issues guided by Lighthouse audits.
 Facilitated knowledge-sharing sessions.
 Tech stack: React, Redux, GraphQL, TypeScript
 
-
-
-Senior Front-End Engineer
+________________
 LabelUp (Moscow, RU) | 06/2016 – 11/2018 (2y 5m)
+Senior Front-End Engineer
 📢 Influencer Marketing Platform — labelup.ru
 Built and scaled the entire front-end ecosystem.
 Introduced performance enhancements and Agile-driven processes.
 Conducted onboarding, interviews, and mentoring.
 Tech stack: React Native, React, Redux, WebSockets, TypeScript, GraphQL
 
+________________
 
 
-Middle Full-Stack Engineer
 iTechArt Group (Minsk, BY) | 03/2015 – 06/2016 (1y 3m)
+Middle Full-Stack Engineer
 🧳 Chrome extension for corporate travel — rocketrip.com
 Gathered requirements, coordinated with stakeholders, and led small team efforts.
 Introduced GraphQL into the workflow.
 Delivered complex performance-critical features.
 Tech stack: Python, Django, React, Redux, Flowtype, Firebase, AWS
+________________
 
 
-
-Back-End Engineer
 Enaza (Perm, RU) | 01/2012 – 03/2015 (3y 2m)
+Back-End Engineer
 🎮 Software distribution platform — enaza.pro
 Contributed to backend systems powering e-commerce for online software & games.
 Tech stack: PHP, Yii Framework, MySQL
+________________
+
 
 Education
 🎓 Perm State Pedagogical University (2010 – 2015)
 Master’s Degree in Information Technologies in Education (Diploma with Honors)
+________________
+
 
 Languages
 🇷🇺 Russian — Native
 🇬🇧 English — C1 (Fluent, Professional)
 🇪🇸 Spanish — B1
+________________
+
 
 Personal Interests
-Continuous learner with a passion for solving complex challenges and exploring emerging technologies.
-Running enthusiast, maintaining focus and resilience through regular training.
-Dedicated father, enjoying quality time and shared activities with my son.
-Chess player, appreciating strategy and analytical thinking (active on Lichess).
+Invent new activities for my son
+Long-distance running
+Chess is my passion
+Tennis, guitar, hunting (wait-wait, i mean mushrooms!)

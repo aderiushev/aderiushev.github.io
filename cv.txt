@@ -13,9 +13,16 @@ https://aderiushev.github.io
 
 
 TLDR;
-1. Lead developer of the project Spoten (editor’s choice in appstore, top-10 category navigation)
-2. Leading role in DEX crypto market Haqqex & mobile app wallet Haqqabi
-3. Solo-responsibility over Rakuten TV website - highload legacy project from A to Z on me
+1. Lead developer of Spoten (Editor's Choice in App Store, Top-10 in Navigation category, 5.7M downloads)
+   → https://apps.apple.com/us/app/spoten-phone-location-tracker/id1395979668
+2. Leading role in DEX crypto market Haqqex & mobile app wallet Haqabi
+   → https://haqqex.com/en
+   → https://apps.apple.com/tr/app/haqabi-crypto-wallet/id6477534740
+3. Solo frontend responsibility for Rakuten TV website - high-load legacy project managed end-to-end
+   → https://www.rakuten.tv/
+	________________
+
+
 Summary
 Senior Software Engineer with 8+7 years of experience (sorry big numbers scares me) delivering high-performance web, mobile applications.
 Expert in React, React Native, TypeScript, and Node.js, with a strong background in both front-end, back-end ecosystems. Don’t mind contributing into QA, DevOps things, usually setting them up for my personal projects at least.

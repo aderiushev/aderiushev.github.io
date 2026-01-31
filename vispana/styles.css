@@ -278,6 +278,7 @@ section .section-description {
 
 .screenshots-track {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;

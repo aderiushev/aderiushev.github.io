@@ -309,7 +309,8 @@ section .section-description {
 }
 
 .screenshot-image.screenshot-wide {
-  width: 400px;
+  width: auto;
+  height: 280px;
   border-radius: 12px;
 }
 
@@ -355,7 +356,8 @@ section .section-description {
   }
 
   .screenshot-image.screenshot-wide {
-    width: 320px;
+    width: auto;
+    height: 220px;
   }
 }
 
@@ -365,7 +367,8 @@ section .section-description {
   }
 
   .screenshot-image.screenshot-wide {
-    width: 280px;
+    width: auto;
+    height: 180px;
   }
 
   .gallery-dots {

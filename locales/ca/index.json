@@ -58,6 +58,7 @@
   "projects.n3ws.description": "Notícies en 3 paraules - Titulars ultra-concisos de Rússia, Espanya i arreu del món impulsats per IA.",
   "projects.palabrino.description": "Aprèn vocabulari espanyol mitjançant l'aprenentatge visual. Relaciona paraules espanyoles amb imatges en un joc d'aprenentatge d'idiomes atractiu.",
   "projects.adchange.description": "Segueix RUB/USDT/EUR en directe, compara rutes directes vs indirectes amb estalvis reals, visualitza gràfics d'historial i converteix a l'instant (React Native + Firebase).",
+  "projects.vispana.description": "Cercador de cites de visat per a BLS Espanya. Monitoratge automatitzat amb notificacions de Telegram i gestió intel·ligent de CAPTCHA (Node.js + Next.js + Grammy).",
 
   "contact.title": "Contacte",
   "contact.description": "Sempre obert a parlar de noves oportunitats, projectes interessants o simplement conversar sobre tecnologia.",

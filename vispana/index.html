@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vispana - Visa Appointment Slot Finder for BLS Spain. Automated monitoring, instant Telegram notifications, and smart CAPTCHA handling.">
+    <meta name="keywords" content="visa appointment, BLS Spain, visa slots, appointment finder, telegram bot, visa monitoring">
+    <meta name="author" content="Aleksei Deriushev">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vispana - Visa Appointment Slot Finder">
+    <meta property="og:description" content="Automated visa appointment monitoring for BLS Spain. Get instant notifications when slots become available.">
+    <meta property="og:url" content="https://aderiushev.github.io/vispana/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vispana - Visa Appointment Slot Finder">
+    <meta name="twitter:description" content="Automated visa appointment monitoring for BLS Spain. Get instant notifications when slots become available.">
+
+    <title>Vispana - Visa Appointment Slot Finder</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🛂</span>
+                    <span class="logo-text">Vispana</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-icon-wrapper">
+                <span class="hero-icon">🛂</span>
+            </div>
+            <h1>Vispana</h1>
+            <p class="tagline">Visa Appointment Slot Finder for BLS Spain</p>
+            <p class="description">
+                Stop refreshing BLS website manually. Vispana automatically monitors visa appointment availability
+                and notifies you instantly via Telegram when slots open up. Smart CAPTCHA handling,
+                24/7 monitoring, and real-time alerts.
+            </p>
+            <div class="button-group">
+                <a href="#how-it-works" class="btn btn-primary">
+                    <span>🤖</span>
+                    Learn More
+                </a>
+                <a href="#screenshots" class="btn btn-secondary">
+                    See Screenshots
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Why Vispana?</h2>
+            <p class="section-description">
+                A complete solution for monitoring visa appointment availability with intelligent automation.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card" style="--index: 0">
+                    <div class="feature-icon">🔄</div>
+                    <h3>24/7 Automated Monitoring</h3>
+                    <p>
+                        Continuous scraping of BLS appointment system. Never miss an available slot
+                        even when they appear at odd hours.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 1">
+                    <div class="feature-icon">📱</div>
+                    <h3>Instant Telegram Alerts</h3>
+                    <p>
+                        Get notified the moment a slot becomes available.
+                        Direct to your phone via Telegram bot integration.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 2">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Smart CAPTCHA Handling</h3>
+                    <p>
+                        Advanced CAPTCHA solving with OCR, LLM integration, and DOM parsing.
+                        Handles verification automatically.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 3">
+                    <div class="feature-icon">📊</div>
+                    <h3>Admin Dashboard</h3>
+                    <p>
+                        Full-featured Next.js dashboard for monitoring sessions,
+                        managing accounts, and viewing analytics.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 4">
+                    <div class="feature-icon">🔐</div>
+                    <h3>Proxy Management</h3>
+                    <p>
+                        Built-in proxy rotation and management to ensure reliable
+                        monitoring without rate limiting issues.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 5">
+                    <div class="feature-icon">📈</div>
+                    <h3>Session Analytics</h3>
+                    <p>
+                        Track session history, CAPTCHA success rates, and slot availability
+                        patterns over time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack-section">
+        <div class="container">
+            <h2>Built With Modern Stack</h2>
+            <p class="section-description">
+                Production-ready monorepo architecture with three independent applications.
+            </p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Backend API</h3>
+                    <div class="tech-tags">
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>Playwright</span>
+                        <span>Supabase</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Admin Dashboard</h3>
+                    <div class="tech-tags">
+                        <span>Next.js 16</span>
+                        <span>React 19</span>
+                        <span>Tailwind</span>
+                        <span>shadcn/ui</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Telegram Bot</h3>
+                    <div class="tech-tags">
+                        <span>Grammy</span>
+                        <span>TypeScript</span>
+                        <span>Webhooks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p class="section-description">
+                Simple setup. Automated monitoring. Instant notifications.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">1️⃣</div>
+                    <h3>Configure Your Account</h3>
+                    <p>
+                        Add your BLS account credentials to the admin dashboard.
+                        Set up your preferred appointment dates and locations.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">2️⃣</div>
+                    <h3>Start Monitoring</h3>
+                    <p>
+                        Enable automated monitoring. The system continuously checks
+                        for available slots using Playwright-based web scraping.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">3️⃣</div>
+                    <h3>Get Notified</h3>
+                    <p>
+                        Receive instant Telegram notifications when slots become available.
+                        Act fast to secure your appointment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <p class="section-description">
+                Telegram bot interface and admin dashboard for complete control.
+            </p>
+
+            <div class="screenshots-gallery">
+                <div class="screenshots-track">
+                    <img src="assets/screenshot1.jpg" alt="Vispana Telegram bot conversation interface" class="screenshot-image">
+                    <img src="assets/screenshot2.jpg" alt="Vispana Telegram bot slot notifications" class="screenshot-image">
+                    <img src="assets/screenshot3.jpg" alt="Vispana Telegram bot commands menu" class="screenshot-image">
+                    <img src="assets/screenshot4.png" alt="Vispana Admin Dashboard overview" class="screenshot-image screenshot-wide">
+                    <img src="assets/screenshot5.png" alt="Vispana Admin Dashboard sessions" class="screenshot-image screenshot-wide">
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                    <span class="dot" data-index="3"></span>
+                    <span class="dot" data-index="4"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Vispana</h4>
+                    <p style="color: var(--text-secondary);">
+                        Visa appointment slot finder for BLS Spain.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Vispana. Developed by Aleksei Deriushev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Screenshot Gallery Swipe Functionality
+        const gallery = document.querySelector('.screenshots-gallery');
+        const track = document.querySelector('.screenshots-track');
+        const dots = document.querySelectorAll('.dot');
+        const images = document.querySelectorAll('.screenshot-image');
+
+        let currentIndex = 0;
+        let startX = 0;
+        let currentX = 0;
+        let isDragging = false;
+        let startScrollLeft = 0;
+        let isProgrammaticScroll = false;
+
+        // Get computed gap value
+        function getGap() {
+            const style = window.getComputedStyle(track);
+            return parseFloat(style.gap) || 24;
+        }
+
+        // Update active dot
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Scroll to specific image
+        function scrollToImage(index) {
+            if (index < 0 || index >= images.length) return;
+            currentIndex = index;
+            isProgrammaticScroll = true;
+            const targetImage = images[index];
+            track.scrollTo({ left: targetImage.offsetLeft, behavior: 'smooth' });
+            updateDots();
+
+            setTimeout(() => {
+                isProgrammaticScroll = false;
+            }, 600);
+        }
+
+        // Handle scroll event to update dots
+        function handleScroll() {
+            if (isProgrammaticScroll) return;
+
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            if (closestIndex !== currentIndex) {
+                currentIndex = closestIndex;
+                updateDots();
+            }
+        }
+
+        // Touch/Mouse events for dragging
+        function handleStart(e) {
+            isDragging = true;
+            startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            startScrollLeft = track.scrollLeft;
+            track.style.scrollBehavior = 'auto';
+            track.style.cursor = 'grabbing';
+        }
+
+        function handleMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            const diff = startX - currentX;
+            track.scrollLeft = startScrollLeft + diff;
+        }
+
+        function handleEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            track.style.scrollBehavior = 'smooth';
+            track.style.cursor = 'grab';
+
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            scrollToImage(closestIndex);
+        }
+
+        // Event listeners
+        let scrollTimeout;
+        track.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(handleScroll, 100);
+        });
+
+        // Mouse events
+        track.addEventListener('mousedown', handleStart);
+        track.addEventListener('mousemove', handleMove);
+        track.addEventListener('mouseup', handleEnd);
+        track.addEventListener('mouseleave', handleEnd);
+
+        // Touch events
+        track.addEventListener('touchstart', handleStart, { passive: true });
+        track.addEventListener('touchmove', handleMove, { passive: false });
+        track.addEventListener('touchend', handleEnd);
+
+        // Dot click events
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => scrollToImage(index));
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') scrollToImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') scrollToImage(currentIndex + 1);
+        });
+    </script>
+</body>
+</html>

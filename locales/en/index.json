@@ -62,6 +62,7 @@
   "projects.n3ws.description": "News in 3 Words - Ultra-concise headlines from Russia, Spain, and around the world powered by AI.",
   "projects.palabrino.description": "Learn Spanish vocabulary through visual learning. Match Spanish words with images in an engaging language learning game.",
   "projects.adchange.description": "Track live RUB/USDT/EUR, compare direct vs indirect routes with real savings, view history charts, and convert instantly (React Native + Firebase).",
+  "projects.vispana.description": "Visa appointment slot finder for BLS Spain. Automated monitoring with Telegram notifications and smart CAPTCHA handling (Node.js + Next.js + Grammy).",
 
   "contact.title": "Get In Touch",
   "contact.description": "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.",

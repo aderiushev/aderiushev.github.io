@@ -1,12 +1,5 @@
 {
   "name": "aderiushev-github-io",
   "private": true,
-  "type": "module",
-  "scripts": {
-    "build:i18n": "node scripts/build-i18n.mjs",
-    "build:all": "npm run build:i18n"
-  },
-  "dependencies": {
-    "puppeteer": "^24.27.0"
-  }
+  "type": "module"
 }

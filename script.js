@@ -1,98 +1,12 @@
-// Random Emoji Logo System
-const initializeEmojiLogo = () => {
-    const emojis = ['👨‍💻', '🚀', '⚡', '🎯', '💎', '🔥', '🌟', '🏃‍♂️', '♟️'];
-    const logoContainer = document.getElementById('logo-emojis');
-
-    if (!logoContainer) return;
-
-    // Shuffle and pick 3 unique emojis
-    const shuffled = [...emojis].sort(() => Math.random() - 0.5);
-    const selectedEmojis = shuffled.slice(0, 3);
-
-    // Create emoji elements
-    logoContainer.innerHTML = selectedEmojis
-        .map(emoji => `<span class="logo-emoji">${emoji}</span>`)
-        .join('');
-};
-
-// Scroll Animation Observer
-const initializeScrollAnimations = () => {
-    const observerOptions = {
-        threshold: 0.1,
-        rootMargin: '0px 0px -50px 0px'
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animated');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    document.querySelectorAll('.animate-on-scroll').forEach(element => {
-        observer.observe(element);
-    });
-};
-
-// Theme Toggle Functionality
-document.addEventListener('DOMContentLoaded', () => {
-    // Initialize emoji logo
-    initializeEmojiLogo();
-
-    // Initialize scroll animations
-    initializeScrollAnimations();
-
-    const themeToggle = document.getElementById('theme-toggle');
-    const html = document.documentElement;
-
-    // Check for saved theme preference or default to system preference
-    const getPreferredTheme = () => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            return savedTheme;
-        }
-        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-    };
-
-    // Set theme
-    const setTheme = (theme) => {
-        html.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
-    };
-
-    // Initialize theme
-    setTheme(getPreferredTheme());
-
-    // Toggle theme on button click
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = html.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        setTheme(newTheme);
-    });
-
-    // Listen for system theme changes
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            setTheme(e.matches ? 'dark' : 'light');
-        }
-    });
-
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const href = this.getAttribute('href');
-            if (href !== '#') {
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href.length > 1) {
+            const target = document.querySelector(href);
+            if (target) {
                 e.preventDefault();
-                const target = document.querySelector(href);
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
+                window.scrollTo({ top: target.offsetTop - 70, behavior: 'smooth' });
             }
-        });
+        }
     });
 });

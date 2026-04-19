@@ -12,19 +12,22 @@ No build step required - this is a pure static site. No linting, testing, or dev
 
 ## Architecture
 
-### Theme System
+### Visual Style
 
-Light/dark mode via `data-theme` attribute on `<html>`. Uses CSS custom properties. Persists to localStorage, respects `prefers-color-scheme`.
+Neubrutalism: thick black borders, hard offset drop shadows (no blur), high-saturation accent palette on cream dot-grid background, chunky `Archivo Black` display type paired with `Space Grotesk` body + `JetBrains Mono` accents, playful card rotations via `--rot` CSS variable.
+
+CSS custom properties define the system: `--bg`, `--ink`, `--paper`, `--accent-1..6`, `--border`, `--shadow-x/y`, `--rot`. Google Fonts are loaded from `index.html`.
 
 ## Project Structure
 
 - `index.html` - Main page (source of truth for structure)
-- `script.js` - Theme toggle, scroll animations, emoji logo
-- `styles.css` - All styling with CSS variables for theming
-- `cm/`, `palabrino/`, `adchange/`, `n3ws/`, `vispana/`, `pirate/` - Standalone product landing pages
+- `script.js` - Smooth-scroll behavior for in-page anchor links
+- `styles.css` - All styling with CSS variables for theme tokens
+- `assets/` - Images (portrait, project thumbnails)
+- `cm/`, `palabrino/`, `adchange/`, `n3ws/`, `vispana/`, `pirate/`, `ninja-tch/`, `lovepoints/` - Standalone product landing pages
 
 ## Key Patterns
 
 - No bundler or transpilation - edit files directly
 - ES modules (`"type": "module"` in package.json)
-- Intersection Observer for scroll animations
+- Each product landing in its own subdirectory is self-contained

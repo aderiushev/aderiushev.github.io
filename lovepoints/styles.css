@@ -533,3 +533,8 @@ footer {
     justify-content: center;
   }
 }
+
+@media (max-width: 480px) {
+  .header-content { flex-wrap: wrap; justify-content: center; gap: 12px; }
+  nav ul { flex-wrap: wrap; justify-content: center; gap: 0.75rem; font-size: 0.9rem; }
+}

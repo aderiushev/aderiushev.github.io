@@ -1,0 +1,224 @@
+/* ================================================================
+   Deriushev Design System — Core Foundations
+   Colors, type scales, spacing, and semantic utility vars for BOTH
+   surfaces: Portfolio (neubrutalism) and Product (dark).
+   ================================================================ */
+
+/* Google Fonts for portfolio (neubrutalism surface) */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  /* ================= PORTFOLIO / NEUBRUTALISM SURFACE ================= */
+  /* Base paper + ink */
+  --pf-bg:     #f4efe6;   /* cream paper */
+  --pf-ink:    #0a0a0a;   /* near black */
+  --pf-paper:  #ffffff;   /* card white */
+
+  /* The six accents — fixed palette, no gradients */
+  --pf-accent-1: #ff5a1f; /* orange   — primary CTA, section chip "noise" */
+  --pf-accent-2: #ffd84d; /* yellow   — highlights, logo mark, tag bg */
+  --pf-accent-3: #4ad6ff; /* cyan     — photo frame, about section, chip */
+  --pf-accent-4: #b6ff4a; /* lime     — status pill, skills card */
+  --pf-accent-5: #ff7ac6; /* pink     — quote card, chip */
+  --pf-accent-6: #a78bfa; /* violet   — projects, chip */
+
+  /* Neubrutalism primitives */
+  --pf-border: 4px;
+  --pf-border-thin: 3px;
+  --pf-border-hair: 2px;
+  --pf-shadow-x: 8px;
+  --pf-shadow-y: 8px;
+  --pf-shadow-lg-x: 10px;
+  --pf-shadow-lg-y: 10px;
+  --pf-shadow-xl-x: 12px;
+  --pf-shadow-xl-y: 12px;
+  --pf-rot: 1;   /* global rotation multiplier; set to 0 to flatten */
+
+  /* Dot grid background */
+  --pf-dot-size: 24px;
+  --pf-dot-radius: 1px;
+
+  /* ================= PRODUCT / DARK SURFACE ================= */
+  --px-bg-primary:   #000000;
+  --px-bg-secondary: #121212;
+  --px-bg-card:      #1a1a1a;
+  --px-bg-elevated:  #252525;
+  --px-text-primary:   #ffffff;
+  --px-text-secondary: #b0b0b0;
+  --px-border:         #2a2a2a;
+  --px-success: #4ade80;
+  --px-error:   #ef4444;
+
+  /* Per-product accent slot — overridden per product scope */
+  --px-accent-primary: #4a9eff;  /* default = CM / Palabrino / N3WS blue */
+  --px-accent-hover:   #3a8eef;
+
+  /* Product accent library (for reference / theme switches) */
+  --px-blue:    #4a9eff;
+  --px-blue-2:  #60a5fa;
+  --px-green:   #10b981;
+  --px-amber:   #f59e0b;
+  --px-yellow:  #FBD438;
+  --px-coral:   #C95D4A;
+
+  /* Product radii — rounded, not sharp */
+  --px-radius-sm: 8px;
+  --px-radius-md: 12px;
+  --px-radius-lg: 16px;
+  --px-radius-xl: 24px;
+
+  /* Product elevations — soft, colored glow off accent */
+  --px-shadow-sm:    0 4px 12px rgba(0,0,0,0.4);
+  --px-shadow-md:    0 10px 40px rgba(0,0,0,0.5);
+  --px-shadow-glow:  0 10px 40px rgba(74,158,255,0.3);
+  --px-shadow-hover: 0 4px 12px rgba(74,158,255,0.4);
+
+  /* ================= SPACING (shared, 4-pt base) ================= */
+  --space-0:  0;
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+
+  /* ================= TYPE TOKENS ================= */
+  /* Portfolio families */
+  --font-display: 'Archivo Black', sans-serif;
+  --font-body:    'Space Grotesk', system-ui, sans-serif;
+  --font-mono:    'JetBrains Mono', ui-monospace, monospace;
+
+  /* Product family (system) */
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+
+  /* Scale — portfolio (big, display-heavy) */
+  --text-xs:   12px;
+  --text-sm:   13px;
+  --text-base: 14px;
+  --text-md:   17px;   /* portfolio body */
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  22px;
+  --text-3xl:  28px;
+  --text-4xl:  38px;
+  --text-5xl:  clamp(40px, 5vw, 68px);   /* section titles */
+  --text-6xl:  clamp(48px, 7vw, 96px);   /* hero headline */
+
+  /* Line heights */
+  --lh-tight:   0.92;
+  --lh-display: 1.05;
+  --lh-body:    1.5;
+  --lh-relaxed: 1.6;
+
+  /* Letter spacing */
+  --tracking-tight:  -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.02em;
+  --tracking-upper:  0.05em;
+}
+
+/* ================= SEMANTIC ALIASES =================
+   Use these in product/marketing code. They default to the portfolio
+   surface; opt into the product surface by wrapping in .surface-dark */
+
+:root {
+  --bg:     var(--pf-bg);
+  --ink:    var(--pf-ink);
+  --paper:  var(--pf-paper);
+  --fg1:    var(--pf-ink);
+  --fg2:    #333333;
+  --accent: var(--pf-accent-1);
+  --border: var(--pf-ink);
+}
+
+.surface-dark {
+  --bg:     var(--px-bg-primary);
+  --ink:    var(--px-text-primary);
+  --paper:  var(--px-bg-card);
+  --fg1:    var(--px-text-primary);
+  --fg2:    var(--px-text-secondary);
+  --accent: var(--px-accent-primary);
+  --border: var(--px-border);
+}
+
+/* ================= SEMANTIC TYPE CLASSES ================= */
+
+.h1,
+h1.display {
+  font-family: var(--font-display);
+  font-size: var(--text-6xl);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+}
+.h2,
+h2.display {
+  font-family: var(--font-display);
+  font-size: var(--text-5xl);
+  line-height: 0.95;
+  letter-spacing: var(--tracking-tight);
+  text-transform: uppercase;
+}
+.h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-3xl);
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+}
+.h4 {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  line-height: var(--lh-display);
+  text-transform: uppercase;
+}
+.eyebrow,
+.section-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-upper);
+}
+.body {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: var(--lh-body);
+}
+.body-lg {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
+}
+.caption {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 500;
+}
+.code,
+.mono {
+  font-family: var(--font-mono);
+}
+
+/* Highlighter (yellow bg pill) — used on words in body copy */
+.hl-yellow { background: var(--pf-accent-2); padding: 0 4px; }
+.hl-cyan   { background: var(--pf-accent-3); padding: 0 4px; }
+.hl-lime   { background: var(--pf-accent-4); padding: 0 4px; }
+
+/* Stroked / outlined type — hero headline word */
+.stroke {
+  -webkit-text-stroke: 3px var(--pf-ink);
+  color: transparent;
+}
+
+/* Dot-grid background utility — apply to page or hero */
+.bg-dotgrid {
+  background-color: var(--pf-bg);
+  background-image: radial-gradient(var(--pf-ink) var(--pf-dot-radius), transparent var(--pf-dot-radius));
+  background-size: var(--pf-dot-size) var(--pf-dot-size);
+  background-position: 0 0;
+}

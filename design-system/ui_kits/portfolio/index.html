@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio UI Kit · Deriushev</title>
+<link rel="stylesheet" href="../../source/styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/babel" src="components.jsx"></script>
+<script type="text/babel">
+  const {Nav, Hero, Marquee, SectionHead, TldrGrid, SkillsGrid, Projects, Contact, Footer} = window;
+  function App(){
+    return (<>
+      <Nav/>
+      <Hero/>
+      <Marquee/>
+      <section className="section" id="tldr"><div className="container">
+        <SectionHead num="01 / TL;DR" title="The" chipText="Shortlist." chipColor="orange"/>
+        <TldrGrid/>
+      </div></section>
+      <section className="section section-about" id="about"><div className="container">
+        <SectionHead num="02 / ABOUT" title="Who the" chipText="heck" chipColor="cyan"/>
+        <div className="about-wrap">
+          <div className="about-text">
+            <p>Senior Software Engineer with <b>14+ years of experience</b> delivering high-performance web &amp; mobile applications.</p>
+            <p>Proficient across <b>streaming, fintech, foodtech, blockchain, rich mapping, influencer marketing, e-commerce</b>.</p>
+          </div>
+          <div className="about-side">
+            <div className="quote-card"><span className="qmark">"</span><p>Proactive, business-first, and not scared of the scary code.</p></div>
+            <div className="interests-card"><h4>Off-hours</h4><ul><li>Inventing activities for my son</li><li>Long-distance running</li><li>Chess · tennis · guitar</li></ul></div>
+          </div>
+        </div>
+      </div></section>
+      <section className="section" id="skills"><div className="container">
+        <SectionHead num="03 / SKILLS" title="The" chipText="toolbox." chipColor="lime"/>
+        <SkillsGrid/>
+      </div></section>
+      <section className="section" id="projects"><div className="container">
+        <SectionHead num="05 / PROJECTS" title="Side" chipText="quests." chipColor="violet"/>
+        <Projects/>
+      </div></section>
+      <section className="section" id="contact"><div className="container">
+        <SectionHead num="06 / CONTACT" title="Let's make" chipText="noise." chipColor="orange"/>
+        <Contact/>
+      </div></section>
+      <Footer/>
+    </>);
+  }
+  ReactDOM.createRoot(document.getElementById('root')).render(<App/>);
+</script>
+</body>
+</html>

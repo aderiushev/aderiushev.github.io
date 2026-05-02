@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ninja-tch - Peer-to-peer BLE walkie-talkie messenger. Exchange text messages via Bluetooth Low Energy without internet.">
+    <meta name="keywords" content="BLE messenger, bluetooth messenger, peer-to-peer, walkie-talkie, React Native, Expo, offline messaging">
+    <meta name="author" content="Aleksei Deriushev">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="ninja-tch - Peer-to-Peer BLE Walkie-Talkie Messenger">
+    <meta property="og:description" content="Two phones discover each other via Bluetooth Low Energy, negotiate roles, and exchange text messages without internet.">
+    <meta property="og:url" content="https://aderiushev.github.io/ninja-tch/">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="ninja-tch - Peer-to-Peer BLE Walkie-Talkie Messenger">
+    <meta name="twitter:description" content="Two phones discover each other via Bluetooth Low Energy, negotiate roles, and exchange text messages without internet.">
+
+    <title>ninja-tch - Peer-to-Peer BLE Walkie-Talkie Messenger</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">🥷</span>
+                    <span class="logo-text">ninja-tch</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-icon-wrapper">
+                <span class="hero-icon">🥷</span>
+            </div>
+            <h1>ninja-tch</h1>
+            <p class="tagline">Peer-to-Peer BLE Walkie-Talkie Messenger</p>
+            <p class="description">
+                Two phones discover each other via Bluetooth Low Energy, autonomously negotiate roles,
+                and exchange short text messages — no internet connection needed.
+            </p>
+            <div class="button-group">
+                <a href="#features" class="btn btn-primary">
+                    <span>📡</span>
+                    Learn More
+                </a>
+                <a href="#screenshots" class="btn btn-secondary">
+                    See Screenshots
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <p class="section-description">
+                A complete offline messaging solution powered by Bluetooth Low Energy.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card" style="--index: 0">
+                    <div class="feature-icon">📡</div>
+                    <h3>No Internet Required</h3>
+                    <p>
+                        Communicate directly between devices using Bluetooth Low Energy.
+                        Works anywhere — no Wi-Fi, no cellular, no servers.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 1">
+                    <div class="feature-icon">🔍</div>
+                    <h3>Auto Discovery</h3>
+                    <p>
+                        Devices automatically find each other nearby via BLE scanning.
+                        No manual pairing or configuration needed.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 2">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Smart Role Negotiation</h3>
+                    <p>
+                        Phones autonomously decide which acts as BLE central and which as peripheral.
+                        Seamless connection setup every time.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 3">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Secure & Local</h3>
+                    <p>
+                        Messages never leave the local BLE connection.
+                        No cloud, no tracking, no data collection — fully private.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 4">
+                    <div class="feature-icon">📱</div>
+                    <h3>Cross-Platform</h3>
+                    <p>
+                        Built with React Native and Expo for both iOS and Android.
+                        Native BLE modules for optimal performance on each platform.
+                    </p>
+                </div>
+
+                <div class="feature-card" style="--index: 5">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Instant Messaging</h3>
+                    <p>
+                        Send and receive text messages in real-time over BLE.
+                        Low latency, walkie-talkie style communication.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack Section -->
+    <section class="tech-stack-section">
+        <div class="container">
+            <h2>Built With</h2>
+            <p class="section-description">
+                Modern mobile stack with native Bluetooth integration.
+            </p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Framework</h3>
+                    <div class="tech-tags">
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>TypeScript</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Communication</h3>
+                    <div class="tech-tags">
+                        <span>BLE</span>
+                        <span>react-native-ble-plx</span>
+                        <span>Custom Native Modules</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Platform</h3>
+                    <div class="tech-tags">
+                        <span>iOS (Swift)</span>
+                        <span>Android (Kotlin)</span>
+                        <span>EAS Build</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <p class="section-description">
+                Simple, focused interface for peer-to-peer messaging.
+            </p>
+
+            <div class="screenshots-gallery">
+                <div class="screenshots-track">
+                    <img src="assets/screenshot1.jpg" alt="ninja-tch device discovery screen" class="screenshot-image">
+                    <img src="assets/screenshot2.jpg" alt="ninja-tch chat interface" class="screenshot-image">
+                    <img src="assets/screenshot3.jpg" alt="ninja-tch connection status" class="screenshot-image">
+                </div>
+                <div class="gallery-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ninja-tch</h4>
+                    <p style="color: var(--text-secondary);">
+                        Peer-to-peer BLE walkie-talkie messenger.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ninja-tch. Developed by Aleksei Deriushev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Screenshot Gallery Swipe Functionality
+        const gallery = document.querySelector('.screenshots-gallery');
+        const track = document.querySelector('.screenshots-track');
+        const dots = document.querySelectorAll('.dot');
+        const images = document.querySelectorAll('.screenshot-image');
+
+        let currentIndex = 0;
+        let startX = 0;
+        let currentX = 0;
+        let isDragging = false;
+        let startScrollLeft = 0;
+        let isProgrammaticScroll = false;
+
+        // Get computed gap value
+        function getGap() {
+            const style = window.getComputedStyle(track);
+            return parseFloat(style.gap) || 24;
+        }
+
+        // Update active dot
+        function updateDots() {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentIndex);
+            });
+        }
+
+        // Scroll to specific image
+        function scrollToImage(index) {
+            if (index < 0 || index >= images.length) return;
+            currentIndex = index;
+            isProgrammaticScroll = true;
+            const targetImage = images[index];
+            track.scrollTo({ left: targetImage.offsetLeft, behavior: 'smooth' });
+            updateDots();
+
+            setTimeout(() => {
+                isProgrammaticScroll = false;
+            }, 600);
+        }
+
+        // Handle scroll event to update dots
+        function handleScroll() {
+            if (isProgrammaticScroll) return;
+
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            if (closestIndex !== currentIndex) {
+                currentIndex = closestIndex;
+                updateDots();
+            }
+        }
+
+        // Touch/Mouse events for dragging
+        function handleStart(e) {
+            isDragging = true;
+            startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            startScrollLeft = track.scrollLeft;
+            track.style.scrollBehavior = 'auto';
+            track.style.cursor = 'grabbing';
+        }
+
+        function handleMove(e) {
+            if (!isDragging) return;
+            e.preventDefault();
+            currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+            const diff = startX - currentX;
+            track.scrollLeft = startScrollLeft + diff;
+        }
+
+        function handleEnd() {
+            if (!isDragging) return;
+            isDragging = false;
+            track.style.scrollBehavior = 'smooth';
+            track.style.cursor = 'grab';
+
+            let closestIndex = 0;
+            let minDistance = Infinity;
+
+            images.forEach((img, index) => {
+                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
+                if (distance < minDistance) {
+                    minDistance = distance;
+                    closestIndex = index;
+                }
+            });
+
+            scrollToImage(closestIndex);
+        }
+
+        // Event listeners
+        let scrollTimeout;
+        track.addEventListener('scroll', () => {
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(handleScroll, 100);
+        });
+
+        // Mouse events
+        track.addEventListener('mousedown', handleStart);
+        track.addEventListener('mousemove', handleMove);
+        track.addEventListener('mouseup', handleEnd);
+        track.addEventListener('mouseleave', handleEnd);
+
+        // Touch events
+        track.addEventListener('touchstart', handleStart, { passive: true });
+        track.addEventListener('touchmove', handleMove, { passive: false });
+        track.addEventListener('touchend', handleEnd);
+
+        // Dot click events
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => scrollToImage(index));
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') scrollToImage(currentIndex - 1);
+            if (e.key === 'ArrowRight') scrollToImage(currentIndex + 1);
+        });
+    </script>
+</body>
+</html>

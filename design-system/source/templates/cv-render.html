@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Aleksei Deriushev — CV</title>
+  <style>
+    @page { size: A4; margin: 14mm 16mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html, body { height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1a1a1a;
+      line-height: 1.45;
+      font-size: 11px;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Header */
+    .header { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 10px; }
+    .header img {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .header-text { flex: 1; }
+    .header h1 { font-size: 22px; line-height: 1.2; margin-bottom: 1px; }
+    .header .subtitle { font-size: 13px; color: #555; margin-bottom: 4px; }
+    .header .contact { font-size: 10.5px; color: #444; line-height: 1.6; }
+
+    hr { border: none; border-top: 1px solid #ddd; margin: 8px 0; }
+
+    /* Section headings */
+    h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #2563eb;
+      border-bottom: 1.5px solid #2563eb;
+      padding-bottom: 2px;
+      margin: 10px 0 6px;
+    }
+
+    /* Highlights */
+    .highlights { padding-left: 16px; }
+    .highlights li { margin-bottom: 3px; }
+    .highlights li strong { color: #1a1a1a; }
+    .highlights .links { font-size: 10px; color: #666; }
+
+    /* Summary */
+    .summary { text-align: justify; }
+
+    /* Skills table */
+    table { width: 100%; border-collapse: collapse; font-size: 10.5px; }
+    th, td { text-align: left; padding: 3px 6px; border: 1px solid #e5e5e5; }
+    th { background: #f5f7fa; font-weight: 600; width: 110px; white-space: nowrap; }
+
+    /* Experience entries */
+    .job { margin-bottom: 8px; page-break-inside: avoid; }
+    .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .job h3 { font-size: 12px; margin: 0; }
+    .job .period { font-size: 10.5px; color: #555; white-space: nowrap; }
+    .job .role { font-size: 11px; font-weight: 600; margin: 1px 0; }
+    .job .desc { font-size: 10.5px; color: #666; font-style: italic; margin-bottom: 2px; }
+    .job ul { padding-left: 16px; margin: 2px 0; }
+    .job li { margin-bottom: 1px; }
+    .job .stack { font-size: 10px; color: #777; margin-top: 2px; }
+
+    /* About */
+    .about { font-style: italic; color: #444; }
+
+    /* Education, Languages, Interests */
+    .edu { margin-bottom: 2px; }
+    .lang-table td, .lang-table th { padding: 2px 6px; }
+    .interests { padding-left: 16px; }
+    .interests li { margin-bottom: 1px; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="../img.png" alt="Aleksei Deriushev" />
+    <div class="header-text">
+      <h1>Aleksei Deriushev</h1>
+      <div class="subtitle">Senior Front-end Engineer</div>
+      <div class="contact">
+        Barcelona, Spain &nbsp;|&nbsp;
+        <a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a> &nbsp;|&nbsp;
+        +34 614 377 858<br/>
+        <a href="https://www.linkedin.com/in/aleksei-deriushev-1b7242a6/">LinkedIn</a> &nbsp;|&nbsp;
+        <a href="https://github.com/aderiushev">GitHub</a> &nbsp;|&nbsp;
+        <a href="https://aderiushev.github.io">aderiushev.github.io</a>
+      </div>
+    </div>
+  </div>
+
+  <hr/>
+
+  <h2>Highlights</h2>
+  <ol class="highlights">
+    <li><strong>Full-stack developer of mobile session replays at Dynatrace</strong> — React Native SDK for session replay capture<br/>
+      <span class="links"><a href="https://dynatrace.com">Dynatrace</a> | <a href="https://www.npmjs.com/package/@dynatrace/react-native-plugin">React Native Plugin</a></span></li>
+    <li><strong>Lead developer of Spoten</strong> — Editor's Choice in App Store, Top-10 in Navigation, 5.7M downloads<br/>
+      <span class="links"><a href="https://apps.apple.com/us/app/spoten-phone-location-tracker/id1395979668">App Store</a></span></li>
+    <li><strong>Leading role in DEX crypto market Haqqex &amp; mobile wallet Haqabi</strong><br/>
+      <span class="links"><a href="https://haqq.network/">HAQQ Network</a> | <a href="https://www.haqabi.com/">Haqabi</a> | <a href="https://apps.apple.com/tr/app/haqabi-crypto-wallet/id6477534740">App Store</a></span></li>
+    <li><strong>Solo frontend ownership of Rakuten TV</strong> — high-load legacy project managed end-to-end<br/>
+      <span class="links"><a href="https://www.rakuten.tv/">rakuten.tv</a></span></li>
+  </ol>
+
+  <h2>Summary</h2>
+  <p class="summary">Senior Software Engineer with 14+ years of experience building high-performance web and mobile applications across streaming, analytics, fintech, blockchain, GIS, and e-commerce. Expert in React, React Native, TypeScript, and Node.js — equally effective on the backend with NestJS, GraphQL, and infrastructure (Docker, CI/CD, AWS). Have led teams and owned products end-to-end, from architecture to release.</p>
+
+  <h2>Core Skills</h2>
+  <table>
+    <tr><th>Frontend</th><td>TypeScript, React, React Native, Next.js, Redux, MobX, Styled-components, Expo, Electron, Zustand, Zod, Tailwind, TanStack Query</td></tr>
+    <tr><th>Backend</th><td>Node.js, Express, NestJS, Prisma, GraphQL, WebSockets, SQL, Firebase, RPC</td></tr>
+    <tr><th>Testing &amp; Tools</th><td>Vite, Webpack, Turborepo, Cypress, Playwright, Jest, Figma, Sentry, Rollbar, Youbora</td></tr>
+    <tr><th>DevOps / Cloud</th><td>Kubernetes, Docker, AWS, CI/CD (GitHub Actions, GitLab CI)</td></tr>
+  </table>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job">
+    <div class="job-header"><h3>Dynatrace — Barcelona, ES</h3><span class="period">Feb 2026 – Present</span></div>
+    <div class="role">Senior Software Developer</div>
+    <div class="desc">Analytics platform — <a href="https://dynatrace.com">dynatrace.com</a></div>
+    <ul><li>Responsible for session replays for mobile (React Native) applications</li></ul>
+    <div class="stack">Stack: React Native, Kotlin, Swift, TypeScript, Maestro, Expo</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>UXRocket — Remote, UAE</h3><span class="period">Apr 2025 – Jan 2026 (9 months)</span></div>
+    <div class="role">Senior Front-End Engineer</div>
+    <div class="desc">Analytics tools platform — <a href="https://uxrocket.ae">uxrocket.ae</a></div>
+    <ul>
+      <li>Owned and developed React Native and Flutter SDKs, integrated by multiple client applications</li>
+      <li>Implemented automatic events markup, A/B testing, mobile visor functionality, and other domain-critical features that positioned the product as a strong competitor in the space</li>
+    </ul>
+    <div class="stack">Stack: React Native, Flutter, TypeScript, Zustand, Firebase, tRPC, IAP</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>Rakuten TV — Barcelona, ES</h3><span class="period">Jun 2023 – Apr 2025 (1y 8m)</span></div>
+    <div class="role">Front-End Engineer</div>
+    <div class="desc">Streaming platform (TVOD/AVOD) — <a href="https://www.rakuten.tv/">rakuten.tv</a></div>
+    <ul>
+      <li>Improved website performance, UX, and scalability for millions of users</li>
+      <li>Designed and implemented new features and optimizations across the platform</li>
+    </ul>
+    <div class="stack">Stack: React, Redux, TypeScript, Styled-components, Next.js, Docker, Cypress, Playwright, Jest, Figma</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>Aldrin — Remote, US</h3><span class="period">Apr 2022 – Jun 2023 (1y 2m)</span></div>
+    <div class="role">Front-End Engineer</div>
+    <div class="desc">Blockchain fintech (Solana ecosystem)</div>
+    <ul>
+      <li>Built and maintained Web3 SDK and integrated third-party wallets</li>
+      <li>Worked on Solana-based pools, swaps, and DeFi features</li>
+    </ul>
+    <div class="stack">Stack: TypeScript, Web3.js, Node.js</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>NRDS — Remote, US</h3><span class="period">Mar 2019 – Apr 2022 (3y 1m)</span></div>
+    <div class="role">Senior Front-End Engineer</div>
+    <div class="desc">Rich map-feature mobile app — <a href="https://nrdsdata.com">nrdsdata.com</a></div>
+    <ul>
+      <li>Developed and optimized complex mobile features in map-driven applications</li>
+      <li>Solved performance-critical challenges in large-scale apps</li>
+      <li>Integrated third-party APIs and SDKs</li>
+      <li>Contributed to leadership tasks and knowledge sharing within the team</li>
+    </ul>
+    <div class="stack">Stack: React Native, Expo, Firebase, React, MobX, TypeScript, NestJS, Prisma</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>Spoten — Contract</h3><span class="period">2019 – 2022 (concurrent with NRDS)</span></div>
+    <div class="role">Lead Developer</div>
+    <div class="desc">Phone location tracker — <a href="https://apps.apple.com/es/app/spoten-buscar-a-tu-familia/id1395979668">App Store</a></div>
+    <ul>
+      <li>Lead developer of a mobile app that reached Editor's Choice in App Store, Top-10 in Navigation category, 5.7M+ downloads</li>
+      <li>Built core location tracking, real-time map features, and push notification systems</li>
+      <li>Managed the full mobile release cycle across iOS and Android</li>
+    </ul>
+    <div class="stack">Stack: React Native, Expo, Firebase, MapKit, Google Maps SDK</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>HAQQ Network — Contract</h3><span class="period">2021 – 2022 (concurrent with NRDS)</span></div>
+    <div class="role">Senior Front-End Engineer</div>
+    <div class="desc">Islamic finance blockchain — <a href="https://haqq.network/">haqq.network</a></div>
+    <ul>
+      <li>Leading role in building Haqqex, a Sharia-compliant decentralized crypto exchange</li>
+      <li>Built Haqabi, a mobile crypto wallet — <a href="https://apps.apple.com/tr/app/haqabi-crypto-wallet/id6477534740">App Store</a></li>
+      <li>Implemented trading UI, wallet integration, and token swap flows</li>
+    </ul>
+    <div class="stack">Stack: React, React Native, TypeScript, Web3.js, EVM/Cosmos SDK</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>IT X100 — Moscow, RU</h3><span class="period">Nov 2018 – Mar 2019 (4 months)</span></div>
+    <div class="role">Senior Front-End Engineer</div>
+    <div class="desc">Food tech platform — <a href="https://joinitx100.com">joinitx100.com</a></div>
+    <ul>
+      <li>Addressed complex performance issues guided by Lighthouse audits</li>
+      <li>Facilitated knowledge-sharing sessions</li>
+    </ul>
+    <div class="stack">Stack: React, Redux, GraphQL, TypeScript</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>LabelUp — Moscow, RU</h3><span class="period">Jun 2016 – Nov 2018 (2y 5m)</span></div>
+    <div class="role">Senior Front-End Engineer</div>
+    <div class="desc">Influencer marketing platform — <a href="https://labelup.ru">labelup.ru</a></div>
+    <ul>
+      <li>Built and scaled the entire front-end ecosystem</li>
+      <li>Introduced performance enhancements and Agile-driven processes</li>
+      <li>Conducted onboarding, interviews, and mentoring for the frontend team</li>
+    </ul>
+    <div class="stack">Stack: React Native, React, Redux, WebSockets, TypeScript, GraphQL</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>iTechArt Group — Minsk, BY</h3><span class="period">Mar 2015 – Jun 2016 (1y 3m)</span></div>
+    <div class="role">Middle Full-Stack Engineer</div>
+    <div class="desc">Chrome extension for corporate travel — <a href="https://rocketrip.com">rocketrip.com</a></div>
+    <ul>
+      <li>Gathered requirements, coordinated with stakeholders, and led small team efforts</li>
+      <li>Introduced GraphQL into the workflow</li>
+      <li>Delivered complex performance-critical features</li>
+    </ul>
+    <div class="stack">Stack: Python, Django, React, Redux, Flowtype, Firebase, AWS</div>
+  </div>
+
+  <div class="job">
+    <div class="job-header"><h3>Enaza — Perm, RU</h3><span class="period">Jan 2012 – Mar 2015 (3y 2m)</span></div>
+    <div class="role">Back-End Engineer</div>
+    <div class="desc">Software distribution platform — <a href="https://enaza.pro">enaza.pro</a></div>
+    <ul><li>Contributed to backend systems powering e-commerce for online software and games</li></ul>
+    <div class="stack">Stack: PHP, Yii Framework, MySQL</div>
+  </div>
+
+  <h2>About Me</h2>
+  <p class="about">Proactive, easy to collaborate with, and genuinely energized by tough problems — legacy codebases included. I think business-first: what moves the needle matters more than what looks elegant. I hold myself to a high bar and invest in growing the people around me.</p>
+
+  <h2>Education</h2>
+  <p class="edu"><strong>Perm State Pedagogical University</strong> (2010 – 2015)<br/>Master's Degree in Information Technologies in Education — Diploma with Honors</p>
+
+  <h2>Languages</h2>
+  <table class="lang-table">
+    <tr><th>Russian</th><td>Native</td></tr>
+    <tr><th>English</th><td>C1 — Fluent, Professional</td></tr>
+    <tr><th>Spanish</th><td>B1</td></tr>
+  </table>
+
+  <h2>Personal Interests</h2>
+  <ul class="interests">
+    <li>Inventing new activities for my son</li>
+    <li>Long-distance running</li>
+    <li>Chess, tennis, guitar</li>
+  </ul>
+
+</body>
+</html>

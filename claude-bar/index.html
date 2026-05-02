@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="claude-bar — macOS menu bar app that shows Claude Code quota usage, session burn rate, and time-to-reset right in your status bar.">
+    <meta name="keywords" content="claude code, macOS menu bar, usage stats, quota tracker, swift, nsstatusitem">
+    <meta name="author" content="Aleksei Deriushev">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="claude-bar — Claude Code Usage in Your Menu Bar">
+    <meta property="og:description" content="Minimal macOS menu bar app that surfaces Claude Code quota stats without opening a terminal.">
+    <meta property="og:url" content="https://aderiushev.github.io/claude-bar/">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="claude-bar — Claude Code Usage in Your Menu Bar">
+    <meta name="twitter:description" content="Minimal macOS menu bar app that surfaces Claude Code quota stats without opening a terminal.">
+
+    <title>claude-bar — Claude Code Usage in Your Menu Bar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⌘</span>
+                    <span class="logo-text">claude-bar</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshot">Screenshot</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">macOS · Swift · AppKit</div>
+            <h1>claude-bar</h1>
+            <p class="tagline">Claude Code quota, always visible.</p>
+            <p class="description">
+                A lean <code>NSStatusItem</code> app that reads your Claude Code usage cache and
+                surfaces session quota, weekly burn, and time-to-reset directly in the macOS menu bar —
+                no terminal, no dashboard, no context-switching.
+            </p>
+            <div class="display-pill">
+                <span class="display-text">23→63 [4d]</span>
+            </div>
+            <p class="display-caption">current % → projected % &nbsp;·&nbsp; time until reset</p>
+            <div class="button-group">
+                <a href="https://github.com/aderiushev/claude-bar" class="btn btn-primary" target="_blank" rel="noopener">
+                    View on GitHub →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>What it does</h2>
+            <p class="section-description">
+                One compact string in your status bar. Everything you need to know at a glance.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Dual quota view</h3>
+                    <p>
+                        Switch between <strong>Week view</strong> (weekly burn → projected) and
+                        <strong>Session view</strong> (current session usage). One menu tap away.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⏱</div>
+                    <h3>Time-to-reset</h3>
+                    <p>
+                        The <code>[4d]</code> suffix shows exactly when your quota resets —
+                        days, hours, or minutes depending on how close you are.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Auto-refresh</h3>
+                    <p>
+                        Polls <code>~/.claude/usage-cache.json</code> every 30 seconds.
+                        Wakes on sleep-resume so the number is always fresh when you open the lid.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🪶</div>
+                    <h3>Zero overhead</h3>
+                    <p>
+                        Pure AppKit, no SwiftUI, no third-party packages. Runs as an accessory app —
+                        no Dock icon, no App Switcher clutter.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛡</div>
+                    <h3>Fully local</h3>
+                    <p>
+                        Reads files already written by the Claude Code CLI. No network calls,
+                        no tokens, no telemetry. Data never leaves your machine.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧩</div>
+                    <h3>Graceful degradation</h3>
+                    <p>
+                        Missing cache file? Shows <code>--</code> instead of crashing.
+                        All fields in <code>UsageSnapshot</code> are optional by design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack-section">
+        <div class="container">
+            <h2>Built with</h2>
+            <p class="section-description">Native macOS stack, no dependencies.</p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Language</h3>
+                    <div class="tech-tags">
+                        <span>Swift 5.9</span>
+                        <span>AppKit</span>
+                        <span>Foundation</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Platform</h3>
+                    <div class="tech-tags">
+                        <span>macOS 13+</span>
+                        <span>NSStatusItem</span>
+                        <span>XcodeGen</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Data</h3>
+                    <div class="tech-tags">
+                        <span>usage-cache.json</span>
+                        <span>~/.claude/</span>
+                        <span>No network</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshot" class="screenshot-section">
+        <div class="container">
+            <h2>See It In Action</h2>
+            <p class="section-description">
+                Sits quietly next to Bluetooth, language, and other system icons.
+            </p>
+            <div class="screenshot-wrapper">
+                <img src="assets/screenshot.png" alt="claude-bar showing 23→63 [4d] in macOS menu bar with Week view / Session view menu open" class="screenshot-img">
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>claude-bar</h4>
+                    <p class="footer-tagline">Claude Code quota in your macOS menu bar.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/aderiushev/claude-bar" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="/#projects">More Projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 claude-bar. Developed by Aleksei Deriushev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

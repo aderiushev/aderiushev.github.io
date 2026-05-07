@@ -16,7 +16,7 @@ Wrap a surface with one of these classes to change the single accent color:
 - `.theme-vispana` (green `#10b981`)
 - `.theme-pirate` (amber `#f59e0b`)
 - `.theme-ninja` (yellow `#FBD438`)
-- `.theme-lovepoints` (coral `#C95D4A`)
+- `.theme-laska` (coral `#C95D4A`)
 - `.theme-adchange` (soft blue `#60a5fa`)
 
 ## Reskinning

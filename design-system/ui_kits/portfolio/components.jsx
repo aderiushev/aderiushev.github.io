@@ -125,7 +125,7 @@
       {n:'05',g:'VP',h:'Vispana',p:'BLS Spain visa slot finder.'},
       {n:'06',g:'PR',h:'Pirate',p:'2D auto-runner in Godot 4.6.'},
       {n:'07',g:'NT',h:'ninja-tch',p:'P2P BLE walkie-talkie.'},
-      {n:'08',g:'LP',h:'Lovepoints',p:'Gamified couples app.'},
+      {n:'08',g:'LP',h:'Laska',p:'Gamified couples app.'},
     ];
     return (
       <div className="projects-grid">

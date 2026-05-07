@@ -3,7 +3,7 @@
 Design system extracted from **[aderiushev.github.io](https://aderiushev.github.io)** — the personal portfolio of **Aleksei Deriushev**, a senior front-end engineer based in Barcelona. The repo bundles two distinct visual surfaces under one umbrella:
 
 1. **Portfolio Surface (Neubrutalism)** — the aderiushev.github.io root. Thick black borders, hard-offset drop shadows, cream dot-grid background, chunky display type, six saturated accent colors, playful card rotations.
-2. **Product Surface (Dark)** — the 8 product landing pages under `/cm/`, `/palabrino/`, `/adchange/`, `/n3ws/`, `/vispana/`, `/pirate/`, `/ninja-tch/`, `/lovepoints/`. Black/near-black backgrounds, subtle 1px borders, rounded corners (8–24px), soft shadows, system fonts, one accent color per product.
+2. **Product Surface (Dark)** — the 8 product landing pages under `/cm/`, `/palabrino/`, `/adchange/`, `/n3ws/`, `/vispana/`, `/pirate/`, `/ninja-tch/`, `/laska/`. Black/near-black backgrounds, subtle 1px borders, rounded corners (8–24px), soft shadows, system fonts, one accent color per product.
 
 The two surfaces share **no visual vocabulary** — they're deliberately opposite. Portfolio is loud-handmade-playful; Product is quiet-app-professional. This system documents both and lets designers target either.
 
@@ -94,7 +94,7 @@ The repo is plain static HTML/CSS/JS — no framework, no build step. That means
 - Text: `#ffffff` primary, `#b0b0b0` secondary.
 - Border: `#2a2a2a` (1px hairline only).
 - Semantic: `#4ade80` success, `#ef4444` error.
-- One accent per product, fully swappable: `cm` / `palabrino` / `n3ws` blue `#4a9eff`; `vispana` green `#10b981`; `pirate` amber `#f59e0b`; `ninja-tch` yellow `#FBD438`; `lovepoints` coral `#C95D4A`; `adchange` soft blue `#60a5fa`.
+- One accent per product, fully swappable: `cm` / `palabrino` / `n3ws` blue `#4a9eff`; `vispana` green `#10b981`; `pirate` amber `#f59e0b`; `ninja-tch` yellow `#FBD438`; `laska` coral `#C95D4A`; `adchange` soft blue `#60a5fa`.
 - Only gradient in the system: `linear-gradient(135deg, #3B82F6, #60A5FA)` on the active screenshot-gallery dot. Reserve for tiny active-state indicators.
 
 ### Type

@@ -7,22 +7,22 @@
     <meta name="keywords" content="claude code, macOS menu bar, usage stats, quota tracker, swift, nsstatusitem">
     <meta name="author" content="Aleksei Deriushev">
 
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="claude-bar — Claude Code Usage in Your Menu Bar">
     <meta property="og:description" content="Minimal macOS menu bar app that surfaces Claude Code quota stats without opening a terminal.">
     <meta property="og:url" content="https://aderiushev.github.io/claude-bar/">
 
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="claude-bar — Claude Code Usage in Your Menu Bar">
     <meta name="twitter:description" content="Minimal macOS menu bar app that surfaces Claude Code quota stats without opening a terminal.">
 
     <title>claude-bar — Claude Code Usage in Your Menu Bar</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Header -->
     <header>
         <div class="container">
             <div class="header-content">
@@ -42,10 +42,10 @@
         </div>
     </header>
 
-    <main>
-
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
+            <div class="hero-icon">⌘</div>
             <div class="hero-badge">macOS · Swift · AppKit</div>
             <h1>claude-bar</h1>
             <p class="tagline">Claude Code quota, always visible.</p>
@@ -70,6 +70,7 @@
         </div>
     </section>
 
+    <!-- Features Section -->
     <section id="features">
         <div class="container">
             <h2>What it does</h2>
@@ -88,7 +89,7 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">⏱</div>
+                    <div class="feature-icon">⏱️</div>
                     <h3>Time-to-reset</h3>
                     <p>
                         The <code>[4d]</code> suffix shows exactly when your quota resets —
@@ -115,7 +116,7 @@
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🛡</div>
+                    <div class="feature-icon">🛡️</div>
                     <h3>Fully local</h3>
                     <p>
                         Reads files already written by the Claude Code CLI. No network calls,
@@ -135,6 +136,7 @@
         </div>
     </section>
 
+    <!-- Tech Stack Section -->
     <section class="tech-stack-section">
         <div class="container">
             <h2>Built with</h2>
@@ -169,6 +171,7 @@
         </div>
     </section>
 
+    <!-- Screenshot Section -->
     <section id="screenshot" class="screenshot-section">
         <div class="container">
             <h2>See It In Action</h2>
@@ -181,8 +184,9 @@
         </div>
     </section>
 
+    <!-- Download Section -->
     <section id="download">
-        <div class="container" style="text-align: center;">
+        <div class="container download">
             <h2>Download</h2>
             <p class="section-description">
                 Available for macOS 13+. Grab the .dmg, drag claude-bar.app into Applications, and launch.
@@ -196,20 +200,27 @@
                     View source on GitHub →
                 </a>
             </div>
-            <p class="section-description" style="margin-top: 24px; font-size: 0.85rem; opacity: 0.7;">
+            <p class="download-note">
                 Unsigned build — on first launch, right-click the app and choose Open to bypass Gatekeeper.
             </p>
         </div>
     </section>
 
-    </main>
-
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>claude-bar</h4>
                     <p class="footer-tagline">Claude Code quota in your macOS menu bar.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshot">Screenshot</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Links</h4>

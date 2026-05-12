@@ -3,21 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Tot el camp — native macOS app for one-tap FC Barcelona match streams. Finds the live game on gooool365.com, extracts the acestream URL, hands off to your player. Bundled Tor fallback for ISP-blocked networks.">
-    <meta name="keywords" content="FC Barcelona, Barça, acestream, macOS, streaming, swift, swiftui, tor, gooool365">
+    <meta name="description" content="Tot el camp — native macOS app for today's football matches. Pick a fixture, app finds an Acestream broadcast, plays it inside a bundled Acestream engine + VLCKit. Self-contained DMG. Tor fallback for blocked ISPs.">
+    <meta name="keywords" content="acestream, macOS, football, streaming, swift, swiftui, tor, vlckit, virtualization, football-data">
     <meta name="author" content="Aleksei Deriushev">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Tot el camp — One-tap FC Barça streams on macOS">
-    <meta property="og:description" content="Native macOS app. One tap → the live Barça match → your acestream player. Bundled Tor fallback for blocked ISPs.">
+    <meta property="og:title" content="Tot el camp — Today's football, played on macOS">
+    <meta property="og:description" content="Pick today's match → app finds a stream → plays it inline. Acestream engine bundled in a VM, VLCKit player embedded, Tor fallback baked in.">
     <meta property="og:url" content="https://aderiushev.github.io/totelcamp/">
     <meta property="og:image" content="https://aderiushev.github.io/totelcamp/assets/icon.png">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tot el camp — One-tap FC Barça streams on macOS">
-    <meta name="twitter:description" content="Native macOS app. One tap → the live Barça match → your acestream player.">
+    <meta name="twitter:title" content="Tot el camp — Today's football, played on macOS">
+    <meta name="twitter:description" content="Pick today's match → app finds a stream → plays it inline. Bundled engine + player, nothing else to install.">
 
-    <title>Tot el camp — One-tap FC Barça streams on macOS</title>
+    <title>Tot el camp — Today's football, played on macOS</title>
     <link rel="icon" href="assets/icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,13 +50,15 @@
         <div class="container">
             <div class="hero-badge">macOS · Swift · SwiftUI · Apple Silicon</div>
             <h1>Tot el camp</h1>
-            <p class="tagline">One tap. The Barça match. On your screen.</p>
+            <p class="tagline">Today's match. Picked, found, played.</p>
             <p class="description">
-                A native macOS app that finds today's live FC Barcelona match on
-                <code>gooool365.com</code>, extracts the <code>acestream://</code> URL,
-                and hands it off to your favourite acestream player. Bundled
-                <strong>Tor</strong> fallback punches through ISP blocks — no VPN,
-                no setup, no terminal.
+                A native macOS app that lists today's football fixtures, finds an
+                Acestream broadcast for the one you pick, and plays it inline.
+                The <strong>Acestream engine</strong> runs inside a bundled
+                Linux VM (Virtualization.framework + Rosetta-for-Linux). The
+                player is <strong>VLCKit</strong>, embedded. <strong>Tor</strong>
+                fallback baked in for ISPs that block stream catalogues. Nothing
+                else to install.
             </p>
             <div class="hero-icon-wrap">
                 <img src="assets/icon.png" alt="Tot el camp app icon — a scoreboard tile in Barça colours" class="hero-icon" width="220" height="220" fetchpriority="high">
@@ -70,7 +72,7 @@
                     View on GitHub →
                 </a>
             </div>
-            <p class="hero-meta">Apple Silicon · macOS 14+ · ad-hoc signed</p>
+            <p class="hero-meta">Apple Silicon · macOS 14+ · Notarized Developer ID</p>
         </div>
     </section>
 
@@ -78,17 +80,40 @@
         <div class="container">
             <h2>What it does</h2>
             <p class="section-description">
-                A focused tool for one specific job: get the Barça match playing on macOS, fast.
+                Today's fixtures from football-data.org. Pick one. App finds the
+                stream and plays it inline. Nothing else to install.
             </p>
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <div class="feature-icon">👆</div>
-                    <h3>One-tap watch flow</h3>
+                    <div class="feature-icon">📅</div>
+                    <h3>Today's fixtures, listed</h3>
                     <p>
-                        Open the app, tap <strong>Watch</strong>. The app fetches today's
-                        schedule, finds the live Barça match, extracts the stream URL —
-                        all inside one button press.
+                        Pulls today's matches from <strong>football-data.org</strong>
+                        across the free-tier competitions (La Liga, Premier League,
+                        Bundesliga, Serie A, Ligue 1, Champions League). Live scores
+                        auto-refresh in place.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📺</div>
+                    <h3>Bundled Acestream engine</h3>
+                    <p>
+                        The Acestream engine runs inside a tiny Alpine Linux VM
+                        via <strong>Virtualization.framework</strong> +
+                        <strong>Rosetta-for-Linux</strong>. No standalone engine
+                        install, no port juggling, no manual setup.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">▶️</div>
+                    <h3>VLCKit player, embedded</h3>
+                    <p>
+                        Playback happens inside the app — full <strong>VLCKit</strong>
+                        decoder, native fullscreen, no handoff to a second player.
+                        Pick a match, hit a stream, watch.
                     </p>
                 </div>
 
@@ -96,19 +121,20 @@
                     <div class="feature-icon">🧅</div>
                     <h3>Tor fallback, bundled</h3>
                     <p>
-                        Your ISP blocks gooool365? The app ships its own <code>tor</code>
-                        binary and falls back automatically. No VPN, no Tor Browser install,
-                        no DNS hacks.
+                        Stream catalogue blocked by your ISP? The app ships its
+                        own <code>tor</code> binary and falls back automatically.
+                        No VPN, no Tor Browser, no DNS hacks.
                     </p>
                 </div>
 
                 <div class="feature-card">
-                    <div class="feature-icon">🔗</div>
-                    <h3>Plays nice with your player</h3>
+                    <div class="feature-icon">📦</div>
+                    <h3>Self-contained, notarized</h3>
                     <p>
-                        Hands off the <code>acestream://</code> URL to whichever app you've
-                        registered as the handler — <a href="https://televisor.app" target="_blank" rel="noopener">Televisor</a>
-                        recommended. No bundled player, no Electron.
+                        Drag <code>TotElCamp.app</code> into Applications and you're
+                        done. <strong>Signed + notarized + stapled</strong> with
+                        Apple Developer ID — Gatekeeper accepts it on first launch
+                        without prompts.
                     </p>
                 </div>
 
@@ -116,29 +142,9 @@
                     <div class="feature-icon">🦴</div>
                     <h3>Native, no junk</h3>
                     <p>
-                        Pure <strong>SwiftUI + AppKit</strong>. No Electron, no Chromium,
-                        no Node runtime. Tiny binary, fast launch, plays well with the
-                        rest of macOS.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">📦</div>
-                    <h3>Self-contained DMG</h3>
-                    <p>
-                        Drag <code>TotElCamp.app</code> into Applications and you're done.
-                        Tor binary, dependencies, fonts — all bundled inside the
-                        <code>.app</code>. Zero prerequisites.
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon">🛠</div>
-                    <h3>Open source, personal use</h3>
-                    <p>
-                        Built for personal use, source on GitHub. Built with
-                        <strong>XcodeGen</strong>, <strong>dylibbundler</strong>, and
-                        a single <code>build-app.sh</code> that produces the DMG.
+                        Pure <strong>SwiftUI + AppKit</strong>. No Electron, no
+                        Chromium, no Node runtime. File → Export Logs… bundles
+                        diagnostics for triage in one click.
                     </p>
                 </div>
             </div>
@@ -148,28 +154,28 @@
     <section id="how" class="how-section">
         <div class="container">
             <h2>How it works</h2>
-            <p class="section-description">Four steps. One button on the user's side.</p>
+            <p class="section-description">Four steps. One window.</p>
 
             <div class="steps">
                 <div class="step">
                     <span class="step-num">01</span>
-                    <h3>Tap Watch</h3>
-                    <p>You open Tot el camp and press the big <strong>Watch</strong> button. That's the entire user surface.</p>
+                    <h3>Pick a fixture</h3>
+                    <p>Today's matches load from <strong>football-data.org</strong>. You tap one — live matches are flagged with a pulsing mustard dot.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">02</span>
-                    <h3>Fetch the schedule</h3>
-                    <p>The app pulls today's matches from gooool365.com — direct first, then Tor fallback if your ISP blocks the domain.</p>
+                    <h3>Find a stream</h3>
+                    <p>The app queries <strong>search-ace.stream</strong> for an Acestream broadcast of that fixture. Direct first; if your ISP blocks it, the bundled Tor falls back automatically.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">03</span>
-                    <h3>Extract the stream</h3>
-                    <p>It locates the live Barça game and pulls the <code>acestream://</code> URL out of the match page.</p>
+                    <h3>Boot the engine</h3>
+                    <p>The bundled Linux VM (booted at app launch via <strong>Virtualization.framework</strong>) resolves the <code>acestream://</code> ID into an HTTP stream URL on <code>:6878</code>.</p>
                 </div>
                 <div class="step">
                     <span class="step-num">04</span>
-                    <h3>Hand off to your player</h3>
-                    <p>macOS opens the URL with whichever app handles <code>acestream://</code>. Televisor (free) is the easy choice.</p>
+                    <h3>Play, in-app</h3>
+                    <p>VLCKit opens the HTTP stream in a dedicated playback window. Native fullscreen with <code>⌃⌘F</code>; close with <code>⌘W</code>.</p>
                 </div>
             </div>
         </div>
@@ -198,11 +204,21 @@
                     </div>
                 </div>
                 <div class="tech-card">
-                    <h3>Plumbing</h3>
+                    <h3>Engine + Player</h3>
                     <div class="tech-tags">
-                        <span>Tor (bundled)</span>
-                        <span>dylibbundler</span>
+                        <span>Virtualization.framework</span>
+                        <span>Rosetta-for-Linux</span>
+                        <span>Acestream engine</span>
+                        <span>VLCKit</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Data + Network</h3>
+                    <div class="tech-tags">
                         <span>football-data.org</span>
+                        <span>search-ace.stream</span>
+                        <span>Tor (bundled)</span>
+                        <span>SOCKS5</span>
                     </div>
                 </div>
             </div>
@@ -225,10 +241,14 @@
                 </a>
             </div>
             <div class="gatekeeper-note">
-                <strong>First launch:</strong> the DMG is ad-hoc signed, so Gatekeeper will complain.
-                Right-click <code>TotElCamp.app</code> and choose <strong>Open</strong> the first time.
-                You'll also want <a href="https://televisor.app" target="_blank" rel="noopener">Televisor</a>
-                (or any other <code>acestream://</code> handler) installed.
+                <strong>First launch:</strong> the DMG is signed with Apple Developer
+                ID and notarized — Gatekeeper accepts it without prompts.
+                <br><br>
+                <strong>One-time prerequisite:</strong> the bundled Acestream
+                engine is x86_64 and runs through Rosetta inside the Linux VM,
+                so install Rosetta for Linux once via Terminal:
+                <br>
+                <code>softwareupdate --install-rosetta --agree-to-license</code>
             </div>
         </div>
     </section>
@@ -240,13 +260,13 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Tot el camp</h4>
-                    <p class="footer-tagline">One tap. The Barça match. On macOS.</p>
+                    <p class="footer-tagline">Today's match. Picked, found, played.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Links</h4>
                     <ul>
                         <li><a href="https://github.com/aderiushev/totelcamp" target="_blank" rel="noopener">GitHub</a></li>
-                        <li><a href="https://televisor.app" target="_blank" rel="noopener">Televisor (player)</a></li>
+                        <li><a href="https://github.com/aderiushev/totelcamp/releases" target="_blank" rel="noopener">Releases</a></li>
                         <li><a href="/#projects">More projects</a></li>
                     </ul>
                 </div>

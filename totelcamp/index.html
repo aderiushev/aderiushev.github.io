@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tot el camp — native macOS app for one-tap FC Barcelona match streams. Finds the live game on gooool365.com, extracts the acestream URL, hands off to your player. Bundled Tor fallback for ISP-blocked networks.">
+    <meta name="keywords" content="FC Barcelona, Barça, acestream, macOS, streaming, swift, swiftui, tor, gooool365">
+    <meta name="author" content="Aleksei Deriushev">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tot el camp — One-tap FC Barça streams on macOS">
+    <meta property="og:description" content="Native macOS app. One tap → the live Barça match → your acestream player. Bundled Tor fallback for blocked ISPs.">
+    <meta property="og:url" content="https://aderiushev.github.io/totelcamp/">
+    <meta property="og:image" content="https://aderiushev.github.io/totelcamp/assets/icon.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Tot el camp — One-tap FC Barça streams on macOS">
+    <meta name="twitter:description" content="Native macOS app. One tap → the live Barça match → your acestream player.">
+
+    <title>Tot el camp — One-tap FC Barça streams on macOS</title>
+    <link rel="icon" href="assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">⚽</span>
+                    <span class="logo-text">tot el camp</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how">How it works</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-badge">macOS · Swift · SwiftUI · Apple Silicon</div>
+            <h1>Tot el camp</h1>
+            <p class="tagline">One tap. The Barça match. On your screen.</p>
+            <p class="description">
+                A native macOS app that finds today's live FC Barcelona match on
+                <code>gooool365.com</code>, extracts the <code>acestream://</code> URL,
+                and hands it off to your favourite acestream player. Bundled
+                <strong>Tor</strong> fallback punches through ISP blocks — no VPN,
+                no setup, no terminal.
+            </p>
+            <div class="hero-icon-wrap">
+                <img src="assets/icon.png" alt="Tot el camp app icon — a scoreboard tile in Barça colours" class="hero-icon" width="220" height="220" fetchpriority="high">
+            </div>
+            <div class="button-group">
+                <a href="https://github.com/aderiushev/totelcamp/releases/latest/download/TotElCamp-0.1.0.dmg" class="btn btn-primary" download>
+                    <span>🍎</span>
+                    Download .dmg for macOS
+                </a>
+                <a href="https://github.com/aderiushev/totelcamp" class="btn btn-secondary" target="_blank" rel="noopener">
+                    View on GitHub →
+                </a>
+            </div>
+            <p class="hero-meta">Apple Silicon · macOS 14+ · ad-hoc signed</p>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>What it does</h2>
+            <p class="section-description">
+                A focused tool for one specific job: get the Barça match playing on macOS, fast.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👆</div>
+                    <h3>One-tap watch flow</h3>
+                    <p>
+                        Open the app, tap <strong>Watch</strong>. The app fetches today's
+                        schedule, finds the live Barça match, extracts the stream URL —
+                        all inside one button press.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🧅</div>
+                    <h3>Tor fallback, bundled</h3>
+                    <p>
+                        Your ISP blocks gooool365? The app ships its own <code>tor</code>
+                        binary and falls back automatically. No VPN, no Tor Browser install,
+                        no DNS hacks.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔗</div>
+                    <h3>Plays nice with your player</h3>
+                    <p>
+                        Hands off the <code>acestream://</code> URL to whichever app you've
+                        registered as the handler — <a href="https://televisor.app" target="_blank" rel="noopener">Televisor</a>
+                        recommended. No bundled player, no Electron.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🦴</div>
+                    <h3>Native, no junk</h3>
+                    <p>
+                        Pure <strong>SwiftUI + AppKit</strong>. No Electron, no Chromium,
+                        no Node runtime. Tiny binary, fast launch, plays well with the
+                        rest of macOS.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📦</div>
+                    <h3>Self-contained DMG</h3>
+                    <p>
+                        Drag <code>TotElCamp.app</code> into Applications and you're done.
+                        Tor binary, dependencies, fonts — all bundled inside the
+                        <code>.app</code>. Zero prerequisites.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛠</div>
+                    <h3>Open source, personal use</h3>
+                    <p>
+                        Built for personal use, source on GitHub. Built with
+                        <strong>XcodeGen</strong>, <strong>dylibbundler</strong>, and
+                        a single <code>build-app.sh</code> that produces the DMG.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="how" class="how-section">
+        <div class="container">
+            <h2>How it works</h2>
+            <p class="section-description">Four steps. One button on the user's side.</p>
+
+            <div class="steps">
+                <div class="step">
+                    <span class="step-num">01</span>
+                    <h3>Tap Watch</h3>
+                    <p>You open Tot el camp and press the big <strong>Watch</strong> button. That's the entire user surface.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">02</span>
+                    <h3>Fetch the schedule</h3>
+                    <p>The app pulls today's matches from gooool365.com — direct first, then Tor fallback if your ISP blocks the domain.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">03</span>
+                    <h3>Extract the stream</h3>
+                    <p>It locates the live Barça game and pulls the <code>acestream://</code> URL out of the match page.</p>
+                </div>
+                <div class="step">
+                    <span class="step-num">04</span>
+                    <h3>Hand off to your player</h3>
+                    <p>macOS opens the URL with whichever app handles <code>acestream://</code>. Televisor (free) is the easy choice.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tech-stack-section">
+        <div class="container">
+            <h2>Built with</h2>
+            <p class="section-description">Native macOS stack, no Electron, no JavaScript runtime.</p>
+
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>Language</h3>
+                    <div class="tech-tags">
+                        <span>Swift 5.9</span>
+                        <span>SwiftUI</span>
+                        <span>AppKit</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Platform</h3>
+                    <div class="tech-tags">
+                        <span>macOS 14+</span>
+                        <span>Apple Silicon</span>
+                        <span>XcodeGen</span>
+                    </div>
+                </div>
+                <div class="tech-card">
+                    <h3>Plumbing</h3>
+                    <div class="tech-tags">
+                        <span>Tor (bundled)</span>
+                        <span>dylibbundler</span>
+                        <span>football-data.org</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="download" class="download-section">
+        <div class="container">
+            <h2>Download</h2>
+            <p class="section-description">
+                macOS 14+ on Apple Silicon. Grab the .dmg, drag <code>TotElCamp.app</code> into Applications, launch.
+            </p>
+            <div class="button-group">
+                <a href="https://github.com/aderiushev/totelcamp/releases/latest/download/TotElCamp-0.1.0.dmg" class="btn btn-primary" download>
+                    <span>🍎</span>
+                    Download .dmg for macOS
+                </a>
+                <a href="https://github.com/aderiushev/totelcamp" class="btn btn-secondary" target="_blank" rel="noopener">
+                    View source on GitHub →
+                </a>
+            </div>
+            <div class="gatekeeper-note">
+                <strong>First launch:</strong> the DMG is ad-hoc signed, so Gatekeeper will complain.
+                Right-click <code>TotElCamp.app</code> and choose <strong>Open</strong> the first time.
+                You'll also want <a href="https://televisor.app" target="_blank" rel="noopener">Televisor</a>
+                (or any other <code>acestream://</code> handler) installed.
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Tot el camp</h4>
+                    <p class="footer-tagline">One tap. The Barça match. On macOS.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="https://github.com/aderiushev/totelcamp" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://televisor.app" target="_blank" rel="noopener">Televisor (player)</a></li>
+                        <li><a href="/#projects">More projects</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Tot el camp. Developed by Aleksei Deriushev. Personal use.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

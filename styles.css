@@ -560,6 +560,8 @@ h1.big .hl {
 .proj:nth-child(6) { background: var(--accent-1); color: var(--paper); }
 .proj:nth-child(7) { background: var(--paper); }
 .proj:nth-child(8) { background: var(--ink); color: var(--paper); }
+.proj:nth-child(9) { background: var(--accent-2); }
+.proj:nth-child(10) { background: var(--accent-3); }
 .proj-top { display: flex; align-items: center; justify-content: space-between; }
 .proj-num {
   font-family: 'JetBrains Mono', monospace;

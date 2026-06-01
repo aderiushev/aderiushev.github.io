@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Open this live football stream in Tot el camp — the native macOS Acestream player.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Watch on Tot el camp">
+    <meta property="og:description" content="A friend shared a live stream. Open it in Tot el camp, or grab the app for macOS.">
+    <meta property="og:url" content="https://aderiushev.github.io/totelcamp/play/">
+    <meta property="og:image" content="https://aderiushev.github.io/totelcamp/assets/icon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Watch on Tot el camp">
+    <meta name="twitter:description" content="A friend shared a live stream. Open it in Tot el camp.">
+
+    <title>Open in Tot el camp</title>
+    <link rel="icon" href="../assets/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --blau: #0F2C5C; --grana: #8B1A3A; --lliure: #F5C518;
+            --paper: #F5F0E6; --paper-2: #EDE6D6; --ink: #0B0B0B; --muted: #5A5550;
+            --border: 3px; --shadow-x: 6px; --shadow-y: 6px;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { height: 100%; }
+        body {
+            font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--ink);
+            background: var(--paper);
+            background-image: radial-gradient(var(--paper-2) 1.5px, transparent 1.5px);
+            background-size: 22px 22px;
+            display: flex; align-items: center; justify-content: center;
+            padding: 24px; min-height: 100%;
+        }
+        .card {
+            position: relative; width: 100%; max-width: 460px;
+            background: var(--paper);
+            border: var(--border) solid var(--ink);
+            box-shadow: var(--shadow-x) var(--shadow-y) 0 var(--ink);
+            padding: 32px;
+        }
+        .badge {
+            display: inline-block; background: var(--lliure);
+            border: 2px solid var(--ink); padding: 4px 10px;
+            font-family: 'JetBrains Mono', monospace; font-weight: 700;
+            font-size: 12px; letter-spacing: 2px; text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        .icon {
+            width: 56px; height: 56px; border: 2px solid var(--ink);
+            margin-bottom: 18px; display: block;
+        }
+        h1 {
+            font-family: 'Archivo Black', sans-serif; font-size: 26px;
+            line-height: 1.1; margin-bottom: 8px; letter-spacing: 0.5px;
+        }
+        .stream-title {
+            font-weight: 700; color: var(--grana); font-size: 18px;
+            margin-bottom: 4px; word-break: break-word;
+        }
+        .status { color: var(--muted); font-size: 15px; margin-bottom: 22px; }
+        .btns { display: flex; flex-direction: column; gap: 12px; }
+        .btn {
+            display: inline-flex; align-items: center; justify-content: center;
+            gap: 8px; text-decoration: none; cursor: pointer;
+            font-family: 'Space Grotesk', sans-serif; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 1.5px; font-size: 14px;
+            padding: 13px 18px; border: var(--border) solid var(--ink);
+            box-shadow: 4px 4px 0 var(--ink); transition: transform .05s, box-shadow .05s;
+            color: #fff; background: var(--blau); width: 100%;
+        }
+        .btn:active { transform: translate(4px, 4px); box-shadow: none; }
+        .btn-secondary { background: var(--paper); color: var(--ink); }
+        .hidden { display: none; }
+        .foot {
+            margin-top: 22px; font-family: 'JetBrains Mono', monospace;
+            font-size: 11px; color: var(--muted); letter-spacing: 0.5px;
+        }
+        .foot a { color: var(--grana); }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <span class="badge">Tot el camp</span>
+        <img class="icon" src="../assets/icon.png" alt="Tot el camp">
+
+        <!-- Shown when a valid stream id is present -->
+        <div id="stream-view" class="hidden">
+            <h1>Opening stream…</h1>
+            <p class="stream-title" id="stream-title"></p>
+            <p class="status" id="status">Launching Tot el camp on your Mac.</p>
+            <div class="btns">
+                <a class="btn" id="open-btn" href="#">Open in Tot el camp</a>
+                <a class="btn btn-secondary" id="download-btn"
+                   href="https://github.com/aderiushev/aderiushev.github.io/releases/latest/download/TotElCamp.dmg" download>
+                    Don't have it? Download
+                </a>
+            </div>
+        </div>
+
+        <!-- Shown when the link has no usable stream id -->
+        <div id="empty-view" class="hidden">
+            <h1>Tot el camp</h1>
+            <p class="status">Native macOS player for live football via Acestream.</p>
+            <div class="btns">
+                <a class="btn"
+                   href="https://github.com/aderiushev/aderiushev.github.io/releases/latest/download/TotElCamp.dmg" download>
+                    Download for macOS
+                </a>
+                <a class="btn btn-secondary" href="../">Learn more</a>
+            </div>
+        </div>
+
+        <p class="foot">macOS 14+ · Apple Silicon · <a href="../">aderiushev.github.io/totelcamp</a></p>
+    </main>
+
+    <script>
+        // Mirror of StreamLink in the app — keep these in sync.
+        var SCHEME = "totelcamp";
+        var HOST = "play";
+
+        function isValidId(id) {
+            return !!id && id.length <= 64 && /^[A-Za-z0-9]+$/.test(id);
+        }
+
+        function deepLink(id, title) {
+            var url = SCHEME + "://" + HOST + "?id=" + encodeURIComponent(id);
+            if (title) url += "&title=" + encodeURIComponent(title);
+            return url;
+        }
+
+        (function () {
+            var params = new URLSearchParams(window.location.search);
+            var id = params.get("id");
+            var title = params.get("title") || "";
+
+            if (!isValidId(id)) {
+                document.getElementById("empty-view").classList.remove("hidden");
+                return;
+            }
+
+            document.getElementById("stream-view").classList.remove("hidden");
+            if (title) {
+                document.getElementById("stream-title").textContent = title;
+            }
+
+            var link = deepLink(id, title);
+            document.getElementById("open-btn").setAttribute("href", link);
+
+            // Try to hand off to the app immediately.
+            window.location.href = link;
+
+            // If we're still here ~1.5s later, the app probably isn't installed.
+            setTimeout(function () {
+                document.getElementById("status").textContent =
+                    "Still here? Tap “Open in Tot el camp”, or download the app below.";
+            }, 1500);
+        })();
+    </script>
+</body>
+</html>

@@ -123,8 +123,10 @@
         var SCHEME = "totelcamp";
         var HOST = "play";
 
+        // An Acestream content id is a 40-char hex SHA-1 infohash; the app and
+        // engine reject anything else, so validate the same shape here.
         function isValidId(id) {
-            return !!id && id.length <= 64 && /^[A-Za-z0-9]+$/.test(id);
+            return !!id && /^[0-9a-fA-F]{40}$/.test(id);
         }
 
         function deepLink(id, title) {
@@ -151,8 +153,12 @@
             var link = deepLink(id, title);
             document.getElementById("open-btn").setAttribute("href", link);
 
-            // Try to hand off to the app immediately.
-            window.location.href = link;
+            // Hand off to the app once per tab session — a reload or Back must not
+            // silently re-launch it. The "Open in Tot el camp" button always works.
+            if (!sessionStorage.getItem("tec-redirected")) {
+                sessionStorage.setItem("tec-redirected", "1");
+                window.location.href = link;
+            }
 
             // If we're still here ~1.5s later, the app probably isn't installed.
             setTimeout(function () {

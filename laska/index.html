@@ -3,391 +3,441 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Laska - Gamify your relationship. Complete tasks, earn Love Points, redeem rewards, and unlock shared goals together.">
-    <meta name="keywords" content="couples app, relationship app, love points, gamification, tasks, rewards, shared goals, React Native, Expo">
+    <meta name="theme-color" content="#FDFBF8">
+    <meta name="description" content="Laska — grown-up love. Turn everyday relationship effort into a shared game: tasks, Love Points, rewards, and goals you unlock together. On iOS &amp; Android.">
+    <meta name="keywords" content="couples app, relationship app, love points, gamification, tasks, rewards, shared goals, Laska, React Native, Expo">
     <meta name="author" content="Aleksei Deriushev">
 
     <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Laska - Gamify Your Relationship">
+    <meta property="og:title" content="Laska — Grown-up love">
     <meta property="og:description" content="Turn relationship effort into a shared game. Complete tasks, earn Love Points, redeem rewards, and grow together.">
     <meta property="og:url" content="https://aderiushev.github.io/laska/">
+    <meta property="og:image" content="https://aderiushev.github.io/laska/assets/app-icon.png">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Laska - Gamify Your Relationship">
+    <meta name="twitter:title" content="Laska — Grown-up love">
     <meta name="twitter:description" content="Turn relationship effort into a shared game. Complete tasks, earn Love Points, redeem rewards, and grow together.">
+    <meta name="twitter:image" content="https://aderiushev.github.io/laska/assets/app-icon.png">
 
-    <title>Laska - Gamify Your Relationship</title>
+    <title>Laska — Grown-up love</title>
+
+    <link rel="icon" type="image/png" href="assets/app-icon.png">
+    <link rel="apple-touch-icon" href="assets/app-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@500;600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;1,500;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="header-content">
-                <a href="index.html" class="logo">
-                    <span class="logo-icon">💕</span>
-                    <span class="logo-text">Laska</span>
-                </a>
-                <nav>
-                    <ul>
-                        <li><a href="/">Main Site</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#screenshots">Screenshots</a></li>
-                        <li><a href="#download">Download</a></li>
-                        <li><a href="support.html">Support</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <!-- ───────── HEADER ───────── -->
+    <header id="site-header">
+        <div class="container header-content">
+            <a href="index.html" class="logo">
+                <img src="assets/app-icon.png" alt="" class="logo-icon-img" width="40" height="40">
+                <span class="logo-text">Laska</span>
+            </a>
+            <nav class="site-nav">
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how">How it works</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="/">Portfolio</a></li>
+                </ul>
+            </nav>
+            <a href="#download" class="btn btn-primary btn-sm header-cta">Get the app</a>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ───────── HERO ───────── -->
     <section class="hero">
-        <div class="container">
-            <div class="hero-icon-wrapper">
-                <span class="hero-icon">💕</span>
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="container hero-grid">
+            <div class="hero-copy reveal">
+                <span class="eyebrow"><span class="eyebrow-dot"></span>Now on iOS &amp; Android</span>
+                <h1>Small acts of love,<br><em>rewarded.</em></h1>
+                <p class="hero-lead">
+                    Laska turns everyday relationship effort into a shared game. Set little
+                    tasks for each other, earn <span class="lp-inline">Love Points</span>,
+                    redeem rewards, and unlock goals together — one thoughtful gesture at a time.
+                </p>
+
+                <div class="store-badges">
+                    <a class="store-badge" href="https://apps.apple.com/us/app/laska-tasks-for-couples/id6761815070" target="_blank" rel="noopener noreferrer" aria-label="Download Laska on the App Store">
+                        <svg class="store-glyph" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                        <span class="store-badge-text">
+                            <small>Download on the</small>
+                            <strong>App Store</strong>
+                        </span>
+                    </a>
+                    <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.aderiushev.lovepoints" target="_blank" rel="noopener noreferrer" aria-label="Get Laska on Google Play">
+                        <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z"/></svg>
+                        <span class="store-badge-text">
+                            <small>Get it on</small>
+                            <strong>Google Play</strong>
+                        </span>
+                    </a>
+                </div>
+
+                <ul class="hero-trust">
+                    <li>Free to start</li>
+                    <li>One subscription, both partners</li>
+                    <li>No ads, ever</li>
+                </ul>
             </div>
-            <h1>Laska</h1>
-            <p class="tagline">Gamify Your Relationship</p>
-            <p class="description">
-                Turn everyday relationship effort into a shared game. Create tasks for each other,
-                earn Love Points, redeem rewards, and unlock shared goals — growing closer together, one LP at a time.
-            </p>
-            <div class="button-group">
-                <a href="https://play.google.com/apps/internaltest/4701403558916041887" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    <span>▶️</span>
-                    Google Play
-                </a>
-                <span class="btn btn-secondary" style="opacity: 0.6; cursor: default;">
-                    <span>🍎</span>
-                    iOS — Coming Soon
-                </span>
+
+            <div class="hero-visual reveal">
+                <div class="device device-float">
+                    <img src="assets/6.jpg" alt="Laska app welcome screen" loading="eager">
+                </div>
+                <div class="float-chip float-chip-lp" aria-hidden="true">
+                    <span class="chip-avatar">✦</span>
+                    <span><strong>+25 LP</strong><br>Task approved</span>
+                </div>
+                <div class="float-chip float-chip-level" aria-hidden="true">
+                    <span class="chip-emoji">💞</span>
+                    <span><strong>Level 3</strong><br>Whisper of the heart</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features">
+    <!-- ───────── STATS STRIP ───────── -->
+    <section class="stats-strip">
+        <div class="container stats-row">
+            <div class="stat"><span class="stat-num">150+</span><span class="stat-label">Reward presets</span></div>
+            <div class="stat"><span class="stat-num">5,000+</span><span class="stat-label">Daily questions</span></div>
+            <div class="stat"><span class="stat-num">6</span><span class="stat-label">Couple levels</span></div>
+            <div class="stat"><span class="stat-num">3–30</span><span class="stat-label">Day journeys</span></div>
+        </div>
+    </section>
+
+    <!-- ───────── FEATURES ───────── -->
+    <section id="features" class="section">
         <div class="container">
-            <h2>Features</h2>
-            <p class="section-description">
-                Everything you need to nurture your relationship through play and shared effort.
-            </p>
+            <div class="section-head">
+                <span class="section-kicker">Features</span>
+                <h2 class="section-title">Everything you need to <em>show up</em> for each other.</h2>
+                <p class="section-sub">A warm, thoughtful toolkit that turns effort into play — and play into closeness.</p>
+            </div>
 
             <div class="features-grid">
-                <div class="feature-card" style="--index: 0">
+                <div class="feature-card reveal" style="--index:0">
                     <div class="feature-icon">📋</div>
-                    <h3>Task System</h3>
-                    <p>
-                        Create meaningful tasks for your partner and earn Love Points.
-                        Six categories — Home, Romance, Talk, Intimacy, Self-care, and Custom —
-                        with an approval workflow that builds communication.
-                    </p>
+                    <h3>Task system</h3>
+                    <p>Create meaningful tasks for your partner across six categories — Home, Romance, Talk, Intimacy, Self-care and Custom — with an approval flow that builds communication.</p>
                 </div>
-
-                <div class="feature-card" style="--index: 1">
+                <div class="feature-card reveal" style="--index:1">
                     <div class="feature-icon">✨</div>
-                    <h3>Love Points Economy</h3>
-                    <p>
-                        Earn LP from completed tasks, auto-split between personal balance
-                        and couple bank. Level up together through 6 tiers as your
-                        relationship grows stronger.
-                    </p>
+                    <h3>Love Points economy</h3>
+                    <p>Earn LP from completed tasks, auto-split between your personal balance and the couple bank. Level up together through six warm tiers as your bond grows.</p>
                 </div>
-
-                <div class="feature-card" style="--index: 2">
+                <div class="feature-card reveal" style="--index:2">
                     <div class="feature-icon">🗺️</div>
                     <h3>Journeys</h3>
-                    <p>
-                        Guided multi-day relationship programs spanning 3 to 30 days.
-                        Unlock steps sequentially and earn bonus LP for completing
-                        each journey together.
-                    </p>
+                    <p>Guided multi-day programs from 3 to 30 days. Unlock a step a day and earn bonus LP for finishing a journey side by side.</p>
                 </div>
-
-                <div class="feature-card" style="--index: 3">
+                <div class="feature-card reveal" style="--index:3">
                     <div class="feature-icon">🎁</div>
                     <h3>Rewards</h3>
-                    <p>
-                        Redeem Love Points for 150+ template coupons or create
-                        custom rewards. Negotiate prices with your partner and
-                        gift each other meaningful experiences.
-                    </p>
+                    <p>Redeem points for 150+ template coupons or design your own. Negotiate prices with your partner and gift each other experiences that matter.</p>
                 </div>
-
-                <div class="feature-card" style="--index: 4">
+                <div class="feature-card reveal" style="--index:4">
                     <div class="feature-icon">🎯</div>
-                    <h3>Shared Goals</h3>
-                    <p>
-                        Save LP together in your Couple Bank toward big milestones.
-                        Smart forecasts show how many weeks until you reach each goal
-                        at your current pace.
-                    </p>
+                    <h3>Shared goals</h3>
+                    <p>Pool LP in your couple bank toward big milestones. Smart forecasts show how many weeks until you reach each goal at your current pace.</p>
                 </div>
-
-                <div class="feature-card" style="--index: 5">
+                <div class="feature-card reveal" style="--index:5">
                     <div class="feature-icon">💬</div>
-                    <h3>Daily Questions</h3>
-                    <p>
-                        Three conversation starters surface daily from a curated database
-                        of 5,000+ questions. Pick one together and earn bonus LP —
-                        no repeats within 90 days.
-                    </p>
+                    <h3>Daily questions</h3>
+                    <p>Three conversation starters surface each day from a curated set of 5,000+. Pick one together, earn bonus LP — no repeats within 90 days.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Tech Stack Section -->
-    <section class="tech-stack-section">
+    <!-- ───────── HOW IT WORKS ───────── -->
+    <section id="how" class="section section-alt">
         <div class="container">
-            <h2>Built With</h2>
-            <p class="section-description">
-                Modern cross-platform stack for a seamless couples experience.
-            </p>
+            <div class="section-head">
+                <span class="section-kicker">How it works</span>
+                <h2 class="section-title">Three steps. One <em>shared</em> game.</h2>
+                <p class="section-sub">The whole loop takes a minute a day — and it compounds.</p>
+            </div>
 
+            <div class="steps">
+                <div class="step reveal" style="--index:0">
+                    <span class="step-num">01</span>
+                    <h3>Set little tasks</h3>
+                    <p>“Plan a date”, “Ten minutes, phones down”, “Run me a bath.” Give each task a Love-Point value together.</p>
+                </div>
+                <div class="step-arrow" aria-hidden="true">→</div>
+                <div class="step reveal" style="--index:1">
+                    <span class="step-num">02</span>
+                    <h3>Earn Love Points</h3>
+                    <p>Complete and approve tasks to bank LP. A slice flows to your shared couple bank automatically.</p>
+                </div>
+                <div class="step-arrow" aria-hidden="true">→</div>
+                <div class="step reveal" style="--index:2">
+                    <span class="step-num">03</span>
+                    <h3>Redeem &amp; grow</h3>
+                    <p>Spend LP on rewards, unlock shared goals, and level up your relationship — together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── SCREENSHOTS ───────── -->
+    <section id="screenshots" class="section screenshots">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-kicker">Screenshots</span>
+                <h2 class="section-title">A warm, grown-up interface.</h2>
+                <p class="section-sub">Designed for couples who take their relationship — not themselves — seriously.</p>
+            </div>
+        </div>
+        <div class="screenshots-gallery">
+            <div class="screenshots-track">
+                <div class="shot"><img src="assets/6.jpg" alt="Laska onboarding screen" class="screenshot-image" loading="lazy"></div>
+                <div class="shot"><img src="assets/3.jpg" alt="Laska partner invite code" class="screenshot-image" loading="lazy"></div>
+                <div class="shot"><img src="assets/4.jpg" alt="Laska new task creation" class="screenshot-image" loading="lazy"></div>
+                <div class="shot"><img src="assets/2.jpg" alt="Laska new reward with categories and LP cost" class="screenshot-image" loading="lazy"></div>
+                <div class="shot"><img src="assets/1.jpg" alt="Laska settings and profile" class="screenshot-image" loading="lazy"></div>
+            </div>
+            <div class="gallery-dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── LASKA PLUS ───────── -->
+    <section class="section">
+        <div class="container">
+            <div class="plus-card reveal">
+                <div class="plus-copy">
+                    <span class="plus-badge">Laska Plus</span>
+                    <h2>One subscription.<br>Both partners.</h2>
+                    <p>Upgrade once and you both get everything — no per-seat pricing, no nickel-and-diming.</p>
+                    <ul class="plus-list">
+                        <li>Unlimited tasks &amp; rewards</li>
+                        <li>Custom coupons &amp; intimate journeys</li>
+                        <li>+20% LP bonus, 2× on birthdays</li>
+                        <li>Level 6 — “Star Union”</li>
+                    </ul>
+                    <a href="#download" class="btn btn-primary">Try it free</a>
+                </div>
+                <div class="plus-visual" aria-hidden="true">
+                    <div class="price-tag">
+                        <span class="price-amt">$4.99</span>
+                        <span class="price-per">/ month · for two</span>
+                    </div>
+                    <div class="plus-orb"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────── BUILT WITH ───────── -->
+    <section class="section section-alt tech-stack-section">
+        <div class="container">
+            <div class="section-head">
+                <span class="section-kicker">Under the hood</span>
+                <h2 class="section-title">Built with a modern stack.</h2>
+                <p class="section-sub">Cross-platform, real-time, and crafted end-to-end by one engineer.</p>
+            </div>
             <div class="tech-grid">
-                <div class="tech-card">
+                <div class="tech-card reveal" style="--index:0">
                     <h3>Mobile</h3>
                     <div class="tech-tags">
-                        <span>React Native</span>
-                        <span>Expo</span>
-                        <span>TypeScript</span>
-                        <span>NativeWind</span>
+                        <span>React Native</span><span>Expo</span><span>TypeScript</span><span>NativeWind</span>
                     </div>
                 </div>
-                <div class="tech-card">
+                <div class="tech-card reveal" style="--index:1">
                     <h3>Backend</h3>
                     <div class="tech-tags">
-                        <span>Supabase</span>
-                        <span>PostgreSQL</span>
-                        <span>Edge Functions</span>
+                        <span>Supabase</span><span>PostgreSQL</span><span>Edge Functions</span>
                     </div>
                 </div>
-                <div class="tech-card">
-                    <h3>Web</h3>
+                <div class="tech-card reveal" style="--index:2">
+                    <h3>Platform</h3>
                     <div class="tech-tags">
-                        <span>Next.js</span>
-                        <span>React</span>
-                        <span>Drizzle ORM</span>
+                        <span>RevenueCat</span><span>Sentry</span><span>PostHog</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Screenshots Section -->
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2>See It In Action</h2>
-            <p class="section-description">
-                A warm, sophisticated interface designed for couples who take their relationship seriously.
-            </p>
-
-            <div class="screenshots-gallery">
-                <div class="screenshots-track">
-                    <img src="assets/6.jpg" alt="Laska onboarding screen" class="screenshot-image" loading="lazy">
-                    <img src="assets/3.jpg" alt="Laska partner invite code" class="screenshot-image" loading="lazy">
-                    <img src="assets/4.jpg" alt="Laska new task creation" class="screenshot-image" loading="lazy">
-                    <img src="assets/2.jpg" alt="Laska new reward with categories and LP cost" class="screenshot-image" loading="lazy">
-                    <img src="assets/1.jpg" alt="Laska settings and profile" class="screenshot-image" loading="lazy">
-                </div>
-                <div class="gallery-dots">
-                    <span class="dot active" data-index="0"></span>
-                    <span class="dot" data-index="1"></span>
-                    <span class="dot" data-index="2"></span>
-                    <span class="dot" data-index="3"></span>
-                    <span class="dot" data-index="4"></span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download">
-        <div class="container" style="text-align: center;">
-            <h2>Download Laska</h2>
-            <p class="section-description">
-                Available on iOS and Android. One subscription covers both partners.
-            </p>
-            <div class="button-group">
-                <a href="https://play.google.com/apps/internaltest/4701403558916041887" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
-                    <span>▶️</span>
-                    Google Play
+    <!-- ───────── DOWNLOAD CTA ───────── -->
+    <section id="download" class="download-cta">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <div class="container cta-inner">
+            <img src="assets/app-icon.png" alt="" class="cta-icon" width="84" height="84">
+            <h2>Start your journey together.</h2>
+            <p>Available now on iOS and Android. Free to start — one subscription covers both partners.</p>
+            <div class="store-badges store-badges-center">
+                <a class="store-badge" href="https://apps.apple.com/us/app/laska-tasks-for-couples/id6761815070" target="_blank" rel="noopener noreferrer" aria-label="Download Laska on the App Store">
+                    <svg class="store-glyph" viewBox="0 0 384 512" aria-hidden="true"><path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zM262.1 104.3c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    <span class="store-badge-text">
+                        <small>Download on the</small>
+                        <strong>App Store</strong>
+                    </span>
                 </a>
-                <span class="btn btn-secondary" style="opacity: 0.6; cursor: default;">
-                    <span>🍎</span>
-                    iOS — Coming Soon
-                </span>
+                <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.aderiushev.lovepoints" target="_blank" rel="noopener noreferrer" aria-label="Get Laska on Google Play">
+                    <svg class="store-glyph" viewBox="0 0 512 512" aria-hidden="true"><path fill="currentColor" d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l220.7-221.3 60.1 60.1L104.6 499z"/></svg>
+                    <span class="store-badge-text">
+                        <small>Get it on</small>
+                        <strong>Google Play</strong>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ───────── FOOTER ───────── -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Laska</h4>
-                    <p style="color: var(--text-secondary);">
-                        Gamify your relationship — tasks, rewards, and shared goals.
-                    </p>
+                <div class="footer-section footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="assets/app-icon.png" alt="" class="logo-icon-img" width="34" height="34">
+                        <span class="logo-text">Laska</span>
+                    </a>
+                    <p>Grown-up love — tasks, rewards, and shared goals for couples who show up.</p>
                 </div>
-
                 <div class="footer-section">
                     <h4>Product</h4>
                     <ul>
                         <li><a href="#features">Features</a></li>
+                        <li><a href="#how">How it works</a></li>
                         <li><a href="#screenshots">Screenshots</a></li>
                         <li><a href="#download">Download</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
                         <li><a href="privacy.html">Privacy Policy</a></li>
                         <li><a href="terms.html">Terms of Use</a></li>
+                        <li><a href="support.html">Support</a></li>
                     </ul>
                 </div>
-
                 <div class="footer-section">
-                    <h4>Contact</h4>
+                    <h4>Get the app</h4>
                     <ul>
-                        <li><a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a></li>
-                        <li><a href="support.html">Get Support</a></li>
+                        <li><a href="https://apps.apple.com/us/app/laska-tasks-for-couples/id6761815070" target="_blank" rel="noopener noreferrer">App Store</a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=com.aderiushev.lovepoints" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+                        <li><a href="mailto:derushev.aleksei@gmail.com">Contact</a></li>
                     </ul>
                 </div>
             </div>
-
             <div class="footer-bottom">
-                <p>&copy; 2026 Laska. Developed by Aleksei Deriushev. All rights reserved.</p>
+                <p>&copy; 2026 Laska. Designed &amp; developed by Aleksei Deriushev.</p>
             </div>
         </div>
     </footer>
 
     <script>
-        // Screenshot Gallery Swipe Functionality
+        // ── Header shadow on scroll ──
+        const header = document.getElementById('site-header');
+        const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+
+        // ── Reveal on scroll ──
+        const revealEls = document.querySelectorAll('.reveal');
+        if ('IntersectionObserver' in window) {
+            const io = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        io.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+            revealEls.forEach((el) => io.observe(el));
+        } else {
+            revealEls.forEach((el) => el.classList.add('is-visible'));
+        }
+
+        // ── Screenshot gallery ──
         const track = document.querySelector('.screenshots-track');
-        const dots = document.querySelectorAll('.dot');
-        const images = document.querySelectorAll('.screenshot-image');
+        const dots = document.querySelectorAll('.gallery-dots .dot');
+        const slides = document.querySelectorAll('.screenshots-track .shot');
 
-        let currentIndex = 0;
-        let startX = 0;
-        let currentX = 0;
-        let isDragging = false;
-        let startScrollLeft = 0;
-        let isProgrammaticScroll = false;
+        if (track && slides.length) {
+            let currentIndex = 0;
+            let startX = 0, currentX = 0, isDragging = false, startScrollLeft = 0, isProgrammaticScroll = false;
 
-        // Update active dot
-        function updateDots() {
-            dots.forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentIndex);
-            });
-        }
+            const updateDots = () => dots.forEach((dot, i) => dot.classList.toggle('active', i === currentIndex));
 
-        // Scroll to specific image
-        function scrollToImage(index) {
-            if (index < 0 || index >= images.length) return;
-            currentIndex = index;
-            isProgrammaticScroll = true;
-            const targetImage = images[index];
-            track.scrollTo({ left: targetImage.offsetLeft, behavior: 'smooth' });
-            updateDots();
+            const closestSlide = () => {
+                let idx = 0, min = Infinity;
+                slides.forEach((s, i) => {
+                    const d = Math.abs(track.scrollLeft - (s.offsetLeft - track.offsetLeft));
+                    if (d < min) { min = d; idx = i; }
+                });
+                return idx;
+            };
 
-            setTimeout(() => {
-                isProgrammaticScroll = false;
-            }, 600);
-        }
-
-        // Handle scroll event to update dots
-        function handleScroll() {
-            if (isProgrammaticScroll) return;
-
-            let closestIndex = 0;
-            let minDistance = Infinity;
-
-            images.forEach((img, index) => {
-                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closestIndex = index;
-                }
-            });
-
-            if (closestIndex !== currentIndex) {
-                currentIndex = closestIndex;
+            const scrollToSlide = (index) => {
+                if (index < 0 || index >= slides.length) return;
+                currentIndex = index;
+                isProgrammaticScroll = true;
+                track.scrollTo({ left: slides[index].offsetLeft - track.offsetLeft, behavior: 'smooth' });
                 updateDots();
-            }
-        }
+                setTimeout(() => { isProgrammaticScroll = false; }, 500);
+            };
 
-        // Touch/Mouse events for dragging
-        function handleStart(e) {
-            isDragging = true;
-            startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-            startScrollLeft = track.scrollLeft;
-            track.style.scrollBehavior = 'auto';
-            track.style.cursor = 'grabbing';
-        }
+            let scrollTimeout;
+            track.addEventListener('scroll', () => {
+                if (isProgrammaticScroll) return;
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    const idx = closestSlide();
+                    if (idx !== currentIndex) { currentIndex = idx; updateDots(); }
+                }, 90);
+            }, { passive: true });
 
-        function handleMove(e) {
-            if (!isDragging) return;
-            e.preventDefault();
-            currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
-            const diff = startX - currentX;
-            track.scrollLeft = startScrollLeft + diff;
-        }
+            const handleStart = (e) => {
+                isDragging = true;
+                startX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+                startScrollLeft = track.scrollLeft;
+                track.classList.add('dragging');
+            };
+            const handleMove = (e) => {
+                if (!isDragging) return;
+                if (e.cancelable) e.preventDefault();
+                currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].pageX;
+                track.scrollLeft = startScrollLeft + (startX - currentX);
+            };
+            const handleEnd = () => {
+                if (!isDragging) return;
+                isDragging = false;
+                track.classList.remove('dragging');
+                scrollToSlide(closestSlide());
+            };
 
-        function handleEnd() {
-            if (!isDragging) return;
-            isDragging = false;
-            track.style.scrollBehavior = 'smooth';
-            track.style.cursor = 'grab';
+            track.addEventListener('mousedown', handleStart);
+            track.addEventListener('mousemove', handleMove);
+            track.addEventListener('mouseup', handleEnd);
+            track.addEventListener('mouseleave', handleEnd);
+            track.addEventListener('touchstart', handleStart, { passive: true });
+            track.addEventListener('touchmove', handleMove, { passive: false });
+            track.addEventListener('touchend', handleEnd);
 
-            let closestIndex = 0;
-            let minDistance = Infinity;
-
-            images.forEach((img, index) => {
-                const distance = Math.abs(track.scrollLeft - img.offsetLeft);
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    closestIndex = index;
-                }
+            dots.forEach((dot, i) => dot.addEventListener('click', () => scrollToSlide(i)));
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') scrollToSlide(currentIndex - 1);
+                if (e.key === 'ArrowRight') scrollToSlide(currentIndex + 1);
             });
-
-            scrollToImage(closestIndex);
         }
-
-        // Event listeners
-        let scrollTimeout;
-        track.addEventListener('scroll', () => {
-            clearTimeout(scrollTimeout);
-            scrollTimeout = setTimeout(handleScroll, 100);
-        });
-
-        // Mouse events
-        track.addEventListener('mousedown', handleStart);
-        track.addEventListener('mousemove', handleMove);
-        track.addEventListener('mouseup', handleEnd);
-        track.addEventListener('mouseleave', handleEnd);
-
-        // Touch events
-        track.addEventListener('touchstart', handleStart, { passive: true });
-        track.addEventListener('touchmove', handleMove, { passive: false });
-        track.addEventListener('touchend', handleEnd);
-
-        // Dot click events
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => scrollToImage(index));
-        });
-
-        // Keyboard navigation
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') scrollToImage(currentIndex - 1);
-            if (e.key === 'ArrowRight') scrollToImage(currentIndex + 1);
-        });
     </script>
 </body>
 </html>

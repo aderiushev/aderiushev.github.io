@@ -12,7 +12,7 @@
 
     /* Text */
     --text-primary:   #2D2A26; /* warm espresso */
-    --text-secondary: #7C7872; /* muted */
+    --text-secondary: #706C65; /* muted — nudged from brand #7C7872 to clear WCAG AA (4.5:1) on cream/white/sand */
 
     /* Accents */
     --accent-primary: #C95D4A; /* coral */

@@ -24,7 +24,7 @@ CSS custom properties define the system: `--bg`, `--ink`, `--paper`, `--accent-1
 - `script.js` - Smooth-scroll behavior for in-page anchor links
 - `styles.css` - All styling with CSS variables for theme tokens
 - `assets/` - Images (portrait, project thumbnails)
-- `cm/`, `palabrino/`, `adchange/`, `n3ws/`, `vispana/`, `pirate/`, `ninja-tch/`, `lovepoints/` - Standalone product landing pages
+- `cm/`, `palabrino/`, `adchange/`, `n3ws/`, `vispana/`, `pirate/`, `ninja-tch/`, `laska/`, `claude-bar/`, `totelcamp/`, `molino/` - Standalone product landing pages
 
 ## Key Patterns
 

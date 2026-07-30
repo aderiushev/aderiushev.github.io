@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Molino — an iOS reader for Russian speakers learning Spanish through real literature. Don Quixote, offline, no accounts, no tracking.">
+    <meta name="author" content="Aleksei Deriushev">
+    <title>Molino — read real Spanish literature</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Molino app icon — a windmill" class="logo-icon">
+                    <span class="logo-text">Molino</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="border-top: none;">
+        <div class="container">
+            <p class="eyebrow">iOS · for Russian speakers learning Spanish</p>
+            <h1>Read Don Quixote in Spanish. Understand every line.</h1>
+            <p class="lede">
+                The Russian meaning arrives first, so comprehension is free —
+                and all your attention lands on the Spanish itself.
+            </p>
+
+            <figure class="demo" id="demo">
+                <p class="demo-ru">Жил-был не так давно в некоем селе Ла-Манчи, имя которого я не хочу вспоминать, один идальго из тех, что держат копьё на подставке, старый щит, тощую клячу и борзую собаку.</p>
+                <blockquote class="demo-es" id="demo-es" hidden>
+                    <span class="ru-mark">·ру</span>
+                    En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor.
+                </blockquote>
+                <button class="demo-btn" id="demo-btn" type="button">Показать испанский</button>
+                <figcaption>
+                    This is the whole app, live: you already hold the meaning in Russian —
+                    tap, and Cervantes opens in the original. Nothing moves without your tap.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>A passage returns three times</h2>
+            <div class="pass">
+                <span class="pass-num">1</span>
+                <div>
+                    <h3>Russian first</h3>
+                    <p>Each phrase comes in Russian; a tap reveals the Spanish original. An unclear word? Touch it — a small Russian hint appears right above the line.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">2</span>
+                <div>
+                    <h3>Days later — Spanish first</h3>
+                    <p>The same passage comes back with the languages swapped: Spanish leads, Russian waits one tap away in the margin.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">3</span>
+                <div>
+                    <h3>Almost clean Spanish</h3>
+                    <p>By the third return you are reading Cervantes nearly unaided. Finished passages settle on your Shelf; the phrases that still needed hints keep returning as short encounters — always as living lines from the book.</p>
+                </div>
+            </div>
+            <p class="aside-note">
+                The library starts with the opening of Don Quixote, Part I — and it is growing.
+            </p>
+        </div>
+    </section>
+
+    <section class="plain">
+        <div class="container">
+            <h2>Nothing leaves your phone</h2>
+            <p>
+                <strong>Molino is local-first by design.</strong> No accounts, no ads, no analytics,
+                no network calls — the app cannot phone home because there is nothing in it that does.
+                Everything you read stays in a database on your device. <a href="privacy.html">The whole privacy policy</a>
+                fits on one page.
+            </p>
+        </div>
+    </section>
+
+    <section class="plain">
+        <div class="container">
+            <h2>Get it</h2>
+            <p><span class="badge-soon">Coming soon to the App Store</span></p>
+            <p style="margin-top: 1rem;">Questions in the meantime? <a href="support.html">Support</a> has answers.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="privacy.html">Privacy</a> ·
+                    <a href="support.html">Support</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const demo = document.getElementById('demo');
+        const es = document.getElementById('demo-es');
+        const btn = document.getElementById('demo-btn');
+        btn.addEventListener('click', () => {
+            const revealed = demo.classList.contains('revealed');
+            if (revealed) {
+                demo.classList.remove('revealed');
+                setTimeout(() => { es.hidden = true; }, 450);
+                btn.textContent = 'Показать испанский';
+            } else {
+                es.hidden = false;
+                requestAnimationFrame(() => requestAnimationFrame(() => demo.classList.add('revealed')));
+                btn.textContent = 'Скрыть';
+            }
+        });
+    </script>
+</body>
+</html>

@@ -4,3 +4,5 @@ node_modules
 
 CLAUDE.md
 firebase-debug.log
+.playwright-mcp/
+.rooky-notes.md

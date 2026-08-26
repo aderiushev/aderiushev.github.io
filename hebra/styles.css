@@ -1,0 +1,377 @@
+/* Hebra landing — warm, caring palette for a family-focused video calling app.
+   Dark background with soft green accents (call/connect) and warm paper text. */
+
+:root {
+  --ink: #0f1612;
+  --card: #172019;
+  --border: #243028;
+  --paper: #dfe8e2;
+  --paper-bright: #f0f8f3;
+  --fade: #7a9082;
+  --accent: #34c759;
+  --accent-dim: #2a9e48;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --mono: 'SF Mono', 'JetBrains Mono', 'Fira Code', monospace;
+  --measure: 42rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sans);
+  background-color: var(--ink);
+  color: var(--paper);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Header */
+header {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--paper);
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+}
+
+.logo-text {
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--fade);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: var(--paper);
+}
+
+/* Hero */
+.hero {
+  padding: 4.5rem 0 3.5rem;
+}
+
+.eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fade);
+  margin-bottom: 1.25rem;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: clamp(1.9rem, 5vw, 2.75rem);
+  line-height: 1.2;
+  color: var(--paper-bright);
+  max-width: 36rem;
+  margin-bottom: 0.85rem;
+}
+
+.hero .lede {
+  color: var(--fade);
+  font-size: 1.1rem;
+  max-width: 34rem;
+}
+
+/* Sections */
+section {
+  padding: 2.75rem 0;
+  border-top: 1px solid var(--border);
+}
+
+section h2 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--paper-bright);
+  margin-bottom: 1.75rem;
+}
+
+/* Steps */
+.pass {
+  display: grid;
+  grid-template-columns: 3.25rem 1fr;
+  gap: 0 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.pass-num {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1.2;
+}
+
+.pass h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--paper);
+  margin-bottom: 0.3rem;
+}
+
+.pass p {
+  color: var(--fade);
+}
+
+.pass p strong {
+  color: var(--paper);
+}
+
+/* Features */
+.features {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: 2.75rem 1fr;
+  gap: 0 1rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.feature h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--paper);
+  margin-bottom: 0.3rem;
+}
+
+.feature p {
+  color: var(--fade);
+  font-size: 0.95rem;
+}
+
+/* Plain sections */
+.plain p {
+  color: var(--fade);
+  margin-bottom: 1rem;
+  max-width: 36rem;
+}
+
+.plain p strong {
+  color: var(--paper);
+  font-weight: 600;
+}
+
+/* Links grid */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 0.75rem;
+}
+
+.link-card {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  color: var(--paper);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.link-card:hover {
+  border-color: var(--accent);
+  background: #1a2b1f;
+}
+
+.link-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  width: 1.5rem;
+  text-align: center;
+}
+
+/* Legal / support pages */
+.legal-content {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.legal-content h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--paper-bright);
+  margin-bottom: 0.5rem;
+}
+
+.legal-content .last-updated {
+  color: var(--fade);
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+
+.legal-content h2 {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--paper-bright);
+  margin: 2.25rem 0 0.9rem;
+}
+
+.legal-content p {
+  margin-bottom: 1rem;
+  color: var(--paper);
+}
+
+.legal-content ul {
+  margin: 0 0 1rem 1.5rem;
+  color: var(--paper);
+}
+
+.legal-content li {
+  margin-bottom: 0.55rem;
+}
+
+.legal-content .muted {
+  color: var(--fade);
+}
+
+.faq-item {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.4rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.faq-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  color: var(--paper);
+}
+
+.faq-item p {
+  color: var(--fade);
+  margin: 0;
+}
+
+.contact-box {
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.75rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.contact-box h3 {
+  font-weight: 600;
+  color: var(--paper-bright);
+  margin-bottom: 0.75rem;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 2rem 0 2.5rem;
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  align-items: baseline;
+  justify-content: space-between;
+  color: var(--fade);
+  font-size: 0.875rem;
+}
+
+.footer-row a {
+  color: var(--fade);
+  text-decoration: none;
+}
+
+.footer-row a:hover {
+  color: var(--paper);
+}
+
+/* Responsive & motion */
+@media (max-width: 540px) {
+  .header-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    padding-top: 3rem;
+  }
+
+  .pass {
+    grid-template-columns: 2.5rem 1fr;
+  }
+
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}

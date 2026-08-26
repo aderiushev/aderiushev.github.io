@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hebra — one-tap, full-screen video calls for senior parents and family. No contacts, no menus. Just press call.">
+    <meta name="author" content="Aleksei Deriushev">
+    <title>Hebra — effortless video calls for family</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Hebra app icon" class="logo-icon">
+                    <span class="logo-text">Hebra</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="border-top: none;">
+        <div class="container">
+            <p class="eyebrow">iOS · iPad + iPhone · for families</p>
+            <h1>One tap. Full screen. Your&nbsp;family&nbsp;is&nbsp;there.</h1>
+            <p class="lede">
+                Hebra is a video calling app stripped to the absolute minimum —
+                designed so senior parents never get lost in menus, contacts, or settings.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>How it works</h2>
+            <div class="pass">
+                <span class="pass-num">1</span>
+                <div>
+                    <h3>Pair once</h3>
+                    <p>One device becomes the <strong>Follower</strong> (iPad at home with the parent). The other becomes the <strong>Leader</strong> (your iPhone). Enter a 6-digit linking code to pair them — done in 30 seconds.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">2</span>
+                <div>
+                    <h3>Press call</h3>
+                    <p>On the Leader phone, tap one giant green button. The Follower iPad rings instantly — even if the app is closed or the screen is locked — via Apple's native CallKit & PushKit integration.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">3</span>
+                <div>
+                    <h3>Talk face to face</h3>
+                    <p>Full-screen, edge-to-edge video fills the iPad. No floating toolbars, no distracting UI — just your face, as large as possible. Hang up when you're done.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plain">
+        <div class="container">
+            <h2>Built for the people who need it most</h2>
+            <div class="features">
+                <div class="feature">
+                    <span class="feature-icon">📞</span>
+                    <div>
+                        <h3>Rings like a real phone call</h3>
+                        <p>PushKit wakes the app from any state. CallKit shows the native green call screen. No missed calls because "the app wasn't open."</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔒</span>
+                    <div>
+                        <h3>Private & encrypted</h3>
+                        <p>Direct WebRTC peer-to-peer connection. Video and audio travel encrypted between devices — never through our servers. Zero tracking, zero ads.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">🔗</span>
+                    <div>
+                        <h3>No accounts, no contacts</h3>
+                        <p>No email, no phone number, no sign-up. A simple 6-digit code pairs two devices. That's the entire setup.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon">📱</span>
+                    <div>
+                        <h3>Locks to one purpose</h3>
+                        <p>After setup, the Follower device locks into call-answering mode. No menus to get lost in. The parent's only job is to accept or ignore the call.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="plain">
+        <div class="container">
+            <h2>Tech under the hood</h2>
+            <p>
+                <strong>100% native Swift + SwiftUI</strong> on the iOS side.
+                Cloudflare Durable Objects handle signaling over WebSocket with hibernation —
+                keeping costs at zero even under the free tier. ICE/TURN relay via Cloudflare Calls.
+                PushKit VoIP pushes are delivered through Apple APNs with JWT-signed tokens.
+            </p>
+            <p>
+                The entire backend fits in a single Cloudflare Worker. No database, no storage,
+                no third-party services. The signaling server is stateless between calls.
+            </p>
+        </div>
+    </section>
+
+    <section class="plain">
+        <div class="container">
+            <h2>Links</h2>
+            <div class="links-grid">
+                <a href="https://apps.apple.com/app/hebra/id6805545962" class="link-card" target="_blank" rel="noopener">
+                    <span class="link-icon">🍎</span>
+                    <span>App Store</span>
+                </a>
+                <a href="https://github.com/aderiushev/call-dad" class="link-card" target="_blank" rel="noopener">
+                    <span class="link-icon">GH</span>
+                    <span>Source Code</span>
+                </a>
+                <a href="privacy.html" class="link-card">
+                    <span class="link-icon">🔒</span>
+                    <span>Privacy Policy</span>
+                </a>
+                <a href="support.html" class="link-card">
+                    <span class="link-icon">💬</span>
+                    <span>Support</span>
+                </a>
+                <a href="https://hebra.aderiushev.workers.dev/health" class="link-card" target="_blank" rel="noopener">
+                    <span class="link-icon">⚡</span>
+                    <span>Backend Health</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="privacy.html">Privacy</a> ·
+                    <a href="support.html">Support</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

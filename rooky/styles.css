@@ -513,3 +513,42 @@ footer {
     transition: none !important;
   }
 }
+
+
+/* ---- Screenshots: a scroll-snap track, no script ------------------------- */
+.section-lede {
+  color: var(--ink-soft);
+  max-width: var(--measure);
+}
+
+.screenshots {
+  overflow: hidden;
+}
+
+.screenshots-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  padding: 1.25rem max(1.5rem, calc((100% - var(--measure)) / 2)) 1.75rem;
+}
+
+.screenshots-track::-webkit-scrollbar {
+  display: none;
+}
+
+.screenshot-image {
+  flex: 0 0 auto;
+  width: 230px;
+  height: auto;
+  border-radius: 22px;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  scroll-snap-align: center;
+}
+
+@media (max-width: 600px) {
+  .screenshot-image { width: 200px; }
+}

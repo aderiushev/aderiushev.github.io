@@ -375,3 +375,54 @@ footer {
     transition: none !important;
   }
 }
+
+/* --- Screenshots ------------------------------------------------------- */
+/* Two grids rather than one: an iPad frame is 3:4 and an iPhone frame is
+   closer to 1:2, so mixing them in a single row leaves ragged bottoms. */
+.shots {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.75rem;
+}
+
+.shots + .shots {
+  margin-top: 1.25rem;
+}
+
+.shot {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.85rem;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  background: #000;
+}
+
+/* The phone captures are twice as tall as they are wide; left at full column
+   width they tower over everything else on the page. */
+.shots-tall .shot img {
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.shot figcaption {
+  padding-top: 0.8rem;
+  color: var(--fade);
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .shots {
+    grid-template-columns: 1fr;
+  }
+}

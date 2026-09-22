@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Miread — an iOS app that teaches a Russian-speaking child to blend letters into syllables. No reading required, no network, no accounts.">
+    <meta name="author" content="Aleksei Deriushev">
+    <title>Miread — from letters to syllables</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Miread app icon — the letters M and A as two joined tiles" class="logo-icon">
+                    <span class="logo-text">Miread</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="border-top: none;">
+        <div class="container">
+            <p class="eyebrow">iOS · Russian · ages 5–7</p>
+            <h1>He knows every letter. The syllable is the wall.</h1>
+            <p class="lede">
+                Ask him what М says and he answers instantly. Ask him to read МА
+                and nothing happens — he says the two sounds and waits for the word
+                to appear. That gap has a name in Russian teaching practice:
+                <strong>слияние</strong>, the merge. Miread trains that one thing.
+            </p>
+
+            <figure class="demo" id="demo">
+                <div class="stage" id="stage">
+                    <span class="tile">М</span>
+                    <span class="tile">А</span>
+                </div>
+                <p class="made" id="made"></p>
+                <button class="demo-btn" id="demo-btn" type="button">Соединить</button>
+                <figcaption>
+                    This is the whole app. In Miread his finger does the dragging,
+                    and the consonant sounds the entire way — so he hears one
+                    continuous <em>мммаааа</em>, not «эм» plus «а».
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Why holding the sound matters</h2>
+            <div class="pass">
+                <span class="pass-num">1</span>
+                <div>
+                    <h3>The consonant never stops</h3>
+                    <p>From the moment he picks up the vowel, the consonant is sounding. As the two tiles close, the sound slides into the vowel. The merge is something he hears happen, not a rule he is told.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">2</span>
+                <div>
+                    <h3>Stretchable letters first</h3>
+                    <p>М, С, Х, Р, Ш, Л, Н come first — every one can be held for as long as the drag lasts. К, П and Т cannot: they are a single burst, and there is nothing to glide. They arrive later, once merging is already a habit.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">3</span>
+                <div>
+                    <h3>A syllable comes back before it fades</h3>
+                    <p>Each syllable he builds returns after one session, then two, four, eight, sixteen. Miss it and it comes back tomorrow. He never grinds, and nothing quietly disappears.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Nothing to read, nothing to configure</h2>
+            <p class="muted">
+                A child who cannot read cannot be given instructions, so Miread gives
+                none. When he hesitates, a translucent tile makes the trip he is meant
+                to make, waits, and makes it again. There are no menus, no settings,
+                no score, no timer, no stars — one board, one gesture, a handful of
+                syllables per sitting.
+            </p>
+            <p class="note">
+                It was built for one six-year-old in particular. Everything in it
+                exists because he got stuck on it.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>It does not phone home</h2>
+            <p class="muted">
+                Miread has no network code at all — not analytics, not crash
+                reporting, not an update check. There are no accounts, no ads, no
+                third-party SDKs. What he does stays in a file on the device and is
+                deleted with the app. The <a href="privacy.html">privacy policy</a>
+                is one page and says exactly this.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="support.html">Support</a> ·
+                    <a href="privacy.html">Privacy</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        (function () {
+            var stage = document.getElementById('stage');
+            var made = document.getElementById('made');
+            var btn = document.getElementById('demo-btn');
+            var joined = false;
+
+            btn.addEventListener('click', function () {
+                joined = !joined;
+                stage.classList.toggle('joined', joined);
+                if (joined) {
+                    btn.textContent = 'Разъединить';
+                    setTimeout(function () {
+                        if (stage.classList.contains('joined')) made.textContent = 'МА';
+                    }, 520);
+                } else {
+                    btn.textContent = 'Соединить';
+                    made.textContent = '';
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

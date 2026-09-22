@@ -1,0 +1,119 @@
+/* Miread landing — the palette is the app's own: a near-black lab, light
+   element tiles, dark ink on them, and the blue the reactor glows as a vowel
+   comes near. Letters are the subject here, so glyphs get room and weight. */
+
+:root {
+  --void: #101014;
+  --card: #1a1a20;
+  --border: #2a2a33;
+  --tile: #edf0f5;
+  --ink: #171a21;
+  --text: #dfe3ea;
+  --fade: #8b91a0;
+  --glow: #8cc7ff;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  --measure: 42rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--sans);
+  background-color: var(--void);
+  color: var(--text);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem; }
+
+a { color: var(--glow); }
+a:hover { color: #b9dcff; }
+
+header { border-bottom: 1px solid var(--border); padding: 1.1rem 0; }
+.header-content { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.logo { display: flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--text); }
+.logo-icon { width: 34px; height: 34px; border-radius: 8px; }
+.logo-text { font-weight: 700; letter-spacing: .01em; }
+nav ul { display: flex; gap: 1rem; list-style: none; font-size: .9rem; flex-wrap: wrap; }
+nav a { text-decoration: none; color: var(--fade); }
+nav a:hover { color: var(--glow); }
+
+section { border-top: 1px solid var(--border); padding: 3.2rem 0; }
+.hero { padding: 4rem 0 3.4rem; }
+.eyebrow {
+  color: var(--fade); font-size: .82rem; letter-spacing: .1em;
+  text-transform: uppercase; margin-bottom: .9rem;
+}
+h1 { font-size: clamp(1.9rem, 5.2vw, 2.9rem); line-height: 1.14; letter-spacing: -.02em; }
+h2 { font-size: 1.35rem; margin-bottom: 1.1rem; letter-spacing: -.01em; }
+h3 { font-size: 1.02rem; margin-bottom: .35rem; }
+.lede { margin-top: 1.1rem; font-size: 1.08rem; color: var(--text); }
+.muted { color: var(--fade); }
+
+/* The demo: the app's entire gesture, in two tiles. */
+.demo {
+  margin-top: 2.2rem; background: var(--card); border: 1px solid var(--border);
+  border-radius: 14px; padding: 1.8rem 1.25rem 1.35rem;
+}
+.stage {
+  display: flex; align-items: center; justify-content: center;
+  gap: var(--gap, 84px); min-height: 132px; transition: gap .55s cubic-bezier(.3,.7,.3,1);
+}
+.tile {
+  width: 92px; height: 108px; border-radius: 12px; background: var(--tile);
+  color: var(--ink); display: grid; place-items: center;
+  font-size: 3.1rem; font-weight: 600; line-height: 1; user-select: none;
+}
+.stage.joined { --gap: 0px; }
+.stage.joined .tile:first-child { border-radius: 12px 0 0 12px; }
+.stage.joined .tile:last-child { border-radius: 0 12px 12px 0; }
+.made {
+  text-align: center; margin-top: 1.1rem; font-size: 2rem; font-weight: 600;
+  letter-spacing: .04em; color: var(--glow); min-height: 2.4rem;
+}
+.demo-btn {
+  display: block; margin: .4rem auto 0; padding: .6rem 1.25rem; border-radius: 999px;
+  border: 1px solid var(--border); background: #23232c; color: var(--text);
+  font: inherit; font-size: .92rem; cursor: pointer;
+}
+.demo-btn:hover { border-color: var(--glow); color: var(--glow); }
+figcaption { margin-top: 1rem; font-size: .88rem; color: var(--fade); text-align: center; }
+
+.pass { display: flex; gap: 1rem; margin-bottom: 1.5rem; }
+.pass-num {
+  flex: 0 0 2rem; height: 2rem; border-radius: 50%; background: #23232c;
+  color: var(--glow); display: grid; place-items: center; font-size: .9rem; font-weight: 700;
+}
+.pass p { color: var(--fade); }
+
+.note {
+  border-left: 2px solid var(--glow); padding-left: 1rem; margin-top: 1.4rem; color: var(--fade);
+}
+
+.legal-content { max-width: var(--measure); margin: 0 auto; padding: 2.6rem 1.25rem 3rem; }
+.legal-content h1 { font-size: 1.7rem; margin-bottom: .4rem; }
+.legal-content h2 { margin-top: 2.1rem; }
+.legal-content p, .legal-content li { margin-bottom: .7rem; }
+.legal-content ul { padding-left: 1.15rem; }
+.last-updated { color: var(--fade); font-size: .88rem; margin-bottom: 1.6rem; }
+
+.faq-item { border-top: 1px solid var(--border); padding: 1.1rem 0; }
+.faq-item p { color: var(--fade); margin-bottom: 0; }
+.contact-box {
+  margin-top: 2rem; background: var(--card); border: 1px solid var(--border);
+  border-radius: 12px; padding: 1.2rem;
+}
+
+footer { border-top: 1px solid var(--border); padding: 1.6rem 0; margin-top: 2rem; }
+.footer-row {
+  display: flex; justify-content: space-between; gap: .75rem;
+  flex-wrap: wrap; font-size: .85rem; color: var(--fade);
+}
+.footer-row a { color: var(--fade); text-decoration: none; }
+.footer-row a:hover { color: var(--glow); }
+
+@media (max-width: 420px) {
+  .stage { --gap: 52px; }
+  .tile { width: 78px; height: 94px; font-size: 2.6rem; }
+}

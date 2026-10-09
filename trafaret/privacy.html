@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for the Trafaret demo — no accounts, no cookies, no analytics; prompts and photos are kept in server memory only.">
+    <meta name="author" content="Aleksei Deriushev">
+    <meta name="theme-color" content="#121214">
+    <title>Privacy Policy — Trafaret</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container wide">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Trafaret icon — a stencil T on orange" class="logo-icon">
+                    <span class="logo-text">Trafaret</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Effective October 9, 2026</p>
+
+        <p>This policy covers the public Trafaret demo at <a href="https://trafaret.onrender.com">trafaret.onrender.com</a>. If you run Trafaret yourself from the <a href="https://github.com/aderiushev/trafaret">source code</a>, nothing reaches me at all.</p>
+
+        <p><strong>In short: no accounts, no cookies, no analytics — and what you run is kept in memory only.</strong></p>
+
+        <h2>What the demo handles</h2>
+        <ul>
+            <li>The prompts and instructions you type, the photos you upload, and the images the models produce.</li>
+            <li>The workflow itself — which blocks you placed and how they are wired. It is saved in your own browser (local storage), not on the server. Clearing the site's data in your browser removes it.</li>
+        </ul>
+
+        <h2>Where it goes</h2>
+        <ul>
+            <li>When you press Run, the server sends the prompt and any input images to the provider of the model you picked: <strong>Cloudflare Workers AI</strong> for FLUX.2 klein, or <strong>BytePlus ModelArk</strong> for Seedream 4.5. Their own terms and privacy policies apply to that processing. The Mock model never leaves the server.</li>
+            <li>The server runs on Render, in Frankfurt, behind Cloudflare. As with any website, these hosting providers process your IP address to deliver requests and may keep their own technical logs.</li>
+        </ul>
+
+        <h2>How long it stays</h2>
+        <ul>
+            <li>The server has no database and writes nothing to disk. Uploads and results live in memory, a finished run is forgotten an hour later, and older images are dropped when memory fills up.</li>
+            <li>Everything is gone whenever the server restarts or falls asleep, which on the free instance happens after 15 idle minutes.</li>
+            <li>To share the demo fairly, the server counts requests per visitor IP address for ten minutes, in memory, and keeps nothing afterwards.</li>
+        </ul>
+
+        <h2>What it does not do</h2>
+        <ul>
+            <li>No accounts, sign-in or email. No cookies, analytics, ads or trackers.</li>
+            <li>Images are not shared with other visitors, but the demo is not meant for private material: please do not upload personal or sensitive photos.</li>
+        </ul>
+
+        <p>If this policy changes, the new version will appear at this address with a new effective date.</p>
+
+        <p>Questions: <a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a><br>
+        Developer: Aleksei Deriushev</p>
+    </div>
+
+    <footer>
+        <div class="container wide">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="index.html">Trafaret</a> ·
+                    <a href="support.html">Support</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

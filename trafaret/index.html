@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trafaret — a node-based editor for reusable AI-image recipes. Wire prompts, photos and style presets into a graph, run it, and re-run only what changed.">
+    <meta name="author" content="Aleksei Deriushev">
+    <meta name="theme-color" content="#121214">
+    <title>Trafaret — AI-image recipes you build once</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container wide">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Trafaret icon — a stencil T on orange" class="logo-icon">
+                    <span class="logo-text">Trafaret</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="https://trafaret.onrender.com">Live demo</a></li>
+                        <li><a href="https://github.com/aderiushev/trafaret">Source</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <p class="eyebrow">Web app · AI images · Open source</p>
+            <h1>Cut the recipe once. <span class="accent">Run it again and again.</span></h1>
+            <p class="lede">
+                Trafaret is a node-based editor for AI images. Put a prompt, a photo, Generate, Edit and
+                Result blocks on a canvas, wire them up, pick a style and press Run. Independent branches
+                render side by side, a failed block retries on its own, and the next run redraws only what
+                changed. <em>Trafaret</em> is Russian for <em>stencil</em>.
+            </p>
+            <div class="actions">
+                <a class="btn primary" href="https://trafaret.onrender.com">Open the live demo →</a>
+                <a class="btn" href="https://github.com/aderiushev/trafaret">Source on GitHub</a>
+            </div>
+            <p class="fineprint">
+                The demo runs on a free instance: the first visit after a quiet spell takes about a minute
+                to wake it up.
+            </p>
+        </div>
+        <div class="container wide">
+            <figure class="shot">
+                <img src="assets/editor.webp" width="2400" height="1218"
+                     alt="The Trafaret editor: a prompt wired into two Seedream 4.5 Generate blocks with their results, a photo edited into a new scene, and a run timeline at the bottom">
+                <figcaption>
+                    A prompt rendered by two Seedream 4.5 branches, plus a photo edit. On this run only the
+                    edit was redrawn — the timeline reads <span class="mono">1 AI call · 2 reused · saved ~34.5 s</span>.
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Build once, re-run only what changed</h2>
+            <div class="pass">
+                <span class="pass-num">1</span>
+                <div>
+                    <h3>Results are kept by what made them</h3>
+                    <p>Every block's result is stored under a fingerprint of its inputs: the prompt, the model, the style, the seed and everything upstream. Change one style and only its branch goes back to the AI; the rest comes back instantly, and the timeline says how much time that saved. Want a new take? 🎲 gives a block a new seed.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">2</span>
+                <div>
+                    <h3>Branches run side by side, failures stay small</h3>
+                    <p>A block starts the moment its own inputs are ready, so independent branches overlap instead of waiting in line. When one AI call fails, only the blocks that need it stop; Retry runs that part again without touching the rest. Nothing paid is ever retried behind your back.</p>
+                </div>
+            </div>
+            <div class="pass">
+                <span class="pass-num">3</span>
+                <div>
+                    <h3>Styles live on the server</h3>
+                    <p>A style preset is a prompt, things to avoid and reference images. The server merges it into each request at run time, and the inspector shows exactly what was sent to the AI — the final prompt and every image, with its role.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>What the templates make</h2>
+            <p class="muted">
+                Real FLUX.2 klein output from the demo's templates: one prompt in two styles, and a casual
+                product photo moved into a new scene.
+            </p>
+            <div class="gallery">
+                <figure>
+                    <img src="assets/mug-premium-3d.webp" width="800" height="800" alt="A white mug with rising steam on a wooden table, clean and minimal, pastel backdrop">
+                    <figcaption><span class="tag text">Premium 3D</span>“A ceramic coffee mug with steam rising, on a wooden table”</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/mug-lifestyle.webp" width="800" height="800" alt="The same kind of mug on a sunlit kitchen counter next to a linen towel">
+                    <figcaption><span class="tag text">Lifestyle</span>The same prompt, the other style</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/teapot-photo.webp" width="800" height="600" alt="A sage-green ceramic teapot on a cluttered dining table with mail, keys and a laptop">
+                    <figcaption><span class="tag image">Photo</span>The sample product shot</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/teapot-marble.webp" width="800" height="600" alt="The same teapot on a sunlit marble kitchen counter">
+                    <figcaption><span class="tag done">Edit</span>“Put the product on a sunlit marble kitchen counter”</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Under the hood</h2>
+            <ul class="stack">
+                <li><strong>Editor</strong>React 19 and React Flow, organised by Feature-Sliced Design. The canvas checks every wire as you drag it, and the workflow saves itself in your browser.</li>
+                <li><strong>Server</strong>Fastify in TypeScript. It validates the graph with the same rules as the editor, runs it block by block as inputs become ready, and caches each result by its inputs.</li>
+                <li><strong>Models</strong>FLUX.2 klein on Cloudflare Workers AI, Seedream 4.5 on BytePlus ModelArk, and a Mock model that needs no key — within small daily caps on the demo.</li>
+                <li><strong>Delivery</strong>One Docker image on Render. Every change goes through unit tests, browser tests and an automated accessibility scan before it deploys.</li>
+            </ul>
+            <p class="muted after-stack">
+                A workflow is plain JSON: export it from the editor and post it to <code>/api/runs</code> with
+                curl. The <a href="https://trafaret.onrender.com/api/docs">API reference</a> is live too.
+            </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>No accounts, no tracking</h2>
+            <p class="muted">
+                There is nothing to sign up for, and no cookies or analytics. A prompt or photo you run goes
+                to the provider of the model you picked; the server keeps it in memory only, until it
+                restarts. Your workflow stays in your own browser. The <a href="privacy.html">privacy policy</a>
+                says exactly that.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container wide">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="support.html">Support</a> ·
+                    <a href="privacy.html">Privacy</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

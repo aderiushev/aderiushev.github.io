@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support for Trafaret — answers to common questions about the live demo, and how to get in touch.">
+    <meta name="author" content="Aleksei Deriushev">
+    <meta name="theme-color" content="#121214">
+    <title>Support — Trafaret</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container wide">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="assets/icon.png" alt="Trafaret icon — a stencil T on orange" class="logo-icon">
+                    <span class="logo-text">Trafaret</span>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="/">Main Site</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy.html">Privacy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="legal-content">
+        <h1>Support</h1>
+        <p class="last-updated">Answers about the <a href="https://trafaret.onrender.com">live demo</a></p>
+
+        <div class="faq-item">
+            <h3>The demo takes a minute to open</h3>
+            <p>It runs on a free instance that sleeps after 15 idle minutes. The first visit wakes it up — keep the tab open and it loads in about a minute.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>A result is labelled Mock</h3>
+            <p>The real models have small daily caps on the demo. Once a cap is reached, jobs run on the Mock model instead and say so. The caps reset at 00:00 UTC.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Seedream 4.5 shows an error</h3>
+            <p>The demo uses Seedream's free quota only, and the service pauses when it runs out. Pick FLUX.2 klein or Mock in the block's Model menu and run again.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>"Too many requests"</h3>
+            <p>To keep the demo fair, each visitor can start 20 runs or retries and 30 uploads per ten minutes. Wait a few minutes and try again.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>My workflow disappeared</h3>
+            <p>Workflows are saved in your browser, so another browser, a private window or cleared site data starts fresh. Use Export to keep a copy as a file, and Import to bring it back.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I run it myself?</h3>
+            <p>Yes — the <a href="https://github.com/aderiushev/trafaret">source is on GitHub</a>, and <code>pnpm install</code> then <code>pnpm dev</code> starts it locally with the Mock models, no keys needed.</p>
+        </div>
+
+        <div class="contact-box">
+            <p>Found a bug or have a question? Open an issue on <a href="https://github.com/aderiushev/trafaret/issues">GitHub</a>, or write to <a href="mailto:derushev.aleksei@gmail.com">derushev.aleksei@gmail.com</a>.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container wide">
+            <div class="footer-row">
+                <span>&copy; 2026 Aleksei Deriushev</span>
+                <span>
+                    <a href="index.html">Trafaret</a> ·
+                    <a href="privacy.html">Privacy</a> ·
+                    <a href="/">aderiushev.github.io</a>
+                </span>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
